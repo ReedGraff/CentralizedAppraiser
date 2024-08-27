@@ -1,0 +1,143 @@
+[
+    {
+      "category": "parcel",
+      "path": "/us/fl/miami-dade/miami/1186",
+      "parcelnumb": "0131120140300",
+      "headline": "60 NE 78th St Apt A",
+      "context": "Miami, FL",
+      "type": "Parcel",
+      "centroid": [
+        -80.1957877538207,
+        25.8460807531779
+      ],
+      "owner": "FORDOME II LLC",
+      "primary_headline": "62 Ne 78 St",
+      "score": 52.567474
+    },
+    {
+      "category": "parcel",
+      "path": "/us/wa/king/seattle/197877",
+      "parcelnumb": "2464400310",
+      "headline": "600 Ne 78th St",
+      "context": "Seattle, WA",
+      "type": "Parcel",
+      "centroid": [
+        -122.321402005958,
+        47.6855277126427
+      ],
+      "owner": "CRAMER KRISTEN S",
+      "score": 44.66899
+    },
+    {
+      "category": "parcel",
+      "path": "/us/wa/king/seattle/197901",
+      "parcelnumb": "2464400465",
+      "headline": "607 Ne 78th St",
+      "context": "Seattle, WA",
+      "type": "Parcel",
+      "centroid": [
+        -122.321182914307,
+        47.6850957932709
+      ],
+      "owner": "BELL STEPHEN W",
+      "score": 44.429565
+    },
+    {
+      "category": "parcel",
+      "path": "/us/wa/king/seattle/197875",
+      "parcelnumb": "2464400300",
+      "headline": "608 Ne 78th St",
+      "context": "Seattle, WA",
+      "type": "Parcel",
+      "centroid": [
+        -122.321097023691,
+        47.6855260243334
+      ],
+      "owner": "MATZINER ADAM S & NICOLE L",
+      "score": 44.364876
+    },
+    {
+      "category": "parcel",
+      "path": "/us/wa/king/seattle/197876",
+      "parcelnumb": "2464400305",
+      "headline": "604 Ne 78th St",
+      "context": "Seattle, WA",
+      "type": "Parcel",
+      "centroid": [
+        -122.321259592519,
+        47.6855267791644
+      ],
+      "owner": "BRANTON DANIELLE NICOLE & U",
+      "score": 44.33156
+    },
+    {
+      "category": "parcel",
+      "path": "/us/wa/king/seattle/197900",
+      "parcelnumb": "2464400460",
+      "headline": "601 Ne 78th St",
+      "context": "Seattle, WA",
+      "type": "Parcel",
+      "centroid": [
+        -122.321365572951,
+        47.6850982634791
+      ],
+      "owner": "CLARK MICHAEL L+LILLIAN S",
+      "score": 44.33156
+    },
+    {
+      "category": "parcel",
+      "path": "/us/wa/clark/vancouver/62584",
+      "parcelnumb": "106392-000",
+      "headline": "6005 Ne 78th St",
+      "context": "Vancouver, WA",
+      "type": "Parcel",
+      "centroid": [
+        -122.610458739683,
+        45.6785718608078
+      ],
+      "owner": "HILBORN DAVID R & HILBORN ELLEN L",
+      "score": 44.01274
+    },
+    {
+      "category": "parcel",
+      "path": "/us/wa/clark/vancouver/61370",
+      "parcelnumb": "156243-000",
+      "headline": "6010 Ne 78th St",
+      "context": "Vancouver, WA",
+      "type": "Parcel",
+      "centroid": [
+        -122.610318738563,
+        45.6790747109631
+      ],
+      "owner": "BURKE JERRY E",
+      "score": 43.77488
+    },
+    {
+      "category": "parcel",
+      "path": "/us/wa/clark/vancouver/61718",
+      "parcelnumb": "106399-021",
+      "headline": "6013 Ne 78th St",
+      "context": "Vancouver, WA",
+      "type": "Parcel",
+      "centroid": [
+        -122.610014910017,
+        45.6785572655562
+      ],
+      "owner": "SUTTERFIELD MICHAEL & SUTTERFIELD SOPHIE",
+      "score": 43.77488
+    },
+    {
+      "category": "parcel",
+      "path": "/us/wa/clark/vancouver/62128",
+      "parcelnumb": "156257-000",
+      "headline": "6008 Ne 78th St",
+      "context": "Vancouver, WA",
+      "type": "Parcel",
+      "centroid": [
+        -122.610723373328,
+        45.6790720879775
+      ],
+      "owner": "NEW HEIGHTS CHURCH OF SOUTHWEST WASHINGTON",
+      "score": 43.67531
+    }
+  ]

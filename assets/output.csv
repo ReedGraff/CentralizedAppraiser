@@ -1,0 +1,68 @@
+id,error.status,error.message,propertyInfo.folio,propertyInfo.subdivision,propertyInfo.blk,propertyInfo.lot,propertyInfo.plat.book,propertyInfo.plat.page,owners.0.name,owners.0.mailingAddresses.0.formattedAddress
+ChIJ750BDE6n2YgRvBO39CkUisA,success,,504013140010,SHERIDAN HOUSE NO 3 174-42 B PARCEL A           ,0,0,0,0,SHERIDAN HOUSE INC,"1700 S Flamingo Rd, Davie, FL 33325, USA"
+ChIJibuY4YSl2YgRiLjxVb30RQQ,success,,514120AD0530,MIRABELLA PLAZA COMMERCIAL CONDO UNIT 1-101 PER CDO CIN# 114389177          ,114437644,0,114437644,0,G & G BRIGHT PROPERTIES LLC,"20200 W Dixie Hwy #1203, Miami, FL 33180, USA"
+ChIJkf_VWY-l2YgRmOw5iZvv3QQ,success,,514034AA0100,LAS TERRAZAS AT VIZCAYA CONDO UNIT 10 BLDG 1 PER CDO BK/PG: 39771/1908          ,115188446,113394429,115188446,113394429,"YU,CHANGKUAN","19311 E Oakmont Dr, Hialeah, FL 33015, USA"
+ChIJBbpvB12n2YgRWxZQiGI1N-k,error,Cannot find a folio for 125 NW 109 AVE,,,,,,,,
+ChIJpTKOJMCx2YgRLKwZJQsedhs,error,"Internal Error. Google API returned: {'error': {'code': 404, 'message': 'The provided Place ID is no longer valid. Please refresh cached Place IDs as per https://developers.google.com/maps/documentation/places/web-service/place-id#save-id.', 'status': 'NOT_FOUND'}}",,,,,,,,
+ChIJc1jXlDql2YgRESPAkN05gJI,error,Cannot find a folio for 10000 Pembroke RD,,,,,,,,
+ChIJH7ZyHdy3j4AROvaaEc-awFI,success,,514120021661,"EVERGLADES SUGAR & LAND CO SUB 2-75 D 20-51-41 N 75 OF S 825 OF THE W 110 OFTHE E 770 OF NW1/4 OF SW1/4 SEC 20,LESS W 16 FOR RD AKA: S1/2 LOT 166 TROPICAL VALLEY      ",114046633,113538172,114046633,113538172,"CONTRERAS,HANS O","1811 SW 100th Ave, Miramar, FL 33025, USA"
+ChIJwYQR1xyp2YgRXVR1qU8RMxM,success,,514104040010,"SPEAR AND VARAT PLAT 176-1 B POR OF PARCEL A DESC AS: BEG NE COR PAR A, S 865.40, W 443.75,N 26.22, W 102.68, NLY 195.95, NW 12, NLY 123.68, NE 200.78, NLY 7.01, N 293.03, NE 49.49, E 20.01, S 2, E 40, W 2, E 56.61, SE 100.72, E 230 TO POB PARCEL A-1     ",114646837,113076251,114646837,113076251,DAVIE ASSOCIATES LLC,"40 E 69th St, New York, NY 10065, USA"
+ChIJSTT8IMGn2YgRettMOXqyiw0,error,Cannot find a folio for 733 SW 110 LN,,,,,,,,
+ChIJEXvoCl6n2YgRWY93uNar4dg,success,,514012150010,PASADENA OFFICE PARK 155-7 B PARCEL A           ,114756461,111585890,114756461,111585890,SANAZ INVESTMENT LLC,"3850 Windmill Lakes Rd, Weston, FL 33332, USA"
+ChIJwcyk7Y2t2YgRA-HhgnqeIeM,error,"Internal Error. Google API returned: {'error': {'code': 404, 'message': 'The provided Place ID is no longer valid. Please refresh cached Place IDs as per https://developers.google.com/maps/documentation/places/web-service/place-id#save-id.', 'status': 'NOT_FOUND'}}",,,,,,,,
+ChIJmxyiFraj2YgRauB-Kozs6Ac,success,,514019030200,SILVER LAKES PHASE II REPLAT 154-50 B LOT O20          ,0,0,0,0,"CUBEROS,MARIA & HUERTA,E J H/E","1056 SW 180th Terrace, Pembroke Pines, FL 33029, USA"
+ChIJASddInyk2YgRKWcBgB-hJCY,success,,514032076030,RIVIERA ISLES II 170-53 B LOT 16 BLK 9           ,0,0,0,0,"MARTIN,NEVILLE JOHN","5211 SW 159th Ave, Miramar, FL 33027, USA"
+ChIJs7xEQHel2YgRBqA9Pjs3vK8,success,,514015AD0690,COBBLESTONE II UNIT 2901 BLDG 29 PER AMCDO BK/PG: 50582/210           ,117513857,112480212,117513857,112480212,"CHARLTON,NIGEL","938 SW 147th Ave, Pembroke Pines, FL 33027, USA"
+ChIJQ7Xhnfel2YgRuQIg0lLpfHU,error,Cannot find a folio for 1411 SW 119 AVE,,,,,,,,
+ChIJTXKkL6Wl2YgRsQcPJRaPLb0,success,,514028110021,"COUNTRY LAKES NORTHWEST QUADRANT PLAT 163-16 B A POR OF PAR A & B DESC AS:COMMSW COR OF NW1/4 SEC 28;N 1268.83 E 906.81;NELY 83.64 TO POB CONT NELY 25.18,NE 308.16;NELY 140.69 E 246.16,S 28.92,SE 494.58,SWLY 119.09,SW 3.90,SWLY & SELY 89.30 SE 15.79;SWLY 527.92;NW 276.16; NE 12.50;NW 149.13;SW 27.50;NW 84.17;SW 27.50;NW 84.17;SW 12.78 NW 187.74 TO POB AKA: HOMEDEPOT",0,0,0,0,HOME DEPOT USA INC,"2525 Piedmont Rd NE, Atlanta, GA 30324, USA"
+ChIJmfrhatVLrkwRYAoAGn-xlYE,success,,514018AA0710,PINES PROFESSIONAL CAMPUS @ SILVER LAKES PHASE 4 COMM CONDO UNIT 105PER CDO BK/PG: 28769/161          ,0,0,0,0,BENDELA LLC,"3581 SW 177th Ave, Miramar, FL 33029, USA"
+ChIJ_QQHpgih2YgReafzECt1YWQ,success,,513910022160,"CHAPEL TRAIL II 112-16 B POR PAR G DESC AS COMM E MOST NE COR PAR G,S 1174.67 TO NLY P/CNO.82 ON R/W DESC IN OR 25963 PG 690 TO POB,SWLY AN ARC DIST 47.12 TO P/T,CONT W 34.53,N 105, E 64.53,S 75 TO POB AKA: LOT 216 HIDDEN LAKE AT CHAPEL TRAIL    ",0,0,0,0,"JOSE,REGINE","20803 NW 19th St, Pembroke Pines, FL 33029, USA"
+ChIJMYrZxyih2YgRnmllFz55XcU,success,,513914080010,PINES 200 PLAZA 156-25 B TRACT B           ,0,0,0,0,HOLLYWOOD 200 INC,"419 E 2nd St, West Jefferson, NC 28694, USA"
+ChIJ369ptS2h2YgRShFNNdRExS4,success,,514005010081,FLA FRUIT LANDS CO SUB NO 1 2-17 D 5-51-40 TR 20 N 178.90 LESS W 1056 &LESS THAT PART LYING WITHIN 40 OF E/L OF NW1/4         ,118260048,0,118260048,0,"SEEBER,FRANK & AUDREY ","6211 SW 166th Ave, Southwest Ranches, FL 33331, USA"
+ChIJpVxM0Qa72YgRnCY9YspvbBQ,success,,504032040127,CHAMBERS LAND CO SUB SE1/4 1-5A B 32-50-40 TR 9 N 165 OF S 495 LESS E 30          ,117440007,116296471,117440007,116296471,"PICCIONI,YULIANA & MEDINA,EDGAR","5661 SW 162nd Ave, Southwest Ranches, FL 33331, USA"
+ChIJ92Xp6buh2YgRA_GZmpKOUNs,success,,504032020178,CHAMBERS LAND CO SUB NW1/4 1-5A B 32-50-40 TR 11 N 130 OF S 520          ,115119900,114842631,115119900,114842631,"CRUZ,MARIA DE LOS ANGELES","5030 SW 170th Ave, Southwest Ranches, FL 33331, USA"
+ChIJ7_BjnsOh2YgRPJE0CWxJZUA,success,,503935030040,TRAILS OF EL RANCHO ACRES 93-34 B LOT 4          ,0,0,0,0,"RODRIGUEZ,LAZARO &","4831 SW 205th Ave, Southwest Ranches, FL 33332, USA"
+ChIJ_cjisEun2YgRCXqszMbBKVQ,success,,514228120010,"BENNETT-PIPES FIRST ADD 18-5 B LOTS 1 & 2 LESS POR DESC AS: BEG AT NE COR LOT 2, WLY 72.52 TOP/C, SWLY 39.25 TO P/T WITH W/L OF LOT 1, SLY 20, NELY 28.27, ELY ALG S/L OF N 25 LOTS 1 & 2 A DIST OF 77.51, NLY TO POB, TOG WITH LOTS 3 & 4, LESS N 25 FOR RD, ALSO TOG WITH LOTS 23 THRU 26 BLK I    ",111685683,0,111685683,0,7TH AVENUE VILLAGE LLC,"801 N Federal Hwy #220, Hallandale Beach, FL 33009, USA"
+ChIJvX6xL3ir2YgR-X6q1PCbidY,error,Cannot find a folio for 2501 S Ocean DR,,,,,,,,
+ChIJiYlGTjoP2YgRwg0rnyUdd-0,success,,514214018160,"HOLLYWOOD LAKES SECTION 1-32 B LOT 17 W 20,18 E 40 BLK 46           ",116560497,114586616,116560497,114586616,"JOSSFOLK,ROY","1010 Lincoln St, Hollywood, FL 33019, USA"
+ChIJXzBKh4-w2YgRiAftNJ2p8lc,success,,514203100070,NORTH HOLLYWOOD 4-1 B LOTS 12 TO 14 BLK 1           ,115640591,0,115640591,0,PIONEER GRANT STREET LLC,"2026 Grant St, Hollywood, FL 33020, USA"
+ChIJ-6_Qe6ur2YgRagOBO8wAXMQ,success,,514203101260,NORTH HOLLYWOOD 4-1 B LOT 13 BLK 15           ,115561964,0,115561964,0,"HERRON,DONNIE SAM","2010 Sherman St, Hollywood, FL 33020, USA"
+ChIJgZjOl1Op2YgRJx1xMR3dj7g,success,,514219017380,"CARVER RANCHES 19-2 B LOTS 18-25,LESS THE N 5 OF LOT 25 BLK 40          ",116207347,115198049,116207347,115198049,CSS HOLDINGS LLC,"5122 Pembroke Rd, Hollywood, FL 33021, USA"
+ChIJtyX3ntGt2YgRZHPe02DmGgU,error,Cannot find a folio for 1675 NE 169 ST,,,,,,,,
+ChIJc267Teyt2YgRsxkjJ8pjudE,success,,494319020010,GALT OCEAN MILE-RESUB LOTS 3 TO 12 BLK 8 & BLK 16 38-18 B LOT 3 BLK 8          ,0,0,0,0,DENNIS MATSON INC,"3350 N Ocean Blvd, Fort Lauderdale, FL 33308, USA"
+ChIJLwMu4yut2YgR-KMAJeB6Lqc,success,,504112040070,COUNTRY CLUB ESTATES UNIT C 26-20 B LOT 7 BLK 14          ,112131140,0,112131140,0,"COOK,DAVID H/E","630 SW 44th Ave, Plantation, FL 33317, USA"
+ChIJf5_h0Cet2YgRYMrpnCKiYAM,error,Cannot find a folio for 2174 NE 170 ST,,,,,,,,
+ChIJ_e3CSESt2YgRg3fQ4jvHipk,error,"Internal Error. Google API returned: {'error': {'code': 404, 'message': 'The provided Place ID is no longer valid. Please refresh cached Place IDs as per https://developers.google.com/maps/documentation/places/web-service/place-id#save-id.', 'status': 'NOT_FOUND'}}",,,,,,,,
+ChIJv33b8hqt2YgRQrWkOH5dTY8,error,Cannot find a folio for 17301 Biscayne BLVD,,,,,,,,
+ChIJKf6IIS-t2YgRVD8YYL7mGEc,error,Cannot find a folio for 18800 NE 29 AVE,,,,,,,,
+ChIJuQ8du0Ct2YgR5WND_TtA_BY,error,Cannot find a folio for 1800 NE 174 ST,,,,,,,,
+ChIJu7KeO6et2YgRq7BFX33AQms,error,Cannot find a folio for 17109 N Bay RD,,,,,,,,
+ChIJ_5G8RXet2YgR_e_Uer9Sv_I,error,Cannot find a folio for 18117 Biscayne BLVD,,,,,,,,
+ChIJOQL5Jbmt2YgRZLASLMWXVws,error,Cannot find a folio for 16410 Miami DR,,,,,,,,
+ChIJBdR7tsGHwYkRFDHJ7FRIaRw,error,Cannot find a folio for 1625 NE 163 ST,,,,,,,,
+ChIJr0Wxp9bulE0RrAMmO6qzKZs,error,Cannot find a folio for 1814 NE Miami Gardens DR,,,,,,,,
+ChIJPUi66XSt2YgRuzbO0UGyb10,error,Cannot find a folio for 2145 NE 170 ST,,,,,,,,
+ChIJxSyASc6t2YgRN0R5mrlQeSU,error,Cannot find a folio for 18683 W Dixie HWY,,,,,,,,
+ChIJjeHTtQq9KW8RXR3mEUDeoRE,error,Cannot find a folio for 1814 NE Miami Gardens DR,,,,,,,,
+ChIJm_jkAbGt2YgR8jJ98GBvh3w,error,Cannot find a folio for 2150 NE 171 ST,,,,,,,,
+ChIJ-a8TDUet2YgRrF-YU3RZ2ro,error,Cannot find a folio for 19068 NE 29 AVE,,,,,,,,
+ChIJ_QgFWImt2YgRB9yTGMseh8o,error,Cannot find a folio for 16800 NE 15 AVE,,,,,,,,
+ChIJ3ymvqHqz2YgRrhstzmC-DDg,error,Cannot find a folio for 822 NE 125 ST,,,,,,,,
+ChIJhYU371YA2YgRxkQgtrrWTg4,success,,494236350010,1200 NORTH FEDERAL 181-82 B PARCEL A           ,117753378,111571778,117753378,111571778,LAUDERDALE-A LLC,"150 N Bartlett St, Medford, OR 97501, USA"
+ChIJHaFyndmt2YgR52Ok2RF90x4,error,Cannot find a folio for 16710 NE 9 AVE,,,,,,,,
+ChIJVaTEohCt2YgRFWsMs6PK8JQ,error,"Internal Error. Google API returned: {'error': {'code': 404, 'message': 'The provided Place ID is no longer valid. Please refresh cached Place IDs as per https://developers.google.com/maps/documentation/places/web-service/place-id#save-id.', 'status': 'NOT_FOUND'}}",,,,,,,,
+ChIJPxgj4Pet2YgR7GllUjo7xGg,error,Cannot find a folio for 20900 NE 30 AVE,,,,,,,,
+ChIJb_SKFCyt2YgRGBO0Y0OHIE0,error,Cannot find a folio for 1571 NE 175 ST,,,,,,,,
+ChIJhdjlKHat2YgRRUXAOi2r1fQ,error,Cannot find a folio for 1462 NE 181 ST,,,,,,,,
+ChIJdypfn_St2YgRVMBqumMM2EA,error,Cannot find a folio for 1031 Ives Dairy RD,,,,,,,,
+ChIJ6ehyrt-t2YgRqdfB7npYlLs,error,Cannot find a folio for 880 NE 155 TER,,,,,,,,
+ChIJ_____0ux2YgR7PuTaa6tZoA,error,Cannot find a folio for 15700 NE 2 AVE,,,,,,,,
+ChIJJ06rfWat2YgRYyUuqC7ff9Y,error,Cannot find a folio for 20161 NE 16 PL,,,,,,,,
+ChIJZWO3a_-l2YgRT2_18TgZNUw,success,,514120021780,EVERGLADES SUGAR & LAND CO SUB 2-75 D 20-51-41 N 150 OF S 1050 OF W 110 OF E880 OF NW1/4 OF SW1/4 LESS E 16 FOR RD AKA LOT 178 TV        ,117302212,0,117302212,0,TRIPLE 3H HOLDINGS LLC,"9022 NW 10th St, Pembroke Pines, FL 33024, USA"
+ChIJDTjNIbev2YgRIWXQqpX5k8k,error,Cannot find a folio for 3770 NW 179 ST,,,,,,,,
+ChIJ_2eBJF2v2YgRQBU9xvz1KDU,error,"Internal Error. Google API returned: {'error': {'code': 404, 'message': 'The provided Place ID is no longer valid. Please refresh cached Place IDs as per https://developers.google.com/maps/documentation/places/web-service/place-id#save-id.', 'status': 'NOT_FOUND'}}",,,,,,,,
+ChIJ1TxzliWv2YgRAnQOunTiSvk,error,Cannot find a folio for 1200 Ali Baba AVE,,,,,,,,
+ChIJ73Julz2p2YgRpioQZO2sfqc,success,,514112051870,"HOLLYWOOD BEACH HEIGHTS SEC B 10-22 B LOT 24,25 BLK 37          ",116224554,0,116224554,0,6145 JOHNSON ST CORP,"6145 Johnson St, Hollywood, FL 33024, USA"
+ChIJwzhBKzal2YgRtKVLWrK0RQM,error,Cannot find a folio for 5612 NW 206 LN,,,,,,,,
+ChIJGW--KrOp2YgRUT0qkmTSIQk,success,,514117140010,"HOLLYBROOK OFFICE PLAZA 117-10 B PARCEL ""A""          ",112976413,0,112976413,0,DYCAL PROPERTIES LLC,"9050 Pines Blvd Suite 101, Pembroke Pines, FL 33024, USA"
+ChIJ8VIMHWSn2YgRkJfV74Je6Sc,success,,514014070093,"PEMBROKE FALLS PHASE 3 158-29 B POR BUFFER TR 9 & TR 20 DESC AS COMM AT MOST NLY NW COR BUFFERTR 9,E 682.32,S 752.31,E 426.16 TO POB,N 102.54,E 30,S 102.54,W 30 TO POB AKA: UNIT 3 CLUSTER 9 LOWELL'S LANDING     ",0,0,0,0,"MENESES,ELBYS JOSE","13152 NW 8th St, Pembroke Pines, FL 33028, USA"

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CentralizedAppraiser"
+version = "0.0.5"
+authors = [
+  { name="Reed Graff (Compliancy)", email="reed@withcompliancy.com" },
+]
+description = "A centralized method of accessing appraiser data, using each counties local property appraiser's data."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["real estate", "appraiser", "property", "data", "centralized"]
+dependencies = [
+    # "setuptools==73.0.1"
+]
+license = {file = "LICENSE"}
+
+[project.urls]
+Homepage = "https://github.com/ReedGraff/CentralizedAppraiser"
+Issues = "https://github.com/ReedGraff/CentralizedAppraiser/issues"

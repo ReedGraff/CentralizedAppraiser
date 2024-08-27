@@ -1,0 +1,873 @@
+{
+    "Additionals": {
+        "AddtionalInfo": [
+            {
+                "Key": "LAND USE AND RESTRICTIONS",
+                "Value": [
+                    {
+                        "InfoName": "Community Development District",
+                        "InfoValue": "COUNTYGIS",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Community Redevelopment Area",
+                        "InfoValue": "COUNTYGIS",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Empowerment Zone",
+                        "InfoValue": "COUNTYGIS",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Enterprise Zone",
+                        "InfoValue": "COUNTYGIS",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Urban Development",
+                        "InfoValue": "COUNTYGIS",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Zoning Code",
+                        "InfoValue": "COUNTYGIS",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Existing Land Use",
+                        "InfoValue": "COUNTYGIS",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "HARB Zoning Code",
+                        "InfoValue": "COUNTYGIS",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Government Agencies and Community Services",
+                        "InfoValue": "http://gisweb.miamidade.gov/communityservices/CommunityServicesAll.html?x=&y=&bufferDistance=5&address=706 NW 7 CT",
+                        "Message": ""
+                    }
+                ]
+            },
+            {
+                "Key": "OTHER GOVERNMENTAL JURISDICTIONS",
+                "Value": [
+                    {
+                        "InfoName": "Business Incentives",
+                        "InfoValue": "https://gisweb.miamidade.gov/businessincentive/default.aspx?searchtype=address&amp;paramvalue=",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Childrens Trust",
+                        "InfoValue": "https://www.thechildrenstrust.org/",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "City of Florida City",
+                        "InfoValue": "http://www.floridacityfl.us/",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Environmental Considerations",
+                        "InfoValue": "https://gisweb.miamidade.gov/environmentalconsiderations/?searchtype=address&paramvalue=706 NW 7 CT",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Florida Inland Navigation District",
+                        "InfoValue": "http://www.aicw.org",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Septic - Well: Property List (MDC)",
+                        "InfoValue": "https://gis-mdc.opendata.arcgis.com/maps/MDC::potential-properties-served-by-septic-or-well/about",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Septic - Well: Septic GIS Points (DOH)",
+                        "InfoValue": "https://gis-mdc.opendata.arcgis.com/datasets/MDC::doh-septic-system/explore",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Septic - Well: Well GIS Points (DOH)",
+                        "InfoValue": "https://gis-mdc.opendata.arcgis.com/datasets/MDC::doh-well-permit/explore",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "PA Bulletin Board",
+                        "InfoValue": "http://bbs.miamidade.gov/",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Special Taxing District and Other Non-Ad valorem Assessment",
+                        "InfoValue": "http://www.miamidade.gov/Apps/PA/PAOnlineTools/Taxes/NonAdvalorem.aspx?folio=1678240260150",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "School Board",
+                        "InfoValue": "http://www.dadeschools.net/",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "South Florida Water Mgmt District",
+                        "InfoValue": "http://www.sfwmd.gov/portal/page/portal/sfwmdmain/home%20page",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Tax Collector",
+                        "InfoValue": "http://www.miamidade.gov/taxcollector/",
+                        "Message": ""
+                    }
+                ]
+            }
+        ],
+        "FooterMessage": "",
+        "HeaderMessage": "* The information listed below is not derived from the Property Appraiser's Office records.  It is provided for convenience and is derived from other government agencies."
+    },
+    "Assessment": {
+        "AssessmentInfos": [
+            {
+                "AssessedValue": 57451,
+                "BuildingOnlyValue": 117537,
+                "ExtraFeatureValue": 7752,
+                "LandValue": 192860,
+                "Message": null,
+                "TotalValue": 318149,
+                "Year": 2024
+            },
+            {
+                "AssessedValue": 55778,
+                "BuildingOnlyValue": 117537,
+                "ExtraFeatureValue": 7849,
+                "LandValue": 144645,
+                "Message": null,
+                "TotalValue": 270031,
+                "Year": 2023
+            },
+            {
+                "AssessedValue": 54154,
+                "BuildingOnlyValue": 105378,
+                "ExtraFeatureValue": 7946,
+                "LandValue": 115716,
+                "Message": null,
+                "TotalValue": 229040,
+                "Year": 2022
+            }
+        ],
+        "Messages": [
+            {
+                "Message": "",
+                "Year": 2023
+            },
+            {
+                "Message": "",
+                "Year": 2022
+            }
+        ]
+    },
+    "Benefit": {
+        "BenefitInfos": [
+            {
+                "Description": "Save Our Homes Cap",
+                "Message": null,
+                "Seq": "4",
+                "TaxYear": 2024,
+                "Type": "Assessment Reduction",
+                "Url": "http://www.miamidade.gov/pa/amendment_10.asp",
+                "Value": 260698
+            },
+            {
+                "Description": "Save Our Homes Cap",
+                "Message": null,
+                "Seq": "4",
+                "TaxYear": 2023,
+                "Type": "Assessment Reduction",
+                "Url": "http://www.miamidade.gov/pa/amendment_10.asp",
+                "Value": 214253
+            },
+            {
+                "Description": "Save Our Homes Cap",
+                "Message": null,
+                "Seq": "4",
+                "TaxYear": 2022,
+                "Type": "Assessment Reduction",
+                "Url": "http://www.miamidade.gov/pa/amendment_10.asp",
+                "Value": 174886
+            },
+            {
+                "Description": "Homestead",
+                "Message": null,
+                "Seq": "5",
+                "TaxYear": 2024,
+                "Type": "Exemption",
+                "Url": "http://www.miamidade.gov/pa/exemptions_homestead.asp",
+                "Value": 25000
+            },
+            {
+                "Description": "Homestead",
+                "Message": null,
+                "Seq": "5",
+                "TaxYear": 2023,
+                "Type": "Exemption",
+                "Url": "http://www.miamidade.gov/pa/exemptions_homestead.asp",
+                "Value": 25000
+            },
+            {
+                "Description": "Homestead",
+                "Message": null,
+                "Seq": "5",
+                "TaxYear": 2022,
+                "Type": "Exemption",
+                "Url": "http://www.miamidade.gov/pa/exemptions_homestead.asp",
+                "Value": 25000
+            },
+            {
+                "Description": "Second Homestead",
+                "Message": null,
+                "Seq": "10",
+                "TaxYear": 2024,
+                "Type": "Exemption",
+                "Url": "http://www.miamidade.gov/pa/exemptions_homestead_additional.asp",
+                "Value": 7451
+            },
+            {
+                "Description": "Second Homestead",
+                "Message": null,
+                "Seq": "10",
+                "TaxYear": 2023,
+                "Type": "Exemption",
+                "Url": "http://www.miamidade.gov/pa/exemptions_homestead_additional.asp",
+                "Value": 5778
+            },
+            {
+                "Description": "Second Homestead",
+                "Message": null,
+                "Seq": "10",
+                "TaxYear": 2022,
+                "Type": "Exemption",
+                "Url": "http://www.miamidade.gov/pa/exemptions_homestead_additional.asp",
+                "Value": 4154
+            },
+            {
+                "Description": "Senior Homestead",
+                "Message": null,
+                "Seq": "15",
+                "TaxYear": 2024,
+                "Type": "Exemption",
+                "Url": "http://www.miamidade.gov/pa/exemptions_homestead_senior.asp",
+                "Value": 25000
+            },
+            {
+                "Description": "Senior Homestead",
+                "Message": null,
+                "Seq": "15",
+                "TaxYear": 2023,
+                "Type": "Exemption",
+                "Url": "http://www.miamidade.gov/pa/exemptions_homestead_senior.asp",
+                "Value": 25000
+            },
+            {
+                "Description": "Senior Homestead",
+                "Message": null,
+                "Seq": "15",
+                "TaxYear": 2022,
+                "Type": "Exemption",
+                "Url": "http://www.miamidade.gov/pa/exemptions_homestead_senior.asp",
+                "Value": 25000
+            }
+        ],
+        "Messages": []
+    },
+    "Building": {
+        "BuildingInfos": [
+            {
+                "Actual": 1971,
+                "ActualArea": 1542,
+                "AdjustedBasePrice": 87,
+                "BuildingNo": 1,
+                "DepreciatedValue": 117537,
+                "Effective": 1971,
+                "EffectiveArea": 1351,
+                "GrossArea": 1542,
+                "HeatedArea": 1256,
+                "Message": null,
+                "PercentComp": 1,
+                "PercentageGood": 60,
+                "ReplacementCostNew": 195895,
+                "RollYear": 2024,
+                "SegNo": 1,
+                "TotalAdjustedPoints": 100,
+                "TraversePoints": "Y",
+                "improvementModelDesc": "Single Family Residential"
+            },
+            {
+                "Actual": 1971,
+                "ActualArea": 1542,
+                "AdjustedBasePrice": 87,
+                "BuildingNo": 1,
+                "DepreciatedValue": 117537,
+                "Effective": 1971,
+                "EffectiveArea": 1351,
+                "GrossArea": 1542,
+                "HeatedArea": 1256,
+                "Message": null,
+                "PercentComp": 1,
+                "PercentageGood": 60,
+                "ReplacementCostNew": 195895,
+                "RollYear": 2023,
+                "SegNo": 1,
+                "TotalAdjustedPoints": 100,
+                "TraversePoints": "Y",
+                "improvementModelDesc": "Single Family Residential"
+            },
+            {
+                "Actual": 1971,
+                "ActualArea": 1542,
+                "AdjustedBasePrice": 78,
+                "BuildingNo": 1,
+                "DepreciatedValue": 105378,
+                "Effective": 1971,
+                "EffectiveArea": 1351,
+                "GrossArea": 1542,
+                "HeatedArea": 1256,
+                "Message": null,
+                "PercentComp": 1,
+                "PercentageGood": 60,
+                "ReplacementCostNew": 175630,
+                "RollYear": 2022,
+                "SegNo": 1,
+                "TotalAdjustedPoints": 100,
+                "TraversePoints": "Y",
+                "improvementModelDesc": "Single Family Residential"
+            }
+        ],
+        "Messages": [
+            {
+                "Message": "",
+                "Year": 2024
+            },
+            {
+                "Message": "",
+                "Year": 2023
+            },
+            {
+                "Message": "",
+                "Year": 2022
+            }
+        ]
+    },
+    "ClassifiedAgInfo": {
+        "Acreage": 0,
+        "CalculatedValue": 0,
+        "LandCode": null,
+        "LandUse": null,
+        "Message": null,
+        "UnitPrice": 0
+    },
+    "Completed": true,
+    "District": 3,
+    "ExtraFeature": {
+        "ExtraFeatureInfos": [
+            {
+                "ActualYearBuilt": 1999,
+                "AdjustedUnitPrice": 10.92,
+                "DepreciatedValue": 2708,
+                "Description": "Chain-link Fence 6-7 ft high",
+                "Message": null,
+                "PercentCondition": 78,
+                "RollYear": 2024,
+                "Units": 248,
+                "UseCode": "0038"
+            },
+            {
+                "ActualYearBuilt": 1999,
+                "AdjustedUnitPrice": 6.84,
+                "DepreciatedValue": 3078,
+                "Description": "Patio - Concrete Slab w/Roof Aluminum or Fiber",
+                "Message": null,
+                "PercentCondition": 76,
+                "RollYear": 2024,
+                "Units": 450,
+                "UseCode": "0093"
+            },
+            {
+                "ActualYearBuilt": 1999,
+                "AdjustedUnitPrice": 11.06,
+                "DepreciatedValue": 2743,
+                "Description": "Chain-link Fence 6-7 ft high",
+                "Message": null,
+                "PercentCondition": 79,
+                "RollYear": 2023,
+                "Units": 248,
+                "UseCode": "0038"
+            },
+            {
+                "ActualYearBuilt": 1999,
+                "AdjustedUnitPrice": 6.93,
+                "DepreciatedValue": 3119,
+                "Description": "Patio - Concrete Slab w/Roof Aluminum or Fiber",
+                "Message": null,
+                "PercentCondition": 77,
+                "RollYear": 2023,
+                "Units": 450,
+                "UseCode": "0093"
+            },
+            {
+                "ActualYearBuilt": 1999,
+                "AdjustedUnitPrice": 11.2,
+                "DepreciatedValue": 2778,
+                "Description": "Chain-link Fence 6-7 ft high",
+                "Message": null,
+                "PercentCondition": 80,
+                "RollYear": 2022,
+                "Units": 248,
+                "UseCode": "0038"
+            },
+            {
+                "ActualYearBuilt": 1999,
+                "AdjustedUnitPrice": 7.02,
+                "DepreciatedValue": 3159,
+                "Description": "Patio - Concrete Slab w/Roof Aluminum or Fiber",
+                "Message": null,
+                "PercentCondition": 78,
+                "RollYear": 2022,
+                "Units": 450,
+                "UseCode": "0093"
+            },
+            {
+                "ActualYearBuilt": 2012,
+                "AdjustedUnitPrice": 10.92,
+                "DepreciatedValue": 1966,
+                "Description": "Carport - Aluminum - With Floor",
+                "Message": null,
+                "PercentCondition": 91,
+                "RollYear": 2024,
+                "Units": 180,
+                "UseCode": "0012"
+            },
+            {
+                "ActualYearBuilt": 2012,
+                "AdjustedUnitPrice": 11.04,
+                "DepreciatedValue": 1987,
+                "Description": "Carport - Aluminum - With Floor",
+                "Message": null,
+                "PercentCondition": 92,
+                "RollYear": 2023,
+                "Units": 180,
+                "UseCode": "0012"
+            },
+            {
+                "ActualYearBuilt": 2012,
+                "AdjustedUnitPrice": 11.16,
+                "DepreciatedValue": 2009,
+                "Description": "Carport - Aluminum - With Floor",
+                "Message": null,
+                "PercentCondition": 93,
+                "RollYear": 2022,
+                "Units": 180,
+                "UseCode": "0012"
+            }
+        ],
+        "Messages": [
+            {
+                "Message": "",
+                "Year": 2024
+            },
+            {
+                "Message": "",
+                "Year": 2023
+            },
+            {
+                "Message": "",
+                "Year": 2022
+            }
+        ]
+    },
+    "GeoParcel": null,
+    "Land": {
+        "Landlines": [
+            {
+                "AdjustedUnitPrice": 20,
+                "CalculatedValue": 150000,
+                "Depth": 0,
+                "FrontFeet": 0,
+                "LandUse": "GENERAL",
+                "LandlineType": "C",
+                "Message": null,
+                "MuniZone": "RS-3",
+                "MuniZoneDescription": null,
+                "PAZoneDescription": "SGL FAMILY - 1201-1400 SQ",
+                "PercentCondition": 1,
+                "RollYear": 2024,
+                "TotalAdjustments": 1,
+                "UnitType": "Square Ft.",
+                "Units": 7500,
+                "UseCode": "00",
+                "Zone": "0500"
+            },
+            {
+                "AdjustedUnitPrice": 10,
+                "CalculatedValue": 42860,
+                "Depth": 0,
+                "FrontFeet": 0,
+                "LandUse": "GENERAL",
+                "LandlineType": "C",
+                "Message": null,
+                "MuniZone": "RS-3",
+                "MuniZoneDescription": null,
+                "PAZoneDescription": "SGL FAMILY - 1201-1400 SQ",
+                "PercentCondition": 0.5,
+                "RollYear": 2024,
+                "TotalAdjustments": 0.5,
+                "UnitType": "Square Ft.",
+                "Units": 4286,
+                "UseCode": "00",
+                "Zone": "0500"
+            },
+            {
+                "AdjustedUnitPrice": 15,
+                "CalculatedValue": 112500,
+                "Depth": 0,
+                "FrontFeet": 0,
+                "LandUse": "GENERAL",
+                "LandlineType": "C",
+                "Message": null,
+                "MuniZone": "RS-3",
+                "MuniZoneDescription": null,
+                "PAZoneDescription": "SGL FAMILY - 1201-1400 SQ",
+                "PercentCondition": 1,
+                "RollYear": 2023,
+                "TotalAdjustments": 1,
+                "UnitType": "Square Ft.",
+                "Units": 7500,
+                "UseCode": "00",
+                "Zone": "0500"
+            },
+            {
+                "AdjustedUnitPrice": 7.5,
+                "CalculatedValue": 32145,
+                "Depth": 0,
+                "FrontFeet": 0,
+                "LandUse": "GENERAL",
+                "LandlineType": "C",
+                "Message": null,
+                "MuniZone": "RS-3",
+                "MuniZoneDescription": null,
+                "PAZoneDescription": "SGL FAMILY - 1201-1400 SQ",
+                "PercentCondition": 0.5,
+                "RollYear": 2023,
+                "TotalAdjustments": 0.5,
+                "UnitType": "Square Ft.",
+                "Units": 4286,
+                "UseCode": "00",
+                "Zone": "0500"
+            },
+            {
+                "AdjustedUnitPrice": 12,
+                "CalculatedValue": 90000,
+                "Depth": 0,
+                "FrontFeet": 0,
+                "LandUse": "GENERAL",
+                "LandlineType": "C",
+                "Message": null,
+                "MuniZone": "RS-3",
+                "MuniZoneDescription": null,
+                "PAZoneDescription": "SGL FAMILY - 1201-1400 SQ",
+                "PercentCondition": 1,
+                "RollYear": 2022,
+                "TotalAdjustments": 1,
+                "UnitType": "Square Ft.",
+                "Units": 7500,
+                "UseCode": "00",
+                "Zone": "0500"
+            },
+            {
+                "AdjustedUnitPrice": 6,
+                "CalculatedValue": 25716,
+                "Depth": 0,
+                "FrontFeet": 0,
+                "LandUse": "GENERAL",
+                "LandlineType": "C",
+                "Message": null,
+                "MuniZone": "RS-3",
+                "MuniZoneDescription": null,
+                "PAZoneDescription": "SGL FAMILY - 1201-1400 SQ",
+                "PercentCondition": 0.5,
+                "RollYear": 2022,
+                "TotalAdjustments": 0.5,
+                "UnitType": "Square Ft.",
+                "Units": 4286,
+                "UseCode": "00",
+                "Zone": "0500"
+            }
+        ],
+        "Messages": [
+            {
+                "Message": "",
+                "Year": 2024
+            },
+            {
+                "Message": "",
+                "Year": 2023
+            },
+            {
+                "Message": "",
+                "Year": 2022
+            }
+        ]
+    },
+    "LegalDescription": {
+        "Description": "MARSH ESTATES         PB 89-57|LOT 5                 BLK 2|LOT SIZE     83.000 X   142|OR 12124-2449 0484 4|COC 22167-1914 03 2004 1",
+        "Message": null,
+        "Number": null
+    },
+    "MailingAddress": {
+        "Address1": "706 NW 7 CT",
+        "Address2": "",
+        "Address3": "",
+        "City": "FLORIDA CITY",
+        "Country": "USA",
+        "Message": null,
+        "State": "FL",
+        "ZipCode": "33034"
+    },
+    "Message": "",
+    "OwnerInfos": [
+        {
+            "Description": "Trustee",
+            "MarriedFlag": "0",
+            "Message": null,
+            "Name": "ESTELLA MAE ATKINS TRS",
+            "PercentageOwn": 1,
+            "Role": null,
+            "ShortDescription": "Trustee",
+            "TenancyCd": "T"
+        },
+        {
+            "Description": "Trustee",
+            "MarriedFlag": "0",
+            "Message": null,
+            "Name": "ESTELLA MAE ATKINS REV TR",
+            "PercentageOwn": 1,
+            "Role": null,
+            "ShortDescription": "Trustee",
+            "TenancyCd": "T"
+        }
+    ],
+    "PropertyInfo": {
+        "BathroomCount": 2,
+        "BedroomCount": 4,
+        "BuildingActualArea": 1542,
+        "BuildingBaseArea": 0,
+        "BuildingEffectiveArea": 1351,
+        "BuildingGrossArea": 1542,
+        "BuildingHeatedArea": 1256,
+        "DORCode": "0101",
+        "DORDescription": "RESIDENTIAL - SINGLE FAMILY : 1 UNIT",
+        "DORDescriptionCurrent": null,
+        "EncodedFolioAndTaxYear": "eXz2VYkcXHB7O2pgEseIQgwhW4fQSSuIUs5KGvV3zDU%3d",
+        "FloorCount": 1,
+        "FolioNumber": "16-7824-026-0150",
+        "HalfBathroomCount": 0,
+        "HxBaseYear": 2005,
+        "LotSize": 11786,
+        "Message": null,
+        "Municipality": "Florida City",
+        "Neighborhood": 0,
+        "NeighborhoodDescription": "UNCLASSIFIED NEIGHBORHOOD",
+        "ParentFolio": "",
+        "PercentHomesteadCapped": 100,
+        "PlatBook": "89",
+        "PlatPage": "57",
+        "PrimaryZone": "0500",
+        "PrimaryZoneDescription": "SGL FAMILY - 1201-1400 SQ",
+        "ShowCurrentValuesFlag": "Y",
+        "Status": "AC Active",
+        "Subdivision": "167824026",
+        "SubdivisionDescription": "MARSH ESTATES",
+        "UnitCount": 1,
+        "YearAnnexed": 0,
+        "YearBuilt": "1971"
+    },
+    "RollYear1": 2024,
+    "SalesInfos": [
+        {
+            "DateOfSale": "3/11/2020",
+            "DocumentStamps": 0.6,
+            "EncodedRecordBookAndPage": "lHVlhHQhIZoJRUYKiXnhi3SitvjbUBwQ%2bQ%2fxnu2nSrXs0uEzxDUiEg%3d%3d",
+            "GranteeName1": "ESTELLA MAE ATKINS TRS",
+            "GranteeName2": "ESTELLA MAE ATKINS REV TR",
+            "GrantorName1": "ESTELLA M ATKINS",
+            "GrantorName2": "",
+            "Message": null,
+            "OfficialRecordBook": "31871",
+            "OfficialRecordPage": "1135",
+            "QualificationDescription": "Corrective, tax or QCD; min consideration",
+            "QualifiedFlag": "U",
+            "QualifiedSYear": null,
+            "QualifiedSourceCode": "",
+            "ReasonCode": "11",
+            "ReviewCode": null,
+            "SaleId": 5,
+            "SaleInstrument": "QCD",
+            "SalePrice": 100,
+            "VacantFlag": "\u0000",
+            "ValidCode": null,
+            "VerifyCode": null
+        },
+        {
+            "DateOfSale": "2/1/1976",
+            "DocumentStamps": 0,
+            "EncodedRecordBookAndPage": "lHVlhHQhIZoJRUYKiXnhi5K4tIoWMEvtv6VVIagHT4VuiXI3%2bEEWcQ%3d%3d",
+            "GranteeName1": "",
+            "GranteeName2": "",
+            "GrantorName1": "",
+            "GrantorName2": "",
+            "Message": null,
+            "OfficialRecordBook": "00000",
+            "OfficialRecordPage": "00000",
+            "QualificationDescription": "Sales which are disqualified as a result of examination of the deed",
+            "QualifiedFlag": "U",
+            "QualifiedSYear": null,
+            "QualifiedSourceCode": "",
+            "ReasonCode": "01",
+            "ReviewCode": null,
+            "SaleId": 4,
+            "SaleInstrument": "",
+            "SalePrice": 1,
+            "VacantFlag": "\u0000",
+            "ValidCode": null,
+            "VerifyCode": null
+        },
+        {
+            "DateOfSale": "12/1/1977",
+            "DocumentStamps": 0,
+            "EncodedRecordBookAndPage": "lHVlhHQhIZoJRUYKiXnhi%2bMVNx77S8AbfDiU4L2QrMQVA4ajskdlMw%3d%3d",
+            "GranteeName1": "",
+            "GranteeName2": "",
+            "GrantorName1": "",
+            "GrantorName2": "",
+            "Message": null,
+            "OfficialRecordBook": "09888",
+            "OfficialRecordPage": "0748",
+            "QualificationDescription": "Sales which are disqualified as a result of examination of the deed",
+            "QualifiedFlag": "U",
+            "QualifiedSYear": null,
+            "QualifiedSourceCode": "",
+            "ReasonCode": "01",
+            "ReviewCode": null,
+            "SaleId": 3,
+            "SaleInstrument": "",
+            "SalePrice": 1,
+            "VacantFlag": "\u0000",
+            "ValidCode": null,
+            "VerifyCode": null
+        },
+        {
+            "DateOfSale": "5/1/1978",
+            "DocumentStamps": 0,
+            "EncodedRecordBookAndPage": "lHVlhHQhIZoJRUYKiXnhixS3TslPGIa3rK%2fiut%2b3pXZLqhks1cwbww%3d%3d",
+            "GranteeName1": "",
+            "GranteeName2": "",
+            "GrantorName1": "",
+            "GrantorName2": "",
+            "Message": null,
+            "OfficialRecordBook": "10043",
+            "OfficialRecordPage": "1271",
+            "QualificationDescription": "Sales which are qualified",
+            "QualifiedFlag": "Q",
+            "QualifiedSYear": null,
+            "QualifiedSourceCode": "",
+            "ReasonCode": "00",
+            "ReviewCode": null,
+            "SaleId": 2,
+            "SaleInstrument": "",
+            "SalePrice": 29000,
+            "VacantFlag": "\u0000",
+            "ValidCode": null,
+            "VerifyCode": null
+        },
+        {
+            "DateOfSale": "3/1/2004",
+            "DocumentStamps": 0,
+            "EncodedRecordBookAndPage": "lHVlhHQhIZoJRUYKiXnhi6AW%2f84EHC06%2b4L1Gqv%2bSNJ6Xpqgcf6bHQ%3d%3d",
+            "GranteeName1": "",
+            "GranteeName2": "",
+            "GrantorName1": "",
+            "GrantorName2": "",
+            "Message": null,
+            "OfficialRecordBook": "22167",
+            "OfficialRecordPage": "1914",
+            "QualificationDescription": "Sales which are qualified",
+            "QualifiedFlag": "Q",
+            "QualifiedSYear": null,
+            "QualifiedSourceCode": "",
+            "ReasonCode": "00",
+            "ReviewCode": null,
+            "SaleId": 1,
+            "SaleInstrument": "",
+            "SalePrice": 129000,
+            "VacantFlag": "\u0000",
+            "ValidCode": null,
+            "VerifyCode": null
+        }
+    ],
+    "SiteAddress": [
+        {
+            "Address": "706 NW 7 CT, Florida City, FL 33034-1907",
+            "BuildingNumber": 1,
+            "City": "Florida City",
+            "HouseNumberSuffix": "",
+            "Message": null,
+            "StreetName": "7",
+            "StreetNumber": 706,
+            "StreetPrefix": "NW",
+            "StreetSuffix": "CT",
+            "StreetSuffixDirection": "",
+            "Unit": "",
+            "Zip": "33034-1907"
+        }
+    ],
+    "Taxable": {
+        "Messages": [],
+        "TaxableInfos": [
+            {
+                "CityExemptionValue": 32451,
+                "CityTaxableValue": 25000,
+                "CountyExemptionValue": 57451,
+                "CountyTaxableValue": 0,
+                "Message": null,
+                "RegionalExemptionValue": 32451,
+                "RegionalTaxableValue": 25000,
+                "SchoolExemptionValue": 25000,
+                "SchoolTaxableValue": 32451,
+                "Year": 2024
+            },
+            {
+                "CityExemptionValue": 30778,
+                "CityTaxableValue": 25000,
+                "CountyExemptionValue": 55778,
+                "CountyTaxableValue": 0,
+                "Message": null,
+                "RegionalExemptionValue": 30778,
+                "RegionalTaxableValue": 25000,
+                "SchoolExemptionValue": 25000,
+                "SchoolTaxableValue": 30778,
+                "Year": 2023
+            },
+            {
+                "CityExemptionValue": 29154,
+                "CityTaxableValue": 25000,
+                "CountyExemptionValue": 54154,
+                "CountyTaxableValue": 0,
+                "Message": null,
+                "RegionalExemptionValue": 29154,
+                "RegionalTaxableValue": 25000,
+                "SchoolExemptionValue": 25000,
+                "SchoolTaxableValue": 29154,
+                "Year": 2022
+            }
+        ]
+    }
+}

@@ -1,0 +1,894 @@
+{
+    "Additionals": {
+        "AddtionalInfo": [
+            {
+                "Key": "LAND USE AND RESTRICTIONS",
+                "Value": [
+                    {
+                        "InfoName": "Community Development District",
+                        "InfoValue": "COUNTYGIS",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Community Redevelopment Area",
+                        "InfoValue": "COUNTYGIS",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Empowerment Zone",
+                        "InfoValue": "COUNTYGIS",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Enterprise Zone",
+                        "InfoValue": "COUNTYGIS",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Urban Development",
+                        "InfoValue": "COUNTYGIS",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Zoning Code",
+                        "InfoValue": "COUNTYGIS",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Existing Land Use",
+                        "InfoValue": "COUNTYGIS",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "HARB Zoning Code",
+                        "InfoValue": "COUNTYGIS",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Government Agencies and Community Services",
+                        "InfoValue": "http://gisweb.miamidade.gov/communityservices/CommunityServicesAll.html?x=&y=&bufferDistance=5&address=19820 SW 324 ST",
+                        "Message": ""
+                    }
+                ]
+            },
+            {
+                "Key": "OTHER GOVERNMENTAL JURISDICTIONS",
+                "Value": [
+                    {
+                        "InfoName": "Business Incentives",
+                        "InfoValue": "https://gisweb.miamidade.gov/businessincentive/default.aspx?searchtype=address&amp;paramvalue=",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Childrens Trust",
+                        "InfoValue": "https://www.thechildrenstrust.org/",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Environmental Considerations",
+                        "InfoValue": "https://gisweb.miamidade.gov/environmentalconsiderations/?searchtype=address&paramvalue=19820 SW 324 ST",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Florida Inland Navigation District",
+                        "InfoValue": "http://www.aicw.org",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Miami-Dade County",
+                        "InfoValue": "http://miamidade.gov/",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Septic - Well: Property List (MDC)",
+                        "InfoValue": "https://gis-mdc.opendata.arcgis.com/maps/MDC::potential-properties-served-by-septic-or-well/about",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Septic - Well: Septic GIS Points (DOH)",
+                        "InfoValue": "https://gis-mdc.opendata.arcgis.com/datasets/MDC::doh-septic-system/explore",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Septic - Well: Well GIS Points (DOH)",
+                        "InfoValue": "https://gis-mdc.opendata.arcgis.com/datasets/MDC::doh-well-permit/explore",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "PA Bulletin Board",
+                        "InfoValue": "http://bbs.miamidade.gov/",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Special Taxing District and Other Non-Ad valorem Assessment",
+                        "InfoValue": "http://www.miamidade.gov/Apps/PA/PAOnlineTools/Taxes/NonAdvalorem.aspx?folio=3078150000422",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "School Board",
+                        "InfoValue": "http://www.dadeschools.net/",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "South Florida Water Mgmt District",
+                        "InfoValue": "http://www.sfwmd.gov/portal/page/portal/sfwmdmain/home%20page",
+                        "Message": ""
+                    },
+                    {
+                        "InfoName": "Tax Collector",
+                        "InfoValue": "http://www.miamidade.gov/taxcollector/",
+                        "Message": ""
+                    }
+                ]
+            }
+        ],
+        "FooterMessage": "",
+        "HeaderMessage": "* The information listed below is not derived from the Property Appraiser's Office records.  It is provided for convenience and is derived from other government agencies."
+    },
+    "Assessment": {
+        "AssessmentInfos": [
+            {
+                "AssessedValue": 422595,
+                "BuildingOnlyValue": 188354,
+                "ExtraFeatureValue": 14427,
+                "LandValue": 347250,
+                "Message": null,
+                "TotalValue": 550031,
+                "Year": 2024
+            },
+            {
+                "AssessedValue": 384178,
+                "BuildingOnlyValue": 189836,
+                "ExtraFeatureValue": 14576,
+                "LandValue": 347250,
+                "Message": null,
+                "TotalValue": 551662,
+                "Year": 2023
+            },
+            {
+                "AssessedValue": 349253,
+                "BuildingOnlyValue": 185932,
+                "ExtraFeatureValue": 14726,
+                "LandValue": 277800,
+                "Message": null,
+                "TotalValue": 478458,
+                "Year": 2022
+            }
+        ],
+        "Messages": [
+            {
+                "Message": "",
+                "Year": 2023
+            },
+            {
+                "Message": "",
+                "Year": 2022
+            }
+        ]
+    },
+    "Benefit": {
+        "BenefitInfos": [
+            {
+                "Description": "Non-Homestead Cap",
+                "Message": null,
+                "Seq": "5",
+                "TaxYear": 2024,
+                "Type": "Assessment Reduction",
+                "Url": "http://www.miamidade.gov/pa/property_value_cap.asp",
+                "Value": 127436
+            },
+            {
+                "Description": "Non-Homestead Cap",
+                "Message": null,
+                "Seq": "5",
+                "TaxYear": 2023,
+                "Type": "Assessment Reduction",
+                "Url": "http://www.miamidade.gov/pa/property_value_cap.asp",
+                "Value": 167484
+            },
+            {
+                "Description": "Non-Homestead Cap",
+                "Message": null,
+                "Seq": "5",
+                "TaxYear": 2022,
+                "Type": "Assessment Reduction",
+                "Url": "http://www.miamidade.gov/pa/property_value_cap.asp",
+                "Value": 129205
+            }
+        ],
+        "Messages": []
+    },
+    "Building": {
+        "BuildingInfos": [
+            {
+                "Actual": 1976,
+                "ActualArea": 600,
+                "AdjustedBasePrice": 51.04,
+                "BuildingNo": 1,
+                "DepreciatedValue": 30627,
+                "Effective": 1976,
+                "EffectiveArea": 600,
+                "GrossArea": 600,
+                "HeatedArea": 600,
+                "Message": null,
+                "PercentComp": 1,
+                "PercentageGood": 61.5,
+                "ReplacementCostNew": 49800,
+                "RollYear": 2024,
+                "SegNo": 1,
+                "TotalAdjustedPoints": 100,
+                "TraversePoints": "Y",
+                "improvementModelDesc": "Single Family Residential"
+            },
+            {
+                "Actual": 1976,
+                "ActualArea": 600,
+                "AdjustedBasePrice": 51.46,
+                "BuildingNo": 1,
+                "DepreciatedValue": 30876,
+                "Effective": 1976,
+                "EffectiveArea": 600,
+                "GrossArea": 600,
+                "HeatedArea": 600,
+                "Message": null,
+                "PercentComp": 1,
+                "PercentageGood": 62,
+                "ReplacementCostNew": 49800,
+                "RollYear": 2023,
+                "SegNo": 1,
+                "TotalAdjustedPoints": 100,
+                "TraversePoints": "Y",
+                "improvementModelDesc": "Single Family Residential"
+            },
+            {
+                "Actual": 1976,
+                "ActualArea": 600,
+                "AdjustedBasePrice": 51.88,
+                "BuildingNo": 1,
+                "DepreciatedValue": 31125,
+                "Effective": 1976,
+                "EffectiveArea": 600,
+                "GrossArea": 600,
+                "HeatedArea": 600,
+                "Message": null,
+                "PercentComp": 1,
+                "PercentageGood": 62.5,
+                "ReplacementCostNew": 49800,
+                "RollYear": 2022,
+                "SegNo": 1,
+                "TotalAdjustedPoints": 100,
+                "TraversePoints": "Y",
+                "improvementModelDesc": "Single Family Residential"
+            },
+            {
+                "Actual": 1971,
+                "ActualArea": 2278,
+                "AdjustedBasePrice": 76.16,
+                "BuildingNo": 2,
+                "DepreciatedValue": 157727,
+                "Effective": 1981,
+                "EffectiveArea": 2071,
+                "GrossArea": 2278,
+                "HeatedArea": 1968,
+                "Message": null,
+                "PercentComp": 1,
+                "PercentageGood": 64,
+                "ReplacementCostNew": 246449,
+                "RollYear": 2024,
+                "SegNo": 1,
+                "TotalAdjustedPoints": 100,
+                "TraversePoints": "Y",
+                "improvementModelDesc": "Single Family Residential"
+            },
+            {
+                "Actual": 1971,
+                "ActualArea": 2278,
+                "AdjustedBasePrice": 76.76,
+                "BuildingNo": 2,
+                "DepreciatedValue": 158960,
+                "Effective": 1981,
+                "EffectiveArea": 2071,
+                "GrossArea": 2278,
+                "HeatedArea": 1968,
+                "Message": null,
+                "PercentComp": 1,
+                "PercentageGood": 64.5,
+                "ReplacementCostNew": 246449,
+                "RollYear": 2023,
+                "SegNo": 1,
+                "TotalAdjustedPoints": 100,
+                "TraversePoints": "Y",
+                "improvementModelDesc": "Single Family Residential"
+            },
+            {
+                "Actual": 1971,
+                "ActualArea": 2278,
+                "AdjustedBasePrice": 74.75,
+                "BuildingNo": 2,
+                "DepreciatedValue": 154807,
+                "Effective": 1981,
+                "EffectiveArea": 2071,
+                "GrossArea": 2278,
+                "HeatedArea": 1968,
+                "Message": null,
+                "PercentComp": 1,
+                "PercentageGood": 65,
+                "ReplacementCostNew": 238165,
+                "RollYear": 2022,
+                "SegNo": 1,
+                "TotalAdjustedPoints": 100,
+                "TraversePoints": "Y",
+                "improvementModelDesc": "Single Family Residential"
+            }
+        ],
+        "Messages": [
+            {
+                "Message": "",
+                "Year": 2024
+            },
+            {
+                "Message": "",
+                "Year": 2023
+            },
+            {
+                "Message": "",
+                "Year": 2022
+            }
+        ]
+    },
+    "ClassifiedAgInfo": {
+        "Acreage": 0,
+        "CalculatedValue": 0,
+        "LandCode": null,
+        "LandUse": null,
+        "Message": null,
+        "UnitPrice": 0
+    },
+    "Completed": true,
+    "District": 3,
+    "ExtraFeature": {
+        "ExtraFeatureInfos": [
+            {
+                "ActualYearBuilt": 1986,
+                "AdjustedUnitPrice": 9.31,
+                "DepreciatedValue": 6983,
+                "Description": "Carport - Wood - Built-up Tar & Gravel",
+                "Message": null,
+                "PercentCondition": 66.5,
+                "RollYear": 2024,
+                "Units": 750,
+                "UseCode": "0014"
+            },
+            {
+                "ActualYearBuilt": 1986,
+                "AdjustedUnitPrice": 9.38,
+                "DepreciatedValue": 7035,
+                "Description": "Carport - Wood - Built-up Tar & Gravel",
+                "Message": null,
+                "PercentCondition": 67,
+                "RollYear": 2023,
+                "Units": 750,
+                "UseCode": "0014"
+            },
+            {
+                "ActualYearBuilt": 1986,
+                "AdjustedUnitPrice": 9.45,
+                "DepreciatedValue": 7088,
+                "Description": "Carport - Wood - Built-up Tar & Gravel",
+                "Message": null,
+                "PercentCondition": 67.5,
+                "RollYear": 2022,
+                "Units": 750,
+                "UseCode": "0014"
+            },
+            {
+                "ActualYearBuilt": 1993,
+                "AdjustedUnitPrice": 7.2,
+                "DepreciatedValue": 4752,
+                "Description": "Chain-link Fence 4-5 ft high",
+                "Message": null,
+                "PercentCondition": 72,
+                "RollYear": 2024,
+                "Units": 660,
+                "UseCode": "0034"
+            },
+            {
+                "ActualYearBuilt": 1993,
+                "AdjustedUnitPrice": 7.3,
+                "DepreciatedValue": 4818,
+                "Description": "Chain-link Fence 4-5 ft high",
+                "Message": null,
+                "PercentCondition": 73,
+                "RollYear": 2023,
+                "Units": 660,
+                "UseCode": "0034"
+            },
+            {
+                "ActualYearBuilt": 1993,
+                "AdjustedUnitPrice": 7.4,
+                "DepreciatedValue": 4884,
+                "Description": "Chain-link Fence 4-5 ft high",
+                "Message": null,
+                "PercentCondition": 74,
+                "RollYear": 2022,
+                "Units": 660,
+                "UseCode": "0034"
+            },
+            {
+                "ActualYearBuilt": 2011,
+                "AdjustedUnitPrice": 3.52,
+                "DepreciatedValue": 774,
+                "Description": "Patio - Concrete Slab",
+                "Message": null,
+                "PercentCondition": 88,
+                "RollYear": 2024,
+                "Units": 220,
+                "UseCode": "0087"
+            },
+            {
+                "ActualYearBuilt": 2011,
+                "AdjustedUnitPrice": 5.72,
+                "DepreciatedValue": 686,
+                "Description": "Patio - Terrazzo, Pebble",
+                "Message": null,
+                "PercentCondition": 88,
+                "RollYear": 2024,
+                "Units": 120,
+                "UseCode": "0088"
+            },
+            {
+                "ActualYearBuilt": 2011,
+                "AdjustedUnitPrice": 6.16,
+                "DepreciatedValue": 1232,
+                "Description": "Screen Enclosure - Better- heavier gauage frm +8'",
+                "Message": null,
+                "PercentCondition": 88,
+                "RollYear": 2024,
+                "Units": 200,
+                "UseCode": "0114"
+            },
+            {
+                "ActualYearBuilt": 2011,
+                "AdjustedUnitPrice": 6.23,
+                "DepreciatedValue": 1246,
+                "Description": "Screen Enclosure - Better- heavier gauage frm +8'",
+                "Message": null,
+                "PercentCondition": 89,
+                "RollYear": 2023,
+                "Units": 200,
+                "UseCode": "0114"
+            },
+            {
+                "ActualYearBuilt": 2011,
+                "AdjustedUnitPrice": 5.78,
+                "DepreciatedValue": 694,
+                "Description": "Patio - Terrazzo, Pebble",
+                "Message": null,
+                "PercentCondition": 89,
+                "RollYear": 2023,
+                "Units": 120,
+                "UseCode": "0088"
+            },
+            {
+                "ActualYearBuilt": 2011,
+                "AdjustedUnitPrice": 3.56,
+                "DepreciatedValue": 783,
+                "Description": "Patio - Concrete Slab",
+                "Message": null,
+                "PercentCondition": 89,
+                "RollYear": 2023,
+                "Units": 220,
+                "UseCode": "0087"
+            },
+            {
+                "ActualYearBuilt": 2011,
+                "AdjustedUnitPrice": 3.6,
+                "DepreciatedValue": 792,
+                "Description": "Patio - Concrete Slab",
+                "Message": null,
+                "PercentCondition": 90,
+                "RollYear": 2022,
+                "Units": 220,
+                "UseCode": "0087"
+            },
+            {
+                "ActualYearBuilt": 2011,
+                "AdjustedUnitPrice": 5.85,
+                "DepreciatedValue": 702,
+                "Description": "Patio - Terrazzo, Pebble",
+                "Message": null,
+                "PercentCondition": 90,
+                "RollYear": 2022,
+                "Units": 120,
+                "UseCode": "0088"
+            },
+            {
+                "ActualYearBuilt": 2011,
+                "AdjustedUnitPrice": 6.3,
+                "DepreciatedValue": 1260,
+                "Description": "Screen Enclosure - Better- heavier gauage frm +8'",
+                "Message": null,
+                "PercentCondition": 90,
+                "RollYear": 2022,
+                "Units": 200,
+                "UseCode": "0114"
+            }
+        ],
+        "Messages": [
+            {
+                "Message": "",
+                "Year": 2024
+            },
+            {
+                "Message": "",
+                "Year": 2023
+            },
+            {
+                "Message": "",
+                "Year": 2022
+            }
+        ]
+    },
+    "GeoParcel": null,
+    "Land": {
+        "Landlines": [
+            {
+                "AdjustedUnitPrice": 10,
+                "CalculatedValue": 150000,
+                "Depth": 0,
+                "FrontFeet": 0,
+                "LandUse": "GENERAL",
+                "LandlineType": "C",
+                "Message": null,
+                "MuniZone": "EU-M",
+                "MuniZoneDescription": null,
+                "PAZoneDescription": "ESTATES - 15000 SQFT LOT",
+                "PercentCondition": 1,
+                "RollYear": 2024,
+                "TotalAdjustments": 1,
+                "UnitType": "Square Ft.",
+                "Units": 15000,
+                "UseCode": "00",
+                "Zone": "2100"
+            },
+            {
+                "AdjustedUnitPrice": 5,
+                "CalculatedValue": 197250,
+                "Depth": 0,
+                "FrontFeet": 0,
+                "LandUse": "GENERAL",
+                "LandlineType": "C",
+                "Message": null,
+                "MuniZone": "EU-M",
+                "MuniZoneDescription": null,
+                "PAZoneDescription": "ESTATES - 15000 SQFT LOT",
+                "PercentCondition": 0.5,
+                "RollYear": 2024,
+                "TotalAdjustments": 0.5,
+                "UnitType": "Square Ft.",
+                "Units": 39450,
+                "UseCode": "00",
+                "Zone": "2100"
+            },
+            {
+                "AdjustedUnitPrice": 10,
+                "CalculatedValue": 150000,
+                "Depth": 0,
+                "FrontFeet": 0,
+                "LandUse": "GENERAL",
+                "LandlineType": "C",
+                "Message": null,
+                "MuniZone": "EU-M",
+                "MuniZoneDescription": null,
+                "PAZoneDescription": "ESTATES - 15000 SQFT LOT",
+                "PercentCondition": 1,
+                "RollYear": 2023,
+                "TotalAdjustments": 1,
+                "UnitType": "Square Ft.",
+                "Units": 15000,
+                "UseCode": "00",
+                "Zone": "2100"
+            },
+            {
+                "AdjustedUnitPrice": 5,
+                "CalculatedValue": 197250,
+                "Depth": 0,
+                "FrontFeet": 0,
+                "LandUse": "GENERAL",
+                "LandlineType": "C",
+                "Message": null,
+                "MuniZone": "EU-M",
+                "MuniZoneDescription": null,
+                "PAZoneDescription": "ESTATES - 15000 SQFT LOT",
+                "PercentCondition": 0.5,
+                "RollYear": 2023,
+                "TotalAdjustments": 0.5,
+                "UnitType": "Square Ft.",
+                "Units": 39450,
+                "UseCode": "00",
+                "Zone": "2100"
+            },
+            {
+                "AdjustedUnitPrice": 8,
+                "CalculatedValue": 120000,
+                "Depth": 0,
+                "FrontFeet": 0,
+                "LandUse": "GENERAL",
+                "LandlineType": "C",
+                "Message": null,
+                "MuniZone": "EU-M",
+                "MuniZoneDescription": null,
+                "PAZoneDescription": "ESTATES - 15000 SQFT LOT",
+                "PercentCondition": 1,
+                "RollYear": 2022,
+                "TotalAdjustments": 1,
+                "UnitType": "Square Ft.",
+                "Units": 15000,
+                "UseCode": "00",
+                "Zone": "2100"
+            },
+            {
+                "AdjustedUnitPrice": 4,
+                "CalculatedValue": 157800,
+                "Depth": 0,
+                "FrontFeet": 0,
+                "LandUse": "GENERAL",
+                "LandlineType": "C",
+                "Message": null,
+                "MuniZone": "EU-M",
+                "MuniZoneDescription": null,
+                "PAZoneDescription": "ESTATES - 15000 SQFT LOT",
+                "PercentCondition": 0.5,
+                "RollYear": 2022,
+                "TotalAdjustments": 0.5,
+                "UnitType": "Square Ft.",
+                "Units": 39450,
+                "UseCode": "00",
+                "Zone": "2100"
+            }
+        ],
+        "Messages": [
+            {
+                "Message": "",
+                "Year": 2024
+            },
+            {
+                "Message": "",
+                "Year": 2023
+            },
+            {
+                "Message": "",
+                "Year": 2022
+            }
+        ]
+    },
+    "LegalDescription": {
+        "Description": "15 57 38 1.19 AC M/L|W1/2 OF NE1/4 OF NW1/4 OF SE1/4|OF SE1/4 LESS N25FT FOR ST|LOT SIZE  IRREGULAR|OR 12491-2046 0485 6",
+        "Message": null,
+        "Number": null
+    },
+    "MailingAddress": {
+        "Address1": "19820 SW 324 ST",
+        "Address2": "",
+        "Address3": "",
+        "City": "HOMESTEAD",
+        "Country": "USA",
+        "Message": null,
+        "State": "FL",
+        "ZipCode": "33030"
+    },
+    "Message": "",
+    "OwnerInfos": [
+        {
+            "Description": "Tenants by the Entirety",
+            "MarriedFlag": "H",
+            "Message": null,
+            "Name": "JORGE LARA LUGO",
+            "PercentageOwn": 1,
+            "Role": null,
+            "ShortDescription": "TBE",
+            "TenancyCd": "U"
+        },
+        {
+            "Description": "Tenants by the Entirety",
+            "MarriedFlag": "W",
+            "Message": null,
+            "Name": "MATILDE LOPEZ",
+            "PercentageOwn": 1,
+            "Role": null,
+            "ShortDescription": "TBE",
+            "TenancyCd": "U"
+        }
+    ],
+    "PropertyInfo": {
+        "BathroomCount": 3,
+        "BedroomCount": 5,
+        "BuildingActualArea": 2878,
+        "BuildingBaseArea": 0,
+        "BuildingEffectiveArea": 2671,
+        "BuildingGrossArea": 2878,
+        "BuildingHeatedArea": 2568,
+        "DORCode": "0101",
+        "DORDescription": "RESIDENTIAL - SINGLE FAMILY : 1 UNIT",
+        "DORDescriptionCurrent": null,
+        "EncodedFolioAndTaxYear": "d0OUxLaIgJ9aGp7xQsZPgb61rZqL5GsoTYYcYIdomnM%3d",
+        "FloorCount": 1,
+        "FolioNumber": "30-7815-000-0422",
+        "HalfBathroomCount": 0,
+        "HxBaseYear": 0,
+        "LotSize": 54450,
+        "Message": null,
+        "Municipality": "Unincorporated County",
+        "Neighborhood": 1770,
+        "NeighborhoodDescription": "WEST HOMESTEAD - OUTSIDE UDB",
+        "ParentFolio": "",
+        "PercentHomesteadCapped": 0,
+        "PlatBook": "",
+        "PlatPage": "",
+        "PrimaryZone": "2100",
+        "PrimaryZoneDescription": "ESTATES - 15000 SQFT LOT",
+        "ShowCurrentValuesFlag": "Y",
+        "Status": "AC Active",
+        "Subdivision": "307815000",
+        "SubdivisionDescription": "",
+        "UnitCount": 1,
+        "YearAnnexed": 0,
+        "YearBuilt": "Multiple (See Building Info.)"
+    },
+    "RollYear1": 2024,
+    "SalesInfos": [
+        {
+            "DateOfSale": "12/14/2020",
+            "DocumentStamps": 0.6,
+            "EncodedRecordBookAndPage": "lHVlhHQhIZoJRUYKiXnhi%2bnv7S1R%2flcVqyIKpXGy8FsYfM%2bcunmoSQ%3d%3d",
+            "GranteeName1": "JORGE LARA LUGO",
+            "GranteeName2": "MATILDE LOPEZ",
+            "GrantorName1": "EAGLE OF THE KEYS",
+            "GrantorName2": "ROOFING CONTRACTOR",
+            "Message": null,
+            "OfficialRecordBook": "32359",
+            "OfficialRecordPage": "2813",
+            "QualificationDescription": "Corrective, tax or QCD; min consideration",
+            "QualifiedFlag": "U",
+            "QualifiedSYear": null,
+            "QualifiedSourceCode": "",
+            "ReasonCode": "11",
+            "ReviewCode": null,
+            "SaleId": 4,
+            "SaleInstrument": "QCD",
+            "SalePrice": 100,
+            "VacantFlag": "\u0000",
+            "ValidCode": null,
+            "VerifyCode": null
+        },
+        {
+            "DateOfSale": "4/25/2019",
+            "DocumentStamps": 3030,
+            "EncodedRecordBookAndPage": "lHVlhHQhIZoJRUYKiXnhizPhR6z3UpFFSXmWCYFkyfahBc10QDK4Pg%3d%3d",
+            "GranteeName1": "EAGLE OF THE KEYS",
+            "GranteeName2": "ROOFING CONTRACTOR",
+            "GrantorName1": "WILLIAM C SAYERS",
+            "GrantorName2": "LISA A SAYERS",
+            "Message": null,
+            "OfficialRecordBook": "31438",
+            "OfficialRecordPage": "1782",
+            "QualificationDescription": "Qual on DOS, multi-parcel sale",
+            "QualifiedFlag": "Q",
+            "QualifiedSYear": null,
+            "QualifiedSourceCode": "",
+            "ReasonCode": "05",
+            "ReviewCode": null,
+            "SaleId": 3,
+            "SaleInstrument": "DEE",
+            "SalePrice": 505000,
+            "VacantFlag": "\u0000",
+            "ValidCode": null,
+            "VerifyCode": null
+        },
+        {
+            "DateOfSale": "7/1/1973",
+            "DocumentStamps": 0,
+            "EncodedRecordBookAndPage": "lHVlhHQhIZoJRUYKiXnhi5K4tIoWMEvtv6VVIagHT4VuiXI3%2bEEWcQ%3d%3d",
+            "GranteeName1": "",
+            "GranteeName2": "",
+            "GrantorName1": "",
+            "GrantorName2": "",
+            "Message": null,
+            "OfficialRecordBook": "00000",
+            "OfficialRecordPage": "00000",
+            "QualificationDescription": "Sales which are qualified",
+            "QualifiedFlag": "Q",
+            "QualifiedSYear": null,
+            "QualifiedSourceCode": "",
+            "ReasonCode": "00",
+            "ReviewCode": null,
+            "SaleId": 2,
+            "SaleInstrument": "",
+            "SalePrice": 6400,
+            "VacantFlag": "\u0000",
+            "ValidCode": null,
+            "VerifyCode": null
+        },
+        {
+            "DateOfSale": "4/1/1985",
+            "DocumentStamps": 0,
+            "EncodedRecordBookAndPage": "lHVlhHQhIZoJRUYKiXnhizJ3tzJittHhHc6SkT1xE%2bjimqGV78GgxQ%3d%3d",
+            "GranteeName1": "",
+            "GranteeName2": "",
+            "GrantorName1": "",
+            "GrantorName2": "",
+            "Message": null,
+            "OfficialRecordBook": "12491",
+            "OfficialRecordPage": "2046",
+            "QualificationDescription": "Other disqualified",
+            "QualifiedFlag": "U",
+            "QualifiedSYear": null,
+            "QualifiedSourceCode": "",
+            "ReasonCode": "03",
+            "ReviewCode": null,
+            "SaleId": 1,
+            "SaleInstrument": "",
+            "SalePrice": 115000,
+            "VacantFlag": "\u0000",
+            "ValidCode": null,
+            "VerifyCode": null
+        }
+    ],
+    "SiteAddress": [
+        {
+            "Address": "19820 SW 324 ST, Unincorporated County, FL 33030-6302",
+            "BuildingNumber": 1,
+            "City": "Unincorporated County",
+            "HouseNumberSuffix": "",
+            "Message": null,
+            "StreetName": "324",
+            "StreetNumber": 19820,
+            "StreetPrefix": "SW",
+            "StreetSuffix": "ST",
+            "StreetSuffixDirection": "",
+            "Unit": "",
+            "Zip": "33030-6302"
+        }
+    ],
+    "Taxable": {
+        "Messages": [],
+        "TaxableInfos": [
+            {
+                "CityExemptionValue": 0,
+                "CityTaxableValue": 0,
+                "CountyExemptionValue": 0,
+                "CountyTaxableValue": 422595,
+                "Message": null,
+                "RegionalExemptionValue": 0,
+                "RegionalTaxableValue": 422595,
+                "SchoolExemptionValue": 0,
+                "SchoolTaxableValue": 550031,
+                "Year": 2024
+            },
+            {
+                "CityExemptionValue": 0,
+                "CityTaxableValue": 0,
+                "CountyExemptionValue": 0,
+                "CountyTaxableValue": 384178,
+                "Message": null,
+                "RegionalExemptionValue": 0,
+                "RegionalTaxableValue": 384178,
+                "SchoolExemptionValue": 0,
+                "SchoolTaxableValue": 551662,
+                "Year": 2023
+            },
+            {
+                "CityExemptionValue": 0,
+                "CityTaxableValue": 0,
+                "CountyExemptionValue": 0,
+                "CountyTaxableValue": 349253,
+                "Message": null,
+                "RegionalExemptionValue": 0,
+                "RegionalTaxableValue": 349253,
+                "SchoolExemptionValue": 0,
+                "SchoolTaxableValue": 478458,
+                "Year": 2022
+            }
+        ]
+    }
+}
