@@ -29,8 +29,10 @@ def getLocationDetailsRecursive(lon, lat, levelList = ["UnitedStates"], defining
     startingPoint = Point(lon, lat)
 
     try:
-        with open(f'{getSubClassPath(levelList, delim="/")}/geometry.geojson') as geo:
-            geometry = json.load(geo)
+        # with open(f'{getSubClassPath(levelList, delim="/")}/geometry.geojson') as geo:
+        #     geometry = json.load(geo)
+        with importlib.resources.open_text(f"{getSubClassPath(levelList, delim=".")}", "geometry.geojson") as file:
+            geometry = json.load(file)
     except FileNotFoundError:
         # happens when the final location is reached and it isn't a parent folder
         return levelList, {"status": "success", "message": ""}

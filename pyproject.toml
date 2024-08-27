@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "CentralizedAppraiser"
-version = "0.0.5"
+version = "0.0.6"
 authors = [
   { name="Reed Graff (Compliancy)", email="reed@withcompliancy.com" },
 ]
@@ -16,12 +16,25 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
-keywords = ["real estate", "appraiser", "property", "data", "centralized"]
+keywords = ["real estate", "appraiser", "property", "data", "centralized", "api"]
 dependencies = [
-    # "setuptools==73.0.1"
+    "requests",
+    # "re",
+    # "importlib",
+    # "math"
+    # "json",
+    "shapely",
+    "schema"
 ]
 license = {file = "LICENSE"}
 
 [project.urls]
 Homepage = "https://github.com/ReedGraff/CentralizedAppraiser"
 Issues = "https://github.com/ReedGraff/CentralizedAppraiser/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+# mypkg = ["*.geojson"]
+"*" = ["*.*"] # include all files in all packages
