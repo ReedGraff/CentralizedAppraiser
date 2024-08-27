@@ -5,6 +5,10 @@ from CentralizedAppraiser import GoogleClient, RegridClient
 
 from CentralizedAppraiser.UnitedStates.Florida.Broward import Broward
 
+with open("creds.txt", "r") as f:
+    googleApiKey = f.readline().strip()
+    regridApiKey = f.readline().strip()
+
 # client = GoogleClient() # API KEY
 client = RegridClient() # API KEY
 # addressInfo, errorHandler = client.getByID("5a3af608-4ad5-453f-95ad-533a53012d7e") # ChIJbYEx-KsN3ogRPgtsV_hq0kg: Brevard. ChIJU_2RLn-h2YgRV1AjoNx__kg: broward. ChIJV5BVdnmx2YgR8_GX_kzbH-s: miamiDade
