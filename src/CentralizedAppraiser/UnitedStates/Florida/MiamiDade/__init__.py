@@ -170,6 +170,37 @@ class MiamiDade(Florida, Florida.County):
             
             else:
 
+                def parse_property_info(text):
+                    # Patterns to match lot, blk, and other records
+                    lot_pattern = re.compile(r'LOT\s(\d+)')
+                    blk_pattern = re.compile(r'BLK\s(\d+)')
+                    other_records_pattern = re.compile(r'(\w+)\s(\d+)-(\d+)')
+
+                    # Extract lot and blk
+                    lot_match = lot_pattern.search(text)
+                    blk_match = blk_pattern.search(text)
+                    
+                    lot = lot_match.group(1) if lot_match else None
+                    blk = blk_match.group(1) if blk_match else None
+
+                    # Extract other records
+                    other_records = []
+                    for match in other_records_pattern.finditer(text):
+                        record_type, book, page = match.groups()
+                        other_records.append({
+                            "type": record_type,
+                            "book": int(book),
+                            "page": int(page)
+                        })
+
+                    return {
+                        "lot": lot,
+                        "blk": blk,
+                        "otherRecords": other_records
+                    }
+                
+                lot_blk_info = parse_property_info(data["LegalDescription"]["Description"])
+
                 return {
                     "assessments": [
                         {
@@ -185,20 +216,14 @@ class MiamiDade(Florida, Florida.County):
                         "folio": data["PropertyInfo"]["FolioNumber"],
                         "parentFolio": data["PropertyInfo"].get("ParentFolio", ""),
                         "subdivision": data["PropertyInfo"]["SubdivisionDescription"],
-                        "blk": convert_to_int(data["PropertyInfo"]["PlatBook"]),
-                        "lot": convert_to_int(data["PropertyInfo"]["PlatPage"]),
+                        "blk": convert_to_int(lot_blk_info["blk"]),
+                        "lot": convert_to_int(lot_blk_info["lot"]),
                         "plat": {
                             "book": convert_to_int(data["PropertyInfo"]["PlatBook"]),
                             "page": convert_to_int(data["PropertyInfo"]["PlatPage"]),
                         },
                         "lotSize": data["PropertyInfo"]["LotSize"],
-                        "otherRecords": [
-                            {
-                                "type": "Legal",
-                                "book": convert_to_int(data["PropertyInfo"]["PlatBook"]),
-                                "page": convert_to_int(data["PropertyInfo"]["PlatPage"]),
-                            }
-                        ]
+                        "otherRecords": lot_blk_info["otherRecords"]
                     },
                     "owners": [
                         {

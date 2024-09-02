@@ -186,14 +186,22 @@ class Broward(Florida, Florida.County):
                 return None, errorHandler
             
             else:
+                from datetime import date
                 # Extract assessments
                 assessments = [
                     {
-                        "assessedValue": convert_to_int(data['d']['parcelInfok__BackingField'][0]['assessedLastYearValue']),
+                        "assessedValue": convert_to_int(data['d']['parcelInfok__BackingField'][0]['sohValue']),
+                        "buildingValue": convert_to_int(data['d']['parcelInfok__BackingField'][0]['bldgValue']),
+                        "landValue": convert_to_int(data['d']['parcelInfok__BackingField'][0]['landValue']),
+                        "totalValue": convert_to_int(data['d']['parcelInfok__BackingField'][0]['totalValue']),
+                        "year": date.today().year
+                    },
+                    {
+                        "assessedValue": convert_to_int(data['d']['parcelInfok__BackingField'][0]['sohLastYearValue']),
                         "buildingValue": convert_to_int(data['d']['parcelInfok__BackingField'][0]['bldgLastYearValue']),
                         "landValue": convert_to_int(data['d']['parcelInfok__BackingField'][0]['landLastYearValue']),
                         "totalValue": convert_to_int(data['d']['parcelInfok__BackingField'][0]['totalValue']),
-                        "year": int(data['d']['millageRatek__BackingField'][0]['millageYear']),
+                        "year": date.today().year-1
                     }
                 ]
 
@@ -202,15 +210,43 @@ class Broward(Florida, Florida.County):
                     lotSize = data['d']['parcelInfok__BackingField'][0]['landCalcFact1'].split(" ")[0]
                     lotSize = convert_to_int(lotSize)
 
+
+                def parse_property_info(text):
+                    # Patterns to match subdivision, pb, pg, lot, and blk
+                    pattern = re.compile(r'([A-Z\s]+)\s(\d+)-(\d+)\sB(?:\sLOT\s(\d+))?(?:\sBLK\s(\d+))?')
+
+                    match = pattern.search(text)
+                    
+                    if match:
+                        subdivision, pb, pg, lot, blk = match.groups()
+                        return {
+                            "subdivision": subdivision.strip(),
+                            "pb": int(pb),
+                            "pg": int(pg),
+                            "lot": lot if lot else None,
+                            "blk": blk if blk else None
+                        }
+                    else:
+                        return {
+                            "subdivision": None,
+                            "pb": None,
+                            "pg": None,
+                            "lot": None,
+                            "blk": None
+                        }
+
+                
+                lot_blk_info = parse_property_info(data['d']['parcelInfok__BackingField'][0]["legal"])
+
                 property_info = {
                     "folio": data['d']['parcelInfok__BackingField'][0]['folioNumber'],
                     "parentFolio": data['d']['parcelInfok__BackingField'][0].get("parentFolio", ""),
-                    "subdivision": data['d']['parcelInfok__BackingField'][0]['legal'],
-                    "blk": convert_to_int(data['d']['parcelInfok__BackingField'][0]['bookAndPageOrCin1']),
-                    "lot": convert_to_int(data['d']['parcelInfok__BackingField'][0]['bookAndPageOrCin2']),
+                    "subdivision": lot_blk_info["subdivision"],
+                    "blk": convert_to_int(lot_blk_info["blk"]),
+                    "lot": convert_to_int(lot_blk_info["lot"]),
                     "plat": {
-                        "book": convert_to_int(data['d']['parcelInfok__BackingField'][0]['bookAndPageOrCin1']),
-                        "page": convert_to_int(data['d']['parcelInfok__BackingField'][0]['bookAndPageOrCin2']),
+                        "book": convert_to_int(lot_blk_info["pb"]),
+                        "page": convert_to_int(lot_blk_info["pg"]),
                     },
                     "lotSize": lotSize, #TODO: Just calculate this from parcel border
                     "otherRecords": []
