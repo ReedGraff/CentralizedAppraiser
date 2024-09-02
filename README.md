@@ -1,6 +1,6 @@
 # CentralizedAppraiser
 A new form of accessing real estate data because nobody wants to pay >$80,000 for Regrid and still not have access to up to date information.
-
+TRY IT WITH ANY ADDRESS IN MIAMIDADE/BROWARD COUNTY.
 
 
 
