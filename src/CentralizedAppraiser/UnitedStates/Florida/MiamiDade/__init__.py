@@ -1,3 +1,4 @@
+import pyproj
 from CentralizedAppraiser import Client
 from CentralizedAppraiser.abstracts._address import AddressInfo, AppraiserInfo
 from CentralizedAppraiser.utils import convert_to_int
@@ -93,6 +94,62 @@ class MiamiDade(Florida, Florida.County):
         
         else:
             return cls.appraiserInfoByFolio(folio, client)
+        
+    @classmethod
+    def getPropertyLinesByFolio(cls, folio:str) -> set[list, dict]:
+        """just returns the property lines for an address"""
+        # list is just a list of lists of coordinates [[(lon, lat), (lon, lat), ...], [(lon, lat), (lon, lat), ...], ...]
+        folio = re.sub(r'[^0-9]', '', folio)
+        headers = {
+            'Accept': '*/*',
+            'Accept-Language': 'en-US,en;q=0.9,es;q=0.8',
+            'Cache-Control': 'no-cache',
+            'Connection': 'keep-alive',
+            'Origin': 'https://www.miamidade.gov',
+            'Pragma': 'no-cache',
+            'Referer': 'https://www.miamidade.gov/Apps/PA/PropertySearch/',
+            'Sec-Fetch-Dest': 'empty',
+            'Sec-Fetch-Mode': 'cors',
+            'Sec-Fetch-Site': 'same-site',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
+            'sec-ch-ua': '"Chromium";v="128", "Not;A=Brand";v="24", "Google Chrome";v="128"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Windows"',
+        }
+
+        params = {
+            'f': 'json', # typically "pbf" or "json"
+            'spatialRel': 'esriSpatialRelIntersects',
+            'where': f"FOLIO='{folio}'",
+        }
+
+        response = requests.get(
+            'https://gisfs.miamidade.gov/mdarcgis/rest/services/MD_PA_PropertySearch/MapServer/6/query',
+            params=params,
+            headers=headers,
+        )
+
+        try:
+            data = response.json()
+
+            # Extract the rings from the geometry
+            rings = data['features'][0]['geometry']['rings']
+
+            # Define the source and target coordinate systems
+            src_proj = pyproj.CRS('EPSG:2236')  # WKID 2236
+            dst_proj = pyproj.CRS('EPSG:4326')  # WGS84
+
+            # Create a transformer object
+            transformer = pyproj.Transformer.from_crs(src_proj, dst_proj, always_xy=True)
+
+            # Transform the coordinates using map
+            transformed_rings = list(map(lambda ring: list(map(lambda coord: transformer.transform(coord[0], coord[1]), ring)), rings))
+            
+            # Print the transformed coordinates
+            return transformed_rings, {"status": "success", "message": ""}
+        
+        except:
+            return None, {"status": "error", "message": "Cannot find property lines for folio"}
 
     @classmethod
     def getScreenshotByFolio(cls, folio:str) -> set[bool, dict]:

@@ -4,6 +4,7 @@ from CentralizedAppraiser.utils import convert_to_int
 
 import re
 import json
+import pyproj
 import requests
 
 class Broward(Florida, Florida.County):
@@ -94,6 +95,75 @@ class Broward(Florida, Florida.County):
         
         else:
             return cls.appraiserInfoByFolio(folio, client)
+        
+    @classmethod
+    def getPropertyLinesByFolio(cls, folio:str) -> set[bool, dict]:
+        """just returns the property lines for an address"""
+
+        cookies = {
+            'ASP.NET_SessionId': 's5mugupueegqdicbiquhzldy',
+            '_gid': 'GA1.2.1787727042.1725253629',
+            '_gat': '1',
+            '_ga_VTXRBF0C53': 'GS1.2.1725253629.11.0.1725253629.0.0.0',
+            '_ga': 'GA1.1.117651107.1723498703',
+            '_ga_MR45PG8FRP': 'GS1.1.1725253632.17.0.1725253640.0.0.0',
+        }
+
+        headers = {
+            'Accept': '*/*',
+            'Accept-Language': 'en-US,en;q=0.9,es;q=0.8',
+            'Cache-Control': 'no-cache',
+            'Connection': 'keep-alive',
+            # 'Cookie': 'ASP.NET_SessionId=s5mugupueegqdicbiquhzldy; _gid=GA1.2.1787727042.1725253629; _gat=1; _ga_VTXRBF0C53=GS1.2.1725253629.11.0.1725253629.0.0.0; _ga=GA1.1.117651107.1723498703; _ga_MR45PG8FRP=GS1.1.1725253632.17.0.1725253640.0.0.0',
+            'Pragma': 'no-cache',
+            'Referer': 'https://gisweb-adapters.bcpa.net/bcpawebmap_ex/bcpawebmap.aspx',
+            'Sec-Fetch-Dest': 'empty',
+            'Sec-Fetch-Mode': 'cors',
+            'Sec-Fetch-Site': 'same-origin',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36',
+            'X-Requested-With': 'XMLHttpRequest',
+            'sec-ch-ua': '"Chromium";v="128", "Not;A=Brand";v="24", "Google Chrome";v="128"',
+            'sec-ch-ua-mobile': '?0',
+            'sec-ch-ua-platform': '"Windows"',
+        }
+
+        params = {
+            'f': 'json',
+            'searchText': folio,
+            'contains': 'true',
+            'returnGeometry': 'true',
+            'layers': '16',
+            'searchFields': 'FOLIO',
+        }
+
+        response = requests.get(
+            'https://gisweb-adapters.bcpa.net/arcgis/rest/services/BCPA_EXTERNAL_JAN24/MapServer/find',
+            params=params,
+            cookies=cookies,
+            headers=headers,
+        )
+
+        try:
+            data = response.json()
+
+            # Extract the rings from the geometry
+            rings = data['results'][0]['geometry']['rings']
+
+            # Define the source and target coordinate systems
+            src_proj = pyproj.CRS('EPSG:2236')  # WKID 2236
+            dst_proj = pyproj.CRS('EPSG:4326')  # WGS84
+
+            # Create a transformer object
+            transformer = pyproj.Transformer.from_crs(src_proj, dst_proj, always_xy=True)
+
+            # Transform the coordinates using map
+            transformed_rings = list(map(lambda ring: list(map(lambda coord: transformer.transform(coord[0], coord[1]), ring)), rings))
+
+            # Print the transformed coordinates
+            return transformed_rings, {"status": "success", "message": ""}
+
+        except:
+            return None, {"status": "error", "message": "Cannot find property lines for folio"}
 
     @classmethod
     def getScreenshotByFolio(cls, folio:str) -> set[bool, dict]:

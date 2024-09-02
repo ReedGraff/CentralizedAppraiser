@@ -9,16 +9,19 @@ with open("creds.txt", "r") as f:
     googleApiKey = f.readline().strip()
     regridApiKey = f.readline().strip()
 
-# client = GoogleClient() # API KEY
-client = RegridClient() # API KEY
+client = GoogleClient(googleApiKey) # API KEY
+# client = RegridClient(regridApiKey) # API KEY
 # addressInfo, errorHandler = client.getByID("5a3af608-4ad5-453f-95ad-533a53012d7e") # ChIJbYEx-KsN3ogRPgtsV_hq0kg: Brevard. ChIJU_2RLn-h2YgRV1AjoNx__kg: broward. ChIJV5BVdnmx2YgR8_GX_kzbH-s: miamiDade
-addressInfo, errorHandler = client.getByAddress("6760 SW 48TH ST") # ChIJbYEx-KsN3ogRPgtsV_hq0kg: Brevard. ChIJU_2RLn-h2YgRV1AjoNx__kg: broward. ChIJV5BVdnmx2YgR8_GX_kzbH-s: miamiDade
-path, errorHandler = CentralizedAppraiser.pathByAddressInfo(addressInfo)
+addressInfo, errorHandler = client.getByAddress("3230 NW 14th Pl, fort lauderdale") # ChIJbYEx-KsN3ogRPgtsV_hq0kg: Brevard. ChIJU_2RLn-h2YgRV1AjoNx__kg: broward. ChIJV5BVdnmx2YgR8_GX_kzbH-s: miamiDade
+classPointer, errorHandler = CentralizedAppraiser.classByAddressInfo(addressInfo)
+folio, errorHandler = classPointer.folioByAddressInfo(addressInfo) # should return the folio
+print(folio)
+print(classPointer.getPropertyLinesByFolio(folio))
+
 # appraiserInfo, errorHandler = CentralizedAppraiser.appraiserInfoByAddressInfo(addressInfo, client)
 # addressInfo, errorHandler = addressInfo.get()
 # folio, errorHandler = classPointer.folioByAddressInfo(addressInfo) # should return the folio
 # appraiserInfo, errorHandler = classPointer.appraiserInfoByFolio(addressInfo["folio"], client)
-print(path)
 # # json.dump(appraiserInfo.get(), open("output.json", "w"), indent=4) # should return the formatted data
 
 

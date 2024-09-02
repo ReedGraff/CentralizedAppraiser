@@ -24,6 +24,12 @@ class Country(object):
     def appraiserInfoByAddressInfo(cls, search:AddressInfo, client:Client) -> set[AppraiserInfo, dict]:
         """just implements the appraiser info by folio with the address info. We use the Client to validate mailing addresses"""
         raise NotImplementedError
+    
+    @classmethod
+    def getPropertyLinesByFolio(cls, folio:str) -> set[list, dict]:
+        """just returns the property lines for an address"""
+        # list is just a list of lists of coordinates [[(lon, lat), (lon, lat), ...], [(lon, lat), (lon, lat), ...], ...]
+        raise NotImplementedError
 
     @classmethod
     def getScreenshotByFolio(cls, folio:str) -> set[bool, dict]:
