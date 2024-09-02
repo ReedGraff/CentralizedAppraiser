@@ -24,7 +24,8 @@ dependencies = [
     # "math"
     # "json",
     "shapely",
-    "schema"
+    "schema",
+    "pyproj"
 ]
 license = {file = "LICENSE"}
 
