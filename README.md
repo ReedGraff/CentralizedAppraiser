@@ -1,5 +1,6 @@
 # CentralizedAppraiser
 A new form of accessing real estate data because nobody wants to pay >$80,000 for Regrid and still not have access to up to date information.
+
 TRY IT WITH ANY ADDRESS IN MIAMIDADE/BROWARD COUNTY.
 
 
@@ -42,7 +43,7 @@ pip install CentralizedAppraiser
 
 
 ## Usage Examples
-Using the Google Maps client, get the appraiser info for an address given the Google Place ID.
+Using the Google Maps client, get the appraiser info for an address given the Google Place ID. Also refer to the examples directory for more examples in the github repository.
 
 #### Regrid Client
 This is a simple implementation which when given an address, it will return the appraiser information.
@@ -187,6 +188,8 @@ Schema({
     "propertyInfo": {
         "folio": And(str, len),
         "parentFolio": str,
+        "legal": str,
+        "use": int,
         "subdivision": str,
         "blk": int,
         "lot": int,
