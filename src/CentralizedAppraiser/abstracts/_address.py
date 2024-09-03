@@ -82,6 +82,8 @@ class AppraiserInfo(AddressSchematic):
                 "propertyInfo": {
                     "folio": And(str, len),
                     "parentFolio": str,
+                    "legal": str,
+                    "use": str,
                     "subdivision": str,
                     "blk": int,
                     "lot": int,

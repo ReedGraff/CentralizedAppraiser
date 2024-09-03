@@ -1,0 +1,819 @@
+{
+    "assessments": [
+        {
+            "assessedValue": 815210,
+            "buildingValue": 599900,
+            "landValue": 731100,
+            "totalValue": 1331000,
+            "year": 2024
+        },
+        {
+            "assessedValue": 741100,
+            "buildingValue": 10000,
+            "landValue": 731100,
+            "totalValue": 741100,
+            "year": 2023
+        },
+        {
+            "assessedValue": 840000,
+            "buildingValue": 401340,
+            "landValue": 438660,
+            "totalValue": 840000,
+            "year": 2022
+        }
+    ],
+    "propertyInfo": {
+        "folio": "01-3112-014-0300",
+        "parentFolio": "",
+        "legal": "LITTLE RIVER GARDENS  PB 7-26|LOTS 3 & 4            BLK 28|LOT SIZE     14622 SQUARE FEET|OR 18099-1116 0598 2 (2)|COC 21372-4526 05 2003 1",
+        "use": "MULTIFAMILY 10 UNITS PLUS : MULTIFAMILY 3 OR MORE UNITS",
+        "subdivision": "LITTLE RIVER GDNS PB 7-26",
+        "blk": 28,
+        "lot": 0,
+        "plat": {
+            "book": 7,
+            "page": 26
+        },
+        "lotSize": 14622,
+        "otherRecords": [
+            {
+                "type": "PB",
+                "book": 7,
+                "page": 26
+            },
+            {
+                "type": "OR",
+                "book": 18099,
+                "page": 1116
+            },
+            {
+                "type": "COC",
+                "book": 21372,
+                "page": 4526
+            }
+        ]
+    },
+    "owners": [
+        {
+            "name": "FORDOME II LLC",
+            "mailingAddresses": [
+                {
+                    "formattedAddress": "1650 S Treasure Dr, North Bay Village, FL 33141, USA",
+                    "folio": null,
+                    "addressComponents": {
+                        "streetNumber": "1650",
+                        "streetDirection": "S",
+                        "street": "Treasure DR",
+                        "city": "North Bay Village",
+                        "county": "Miami-Dade County",
+                        "state": "Florida",
+                        "country": "United States",
+                        "zip": "33141"
+                    },
+                    "geo": {
+                        "lat": 25.844406799999998,
+                        "lng": -80.15091079999999
+                    }
+                }
+            ]
+        }
+    ],
+    "unStructured": {
+        "Additionals": {
+            "AddtionalInfo": [
+                {
+                    "Key": "LAND USE AND RESTRICTIONS",
+                    "Value": [
+                        {
+                            "InfoName": "Community Development District",
+                            "InfoValue": "COUNTYGIS",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "Community Redevelopment Area",
+                            "InfoValue": "COUNTYGIS",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "Empowerment Zone",
+                            "InfoValue": "COUNTYGIS",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "Enterprise Zone",
+                            "InfoValue": "COUNTYGIS",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "Urban Development",
+                            "InfoValue": "COUNTYGIS",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "Zoning Code",
+                            "InfoValue": "COUNTYGIS",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "Existing Land Use",
+                            "InfoValue": "COUNTYGIS",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "HARB Zoning Code",
+                            "InfoValue": "COUNTYGIS",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "Government Agencies and Community Services",
+                            "InfoValue": "http://gisweb.miamidade.gov/communityservices/CommunityServicesAll.html?x=&y=&bufferDistance=5&address=62 NE 78 ST",
+                            "Message": ""
+                        }
+                    ]
+                },
+                {
+                    "Key": "OTHER GOVERNMENTAL JURISDICTIONS",
+                    "Value": [
+                        {
+                            "InfoName": "Business Incentives",
+                            "InfoValue": "https://gisweb.miamidade.gov/businessincentive/default.aspx?searchtype=address&amp;paramvalue=",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "Childrens Trust",
+                            "InfoValue": "https://www.thechildrenstrust.org/",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "City of Miami",
+                            "InfoValue": "http://www.miamigov.com/home/",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "Environmental Considerations",
+                            "InfoValue": "https://gisweb.miamidade.gov/environmentalconsiderations/?searchtype=address&paramvalue=62 NE 78 ST",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "Florida Inland Navigation District",
+                            "InfoValue": "http://www.aicw.org",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "Septic - Well: Property List (MDC)",
+                            "InfoValue": "https://gis-mdc.opendata.arcgis.com/maps/MDC::potential-properties-served-by-septic-or-well/about",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "Septic - Well: Septic GIS Points (DOH)",
+                            "InfoValue": "https://gis-mdc.opendata.arcgis.com/datasets/MDC::doh-septic-system/explore",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "Septic - Well: Well GIS Points (DOH)",
+                            "InfoValue": "https://gis-mdc.opendata.arcgis.com/datasets/MDC::doh-well-permit/explore",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "PA Bulletin Board",
+                            "InfoValue": "http://bbs.miamidade.gov/",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "Special Taxing District and Other Non-Ad valorem Assessment",
+                            "InfoValue": "http://www.miamidade.gov/Apps/PA/PAOnlineTools/Taxes/NonAdvalorem.aspx?folio=0131120140300",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "School Board",
+                            "InfoValue": "http://www.dadeschools.net/",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "South Florida Water Mgmt District",
+                            "InfoValue": "http://www.sfwmd.gov/portal/page/portal/sfwmdmain/home%20page",
+                            "Message": ""
+                        },
+                        {
+                            "InfoName": "Tax Collector",
+                            "InfoValue": "http://www.miamidade.gov/taxcollector/",
+                            "Message": ""
+                        }
+                    ]
+                }
+            ],
+            "FooterMessage": "",
+            "HeaderMessage": "* The information listed below is not derived from the Property Appraiser's Office records.  It is provided for convenience and is derived from other government agencies."
+        },
+        "Assessment": {
+            "AssessmentInfos": [
+                {
+                    "AssessedValue": 815210,
+                    "BuildingOnlyValue": 599900,
+                    "ExtraFeatureValue": 0,
+                    "LandValue": 731100,
+                    "Message": null,
+                    "TotalValue": 1331000,
+                    "Year": 2024
+                },
+                {
+                    "AssessedValue": 741100,
+                    "BuildingOnlyValue": 10000,
+                    "ExtraFeatureValue": 0,
+                    "LandValue": 731100,
+                    "Message": null,
+                    "TotalValue": 741100,
+                    "Year": 2023
+                },
+                {
+                    "AssessedValue": 840000,
+                    "BuildingOnlyValue": 401340,
+                    "ExtraFeatureValue": 0,
+                    "LandValue": 438660,
+                    "Message": null,
+                    "TotalValue": 840000,
+                    "Year": 2022
+                }
+            ],
+            "Messages": [
+                {
+                    "Message": "",
+                    "Year": 2023
+                },
+                {
+                    "Message": "",
+                    "Year": 2022
+                }
+            ]
+        },
+        "Benefit": {
+            "BenefitInfos": [
+                {
+                    "Description": "Non-Homestead Cap",
+                    "Message": null,
+                    "Seq": "5",
+                    "TaxYear": 2024,
+                    "Type": "Assessment Reduction",
+                    "Url": "http://www.miamidade.gov/pa/property_value_cap.asp",
+                    "Value": 515790
+                }
+            ],
+            "Messages": []
+        },
+        "Building": {
+            "BuildingInfos": [
+                {
+                    "Actual": 1958,
+                    "ActualArea": 2303,
+                    "AdjustedBasePrice": -1,
+                    "BuildingNo": 1,
+                    "DepreciatedValue": -1,
+                    "Effective": 1960,
+                    "EffectiveArea": 2103,
+                    "GrossArea": 2303,
+                    "HeatedArea": 2303,
+                    "Message": null,
+                    "PercentComp": 1,
+                    "PercentageGood": -1,
+                    "ReplacementCostNew": -1,
+                    "RollYear": 2024,
+                    "SegNo": 1,
+                    "TotalAdjustedPoints": 145,
+                    "TraversePoints": "Y",
+                    "improvementModelDesc": "Apt/Hotel - 1 Story"
+                },
+                {
+                    "Actual": 1958,
+                    "ActualArea": 2303,
+                    "AdjustedBasePrice": -1,
+                    "BuildingNo": 1,
+                    "DepreciatedValue": -1,
+                    "Effective": 1960,
+                    "EffectiveArea": 2103,
+                    "GrossArea": 2303,
+                    "HeatedArea": 2303,
+                    "Message": null,
+                    "PercentComp": 1,
+                    "PercentageGood": -1,
+                    "ReplacementCostNew": -1,
+                    "RollYear": 2023,
+                    "SegNo": 1,
+                    "TotalAdjustedPoints": 145,
+                    "TraversePoints": "Y",
+                    "improvementModelDesc": "Apt/Hotel - 1 Story"
+                },
+                {
+                    "Actual": 1958,
+                    "ActualArea": 2303,
+                    "AdjustedBasePrice": -1,
+                    "BuildingNo": 1,
+                    "DepreciatedValue": -1,
+                    "Effective": 1960,
+                    "EffectiveArea": 2103,
+                    "GrossArea": 2303,
+                    "HeatedArea": 2303,
+                    "Message": null,
+                    "PercentComp": 1,
+                    "PercentageGood": -1,
+                    "ReplacementCostNew": -1,
+                    "RollYear": 2022,
+                    "SegNo": 1,
+                    "TotalAdjustedPoints": 145,
+                    "TraversePoints": "Y",
+                    "improvementModelDesc": "Apt/Hotel - 1 Story"
+                },
+                {
+                    "Actual": 1949,
+                    "ActualArea": 850,
+                    "AdjustedBasePrice": -1,
+                    "BuildingNo": 2,
+                    "DepreciatedValue": -1,
+                    "Effective": 1954,
+                    "EffectiveArea": 850,
+                    "GrossArea": 850,
+                    "HeatedArea": 850,
+                    "Message": null,
+                    "PercentComp": 1,
+                    "PercentageGood": -1,
+                    "ReplacementCostNew": -1,
+                    "RollYear": 2024,
+                    "SegNo": 1,
+                    "TotalAdjustedPoints": 142,
+                    "TraversePoints": "Y",
+                    "improvementModelDesc": "Apt/Hotel - 1 Story"
+                },
+                {
+                    "Actual": 1949,
+                    "ActualArea": 850,
+                    "AdjustedBasePrice": -1,
+                    "BuildingNo": 2,
+                    "DepreciatedValue": -1,
+                    "Effective": 1954,
+                    "EffectiveArea": 850,
+                    "GrossArea": 850,
+                    "HeatedArea": 850,
+                    "Message": null,
+                    "PercentComp": 1,
+                    "PercentageGood": -1,
+                    "ReplacementCostNew": -1,
+                    "RollYear": 2023,
+                    "SegNo": 1,
+                    "TotalAdjustedPoints": 142,
+                    "TraversePoints": "Y",
+                    "improvementModelDesc": "Apt/Hotel - 1 Story"
+                },
+                {
+                    "Actual": 1949,
+                    "ActualArea": 850,
+                    "AdjustedBasePrice": -1,
+                    "BuildingNo": 2,
+                    "DepreciatedValue": -1,
+                    "Effective": 1954,
+                    "EffectiveArea": 850,
+                    "GrossArea": 850,
+                    "HeatedArea": 850,
+                    "Message": null,
+                    "PercentComp": 1,
+                    "PercentageGood": -1,
+                    "ReplacementCostNew": -1,
+                    "RollYear": 2022,
+                    "SegNo": 1,
+                    "TotalAdjustedPoints": 142,
+                    "TraversePoints": "Y",
+                    "improvementModelDesc": "Apt/Hotel - 1 Story"
+                },
+                {
+                    "Actual": 1949,
+                    "ActualArea": 1454,
+                    "AdjustedBasePrice": -1,
+                    "BuildingNo": 3,
+                    "DepreciatedValue": -1,
+                    "Effective": 1954,
+                    "EffectiveArea": 1454,
+                    "GrossArea": 1454,
+                    "HeatedArea": 1454,
+                    "Message": null,
+                    "PercentComp": 1,
+                    "PercentageGood": -1,
+                    "ReplacementCostNew": -1,
+                    "RollYear": 2024,
+                    "SegNo": 1,
+                    "TotalAdjustedPoints": 146,
+                    "TraversePoints": "Y",
+                    "improvementModelDesc": "Apt/Hotel - 1 Story"
+                },
+                {
+                    "Actual": 1949,
+                    "ActualArea": 1454,
+                    "AdjustedBasePrice": -1,
+                    "BuildingNo": 3,
+                    "DepreciatedValue": -1,
+                    "Effective": 1954,
+                    "EffectiveArea": 1454,
+                    "GrossArea": 1454,
+                    "HeatedArea": 1454,
+                    "Message": null,
+                    "PercentComp": 1,
+                    "PercentageGood": -1,
+                    "ReplacementCostNew": -1,
+                    "RollYear": 2023,
+                    "SegNo": 1,
+                    "TotalAdjustedPoints": 146,
+                    "TraversePoints": "Y",
+                    "improvementModelDesc": "Apt/Hotel - 1 Story"
+                },
+                {
+                    "Actual": 1949,
+                    "ActualArea": 1454,
+                    "AdjustedBasePrice": -1,
+                    "BuildingNo": 3,
+                    "DepreciatedValue": -1,
+                    "Effective": 1954,
+                    "EffectiveArea": 1454,
+                    "GrossArea": 1454,
+                    "HeatedArea": 1454,
+                    "Message": null,
+                    "PercentComp": 1,
+                    "PercentageGood": -1,
+                    "ReplacementCostNew": -1,
+                    "RollYear": 2022,
+                    "SegNo": 1,
+                    "TotalAdjustedPoints": 146,
+                    "TraversePoints": "Y",
+                    "improvementModelDesc": "Apt/Hotel - 1 Story"
+                }
+            ],
+            "Messages": [
+                {
+                    "Message": "The calculated values for this property have been overridden.  Please refer to the Land, Building, and XF Values in the Assessment Section, in order to obtain the most accurate values.",
+                    "Year": 2024
+                },
+                {
+                    "Message": "The calculated values for this property have been overridden.  Please refer to the Land, Building, and XF Values in the Assessment Section, in order to obtain the most accurate values.",
+                    "Year": 2023
+                },
+                {
+                    "Message": "The calculated values for this property have been overridden.  Please refer to the Land, Building, and XF Values in the Assessment Section, in order to obtain the most accurate values.",
+                    "Year": 2022
+                }
+            ]
+        },
+        "ClassifiedAgInfo": {
+            "Acreage": 0,
+            "CalculatedValue": 0,
+            "LandCode": null,
+            "LandUse": null,
+            "Message": null,
+            "UnitPrice": 0
+        },
+        "Completed": true,
+        "District": 6,
+        "ExtraFeature": {
+            "ExtraFeatureInfos": [],
+            "Messages": []
+        },
+        "GeoParcel": null,
+        "Land": {
+            "Landlines": [
+                {
+                    "AdjustedUnitPrice": -1,
+                    "CalculatedValue": -1,
+                    "Depth": 0,
+                    "FrontFeet": 0,
+                    "LandUse": "GENERAL",
+                    "LandlineType": "C",
+                    "Message": null,
+                    "MuniZone": "T5-R",
+                    "MuniZoneDescription": null,
+                    "PAZoneDescription": "MULTI-FAMILY - 5 STORY &",
+                    "PercentCondition": 1,
+                    "RollYear": 2024,
+                    "TotalAdjustments": 0,
+                    "UnitType": "Square Ft.",
+                    "Units": 14622,
+                    "UseCode": "00",
+                    "Zone": "4600"
+                },
+                {
+                    "AdjustedUnitPrice": -1,
+                    "CalculatedValue": -1,
+                    "Depth": 0,
+                    "FrontFeet": 0,
+                    "LandUse": "GENERAL",
+                    "LandlineType": "C",
+                    "Message": null,
+                    "MuniZone": "T5-R",
+                    "MuniZoneDescription": null,
+                    "PAZoneDescription": "MULTI-FAMILY - 5 STORY &",
+                    "PercentCondition": 1,
+                    "RollYear": 2023,
+                    "TotalAdjustments": 1,
+                    "UnitType": "Square Ft.",
+                    "Units": 14622,
+                    "UseCode": "00",
+                    "Zone": "4600"
+                },
+                {
+                    "AdjustedUnitPrice": -1,
+                    "CalculatedValue": -1,
+                    "Depth": 0,
+                    "FrontFeet": 0,
+                    "LandUse": "GENERAL",
+                    "LandlineType": "C",
+                    "Message": null,
+                    "MuniZone": "T5-R",
+                    "MuniZoneDescription": null,
+                    "PAZoneDescription": "MULTI-FAMILY - 5 STORY &",
+                    "PercentCondition": 1,
+                    "RollYear": 2022,
+                    "TotalAdjustments": 1,
+                    "UnitType": "Square Ft.",
+                    "Units": 14622,
+                    "UseCode": "00",
+                    "Zone": "4600"
+                }
+            ],
+            "Messages": [
+                {
+                    "Message": "The calculated values for this property have been overridden.  Please refer to the Land, Building, and XF Values in the Assessment Section, in order to obtain the most accurate values.",
+                    "Year": 2024
+                },
+                {
+                    "Message": "The calculated values for this property have been overridden.  Please refer to the Land, Building, and XF Values in the Assessment Section, in order to obtain the most accurate values.",
+                    "Year": 2023
+                },
+                {
+                    "Message": "The calculated values for this property have been overridden.  Please refer to the Land, Building, and XF Values in the Assessment Section, in order to obtain the most accurate values.",
+                    "Year": 2022
+                }
+            ]
+        },
+        "LegalDescription": {
+            "Description": "LITTLE RIVER GARDENS  PB 7-26|LOTS 3 & 4            BLK 28|LOT SIZE     14622 SQUARE FEET|OR 18099-1116 0598 2 (2)|COC 21372-4526 05 2003 1",
+            "Message": null,
+            "Number": null
+        },
+        "MailingAddress": {
+            "Address1": "1650 S TREASURE DR",
+            "Address2": "",
+            "Address3": "",
+            "City": "NORTH BAY VILLAGE",
+            "Country": "USA",
+            "Message": null,
+            "State": "FL",
+            "ZipCode": "33141"
+        },
+        "Message": "",
+        "OwnerInfos": [
+            {
+                "Description": "",
+                "MarriedFlag": "0",
+                "Message": null,
+                "Name": "FORDOME II LLC",
+                "PercentageOwn": 0,
+                "Role": null,
+                "ShortDescription": "",
+                "TenancyCd": "\u0000"
+            }
+        ],
+        "PropertyInfo": {
+            "BathroomCount": 10,
+            "BedroomCount": 10,
+            "BuildingActualArea": 4607,
+            "BuildingBaseArea": 0,
+            "BuildingEffectiveArea": 4407,
+            "BuildingGrossArea": 4607,
+            "BuildingHeatedArea": 4607,
+            "DORCode": "0303",
+            "DORDescription": "MULTIFAMILY 10 UNITS PLUS : MULTIFAMILY 3 OR MORE UNITS",
+            "DORDescriptionCurrent": null,
+            "EncodedFolioAndTaxYear": "J1COeydnmm%2f6ilUSGxknaK4H3H%2bHv2w8I4myNs6pazc%3d",
+            "FloorCount": 1,
+            "FolioNumber": "01-3112-014-0300",
+            "HalfBathroomCount": 0,
+            "HxBaseYear": 0,
+            "LotSize": 14622,
+            "Message": null,
+            "Municipality": "Miami",
+            "Neighborhood": 1110,
+            "NeighborhoodDescription": "NO GABLES",
+            "ParentFolio": "",
+            "PercentHomesteadCapped": 0,
+            "PlatBook": "7",
+            "PlatPage": "26",
+            "PrimaryZone": "4600",
+            "PrimaryZoneDescription": "MULTI-FAMILY - 5 STORY &",
+            "ShowCurrentValuesFlag": "Y",
+            "Status": "AC Active",
+            "Subdivision": "013112014",
+            "SubdivisionDescription": "LITTLE RIVER GDNS PB 7-26",
+            "UnitCount": 10,
+            "YearAnnexed": 0,
+            "YearBuilt": "Multiple (See Building Info.)"
+        },
+        "RollYear1": 2024,
+        "SalesInfos": [
+            {
+                "DateOfSale": "4/5/2021",
+                "DocumentStamps": 0.6,
+                "EncodedRecordBookAndPage": "lHVlhHQhIZoJRUYKiXnhi%2fYcgxra0LoLwlJ5YZk%2b8DfNAXhWm4yVPg%3d%3d",
+                "GranteeName1": "FORDOME II LLC",
+                "GranteeName2": "",
+                "GrantorName1": "FORDOME INC",
+                "GrantorName2": "",
+                "Message": null,
+                "OfficialRecordBook": "32451",
+                "OfficialRecordPage": "4200",
+                "QualificationDescription": "Corrective, tax or QCD; min consideration",
+                "QualifiedFlag": "U",
+                "QualifiedSYear": null,
+                "QualifiedSourceCode": "",
+                "ReasonCode": "11",
+                "ReviewCode": null,
+                "SaleId": 6,
+                "SaleInstrument": "WDE",
+                "SalePrice": 100,
+                "VacantFlag": "\u0000",
+                "ValidCode": null,
+                "VerifyCode": null
+            },
+            {
+                "DateOfSale": "1/9/2020",
+                "DocumentStamps": 7800,
+                "EncodedRecordBookAndPage": "lHVlhHQhIZoJRUYKiXnhi3q%2fL7rzTuYgNXOe1igdSiEoEhzcx2WDzQ%3d%3d",
+                "GranteeName1": "FORDOME INC",
+                "GranteeName2": "",
+                "GrantorName1": "FUTURE MOSU NE 78 STREET LLC",
+                "GrantorName2": "",
+                "Message": null,
+                "OfficialRecordBook": "31782",
+                "OfficialRecordPage": "0702",
+                "QualificationDescription": "Qual on DOS, multi-parcel sale",
+                "QualifiedFlag": "Q",
+                "QualifiedSYear": null,
+                "QualifiedSourceCode": "",
+                "ReasonCode": "05",
+                "ReviewCode": null,
+                "SaleId": 5,
+                "SaleInstrument": "WDE",
+                "SalePrice": 1300000,
+                "VacantFlag": "\u0000",
+                "ValidCode": null,
+                "VerifyCode": null
+            },
+            {
+                "DateOfSale": "2/7/2017",
+                "DocumentStamps": 4200,
+                "EncodedRecordBookAndPage": "lHVlhHQhIZoJRUYKiXnhi6n9ogRMsp13LHnLfPPlGcTcDRmK4pv0Ow%3d%3d",
+                "GranteeName1": "FUTURE MOSU NE 78 STREET LLC",
+                "GranteeName2": "",
+                "GrantorName1": "VILLA INVESTMENT INC",
+                "GrantorName2": "",
+                "Message": null,
+                "OfficialRecordBook": "30427",
+                "OfficialRecordPage": "0701",
+                "QualificationDescription": "Qual on DOS, multi-parcel sale",
+                "QualifiedFlag": "Q",
+                "QualifiedSYear": null,
+                "QualifiedSourceCode": "",
+                "ReasonCode": "05",
+                "ReviewCode": null,
+                "SaleId": 4,
+                "SaleInstrument": "DEE",
+                "SalePrice": 700000,
+                "VacantFlag": "\u0000",
+                "ValidCode": null,
+                "VerifyCode": null
+            },
+            {
+                "DateOfSale": "4/1/1997",
+                "DocumentStamps": 0,
+                "EncodedRecordBookAndPage": "lHVlhHQhIZoJRUYKiXnhi8NHfQ5Cqh7eSMe%2bY9IBkUxi19xuuikstQ%3d%3d",
+                "GranteeName1": "",
+                "GranteeName2": "",
+                "GrantorName1": "",
+                "GrantorName2": "",
+                "Message": null,
+                "OfficialRecordBook": "18099",
+                "OfficialRecordPage": "1111",
+                "QualificationDescription": "Sales which are disqualified as a result of examination of the deed",
+                "QualifiedFlag": "U",
+                "QualifiedSYear": null,
+                "QualifiedSourceCode": "",
+                "ReasonCode": "01",
+                "ReviewCode": null,
+                "SaleId": 3,
+                "SaleInstrument": "",
+                "SalePrice": 0,
+                "VacantFlag": "\u0000",
+                "ValidCode": null,
+                "VerifyCode": null
+            },
+            {
+                "DateOfSale": "5/1/1998",
+                "DocumentStamps": 0,
+                "EncodedRecordBookAndPage": "lHVlhHQhIZoJRUYKiXnhi8NHfQ5Cqh7eSMe%2bY9IBkUzBmMWX5H6gJQ%3d%3d",
+                "GranteeName1": "",
+                "GranteeName2": "",
+                "GrantorName1": "",
+                "GrantorName2": "",
+                "Message": null,
+                "OfficialRecordBook": "18099",
+                "OfficialRecordPage": "1116",
+                "QualificationDescription": "Deeds that include more than one parcel",
+                "QualifiedFlag": "Q",
+                "QualifiedSYear": null,
+                "QualifiedSourceCode": "",
+                "ReasonCode": "02",
+                "ReviewCode": null,
+                "SaleId": 2,
+                "SaleInstrument": "",
+                "SalePrice": 190000,
+                "VacantFlag": "\u0000",
+                "ValidCode": null,
+                "VerifyCode": null
+            },
+            {
+                "DateOfSale": "5/1/2003",
+                "DocumentStamps": 0,
+                "EncodedRecordBookAndPage": "lHVlhHQhIZoJRUYKiXnhixkcnX2LeNUQ5teH4gc%2bgqd1nQ10uXq1Zw%3d%3d",
+                "GranteeName1": "",
+                "GranteeName2": "",
+                "GrantorName1": "",
+                "GrantorName2": "",
+                "Message": null,
+                "OfficialRecordBook": "21372",
+                "OfficialRecordPage": "4526",
+                "QualificationDescription": "Deeds that include more than one parcel",
+                "QualifiedFlag": "Q",
+                "QualifiedSYear": null,
+                "QualifiedSourceCode": "",
+                "ReasonCode": "02",
+                "ReviewCode": null,
+                "SaleId": 1,
+                "SaleInstrument": "",
+                "SalePrice": 273000,
+                "VacantFlag": "\u0000",
+                "ValidCode": null,
+                "VerifyCode": null
+            }
+        ],
+        "SiteAddress": [
+            {
+                "Address": "62 NE 78 ST, Miami, FL 33138-4337",
+                "BuildingNumber": 1,
+                "City": "Miami",
+                "HouseNumberSuffix": "",
+                "Message": null,
+                "StreetName": "78",
+                "StreetNumber": 62,
+                "StreetPrefix": "NE",
+                "StreetSuffix": "ST",
+                "StreetSuffixDirection": "",
+                "Unit": "",
+                "Zip": "33138-4337"
+            }
+        ],
+        "Taxable": {
+            "Messages": [],
+            "TaxableInfos": [
+                {
+                    "CityExemptionValue": 0,
+                    "CityTaxableValue": 815210,
+                    "CountyExemptionValue": 0,
+                    "CountyTaxableValue": 815210,
+                    "Message": null,
+                    "RegionalExemptionValue": 0,
+                    "RegionalTaxableValue": 815210,
+                    "SchoolExemptionValue": 0,
+                    "SchoolTaxableValue": 1331000,
+                    "Year": 2024
+                },
+                {
+                    "CityExemptionValue": 0,
+                    "CityTaxableValue": 741100,
+                    "CountyExemptionValue": 0,
+                    "CountyTaxableValue": 741100,
+                    "Message": null,
+                    "RegionalExemptionValue": 0,
+                    "RegionalTaxableValue": 741100,
+                    "SchoolExemptionValue": 0,
+                    "SchoolTaxableValue": 741100,
+                    "Year": 2023
+                },
+                {
+                    "CityExemptionValue": 0,
+                    "CityTaxableValue": 840000,
+                    "CountyExemptionValue": 0,
+                    "CountyTaxableValue": 840000,
+                    "Message": null,
+                    "RegionalExemptionValue": 0,
+                    "RegionalTaxableValue": 840000,
+                    "SchoolExemptionValue": 0,
+                    "SchoolTaxableValue": 840000,
+                    "Year": 2022
+                }
+            ]
+        }
+    }
+}

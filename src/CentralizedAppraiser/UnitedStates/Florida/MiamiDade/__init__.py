@@ -215,6 +215,8 @@ class MiamiDade(Florida, Florida.County):
                     "propertyInfo": {
                         "folio": data["PropertyInfo"]["FolioNumber"],
                         "parentFolio": data["PropertyInfo"].get("ParentFolio", ""),
+                        "legal": data["LegalDescription"]["Description"],
+                        "use": data["PropertyInfo"]["DORDescription"],
                         "subdivision": data["PropertyInfo"]["SubdivisionDescription"],
                         "blk": convert_to_int(lot_blk_info["blk"]),
                         "lot": convert_to_int(lot_blk_info["lot"]),

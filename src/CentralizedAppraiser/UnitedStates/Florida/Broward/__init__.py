@@ -241,6 +241,8 @@ class Broward(Florida, Florida.County):
                 property_info = {
                     "folio": data['d']['parcelInfok__BackingField'][0]['folioNumber'],
                     "parentFolio": data['d']['parcelInfok__BackingField'][0].get("parentFolio", ""),
+                    "legal": data['d']['parcelInfok__BackingField'][0]["legal"],
+                    "use": data['d']['parcelInfok__BackingField'][0]["useCode"],
                     "subdivision": lot_blk_info["subdivision"],
                     "blk": convert_to_int(lot_blk_info["blk"]),
                     "lot": convert_to_int(lot_blk_info["lot"]),
