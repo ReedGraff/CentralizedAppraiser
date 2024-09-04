@@ -84,12 +84,12 @@ class AppraiserInfo(AddressSchematic):
                     "parentFolio": str,
                     "legal": str,
                     "use": str,
-                    "subdivision": str,
-                    "blk": int,
-                    "lot": int,
+                    "subdivision": Or(None, str),
+                    "blk": Or(None, int),
+                    "lot": Or(None, int),
                     "plat": {
-                        "book": int,
-                        "page": int
+                        "book": Or(None, int),
+                        "page": Or(None, int)
                     },
                     "lotSize": Or(None, int, float),
                     "otherRecords": [
