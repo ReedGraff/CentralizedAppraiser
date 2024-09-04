@@ -43,7 +43,8 @@ def getLocationDetailsRecursive(lon, lat, levelList = ["UnitedStates"], defining
         if polygon.contains(startingPoint):
             # print(feature['properties']["NAME"])
             try:
-                module = importlib.import_module(f"{getSubClassPath(levelList)}.{re.sub(r'\W+','', feature['properties'][definingKey])}")
+                modulePath = getSubClassPath(levelList) + "." + re.sub(r'\W+','', feature['properties'][definingKey])
+                module = importlib.import_module(modulePath)
                 my_class = getattr(module, re.sub(r'\W+','', feature['properties'][definingKey]))
                 levelList.append(feature['properties'][definingKey])
 

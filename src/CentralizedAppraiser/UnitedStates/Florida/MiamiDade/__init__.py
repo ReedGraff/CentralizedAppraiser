@@ -32,7 +32,7 @@ class MiamiDade(Florida, Florida.County):
                 "clientAppName": "PropertySearch",
                 "myUnit": "",
                 "from": "1",
-                "myAddress": f"{address["streetNumber"]} {address["streetDirection"]} {address["street"]}",
+                "myAddress": f"{address['streetNumber']} {address['streetDirection']} {address['street']}",
                 "to": "200"
             }
 
@@ -83,7 +83,7 @@ class MiamiDade(Florida, Florida.County):
             return AppraiserInfo(data, client, cls.__translate), {"status": "success", "message": ""}
         
         else:
-            return None, {"status": "error", "message": f"Unable to find Appraiser Info"}
+            return None, {"status": "error", "message": "Unable to find Appraiser Info"}
     
     @classmethod
     def appraiserInfoByAddressInfo(cls, search:AddressInfo, client:Client) -> set[AppraiserInfo, dict]:
@@ -158,7 +158,7 @@ class MiamiDade(Florida, Florida.County):
     
     @classmethod
     def __translate(cls, data:dict, client:Client) -> set[dict, dict]:
-        mailAddressInfo, errorHandler = client.getByAddress(f"{data["MailingAddress"]["Address1"]}, {data["MailingAddress"]["City"]}, {data["MailingAddress"]["State"]}")
+        mailAddressInfo, errorHandler = client.getByAddress(f"{data['MailingAddress']['Address1']}, {data['MailingAddress']['City']}, {data['MailingAddress']['State']}")
         if errorHandler["status"] == "error":
             return None, errorHandler
         
