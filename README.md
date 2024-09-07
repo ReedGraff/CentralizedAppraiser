@@ -16,7 +16,7 @@ pip install CentralizedAppraiser
 
 
 ## This may be used in unison with regrid, however, it is distinguished in a few ways:
-* It dynamically accesses property appraiser data (meaning it is always up to date)
+* This is effectively an api of apis, for every request, it dynamically accesses property appraiser data (meaning it is always up to date)
 * It enables you to access all the additional county specific data
 * It enables you to interact with the county website (for example, to screenshot the property appraiser website)
 * It is free
@@ -189,13 +189,13 @@ Schema({
         "folio": And(str, len),
         "parentFolio": str,
         "legal": str,
-        "use": int,
-        "subdivision": str,
-        "blk": int,
-        "lot": int,
+        "use": str,
+        "subdivision": Or(None, str),
+        "blk": Or(None, int),
+        "lot": Or(None, int),
         "plat": {
-            "book": int,
-            "page": int
+            "book": Or(None, int),
+            "page": Or(None, int)
         },
         "lotSize": Or(None, int, float),
         "otherRecords": [
