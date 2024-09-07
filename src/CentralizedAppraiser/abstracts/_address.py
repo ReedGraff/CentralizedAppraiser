@@ -151,34 +151,9 @@ class FolioInfo(AddressSchematic):
     """Passed from the counties (this represents one individual folio)"""
     # this would replace the regrid folio search or typeahead function...
     # right now, we are somewhat dependent on regrid to access the right folio number... (in the case where there are multiple folios for an address)
-    raise NotImplementedError
-
-
     @strict_types
     def __init__(self, data:dict, translateStrategy) -> None:
-        self.__data = data # this is the raw data from the appraiser
-        self.__formattedData = translateStrategy(data) # this is the translated data into consistent format
-
-        self.__schema = Schema(
-            {
-                "formattedAddress": And(str, len),
-                "folio": Or(None, And(str, Use(len))),
-                "addressComponents": {
-                    "streetNumber": str,
-                    "street": str,
-                    "streetDirection": str,
-                    "city": str,
-                    "county": str,
-                    "state": And(str, len),
-                    "country": And(str, len),
-                    "zip": And(str, len)
-                },
-                "geo": {
-                    "lat": And(Use(float), lambda n: -90 <= n <= 90),
-                    "lng": And(Use(float), lambda n: -180 <= n <= 180)
-                }
-            }
-        )
+        raise NotImplementedError
 
     def __str__(self):
         raise NotImplementedError

@@ -1,0 +1,1630 @@
+{
+    "parcels": {
+        "type": "FeatureCollection",
+        "features": [
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                -80.263067,
+                                25.7566435
+                            ],
+                            [
+                                -80.2630695,
+                                25.7567135
+                            ],
+                            [
+                                -80.2630715,
+                                25.756779
+                            ],
+                            [
+                                -80.263442,
+                                25.756765
+                            ],
+                            [
+                                -80.2634395,
+                                25.756697
+                            ],
+                            [
+                                -80.2634375,
+                                25.7566275
+                            ],
+                            [
+                                -80.263435,
+                                25.756559
+                            ],
+                            [
+                                -80.263432,
+                                25.756459
+                            ],
+                            [
+                                -80.26314,
+                                25.756469
+                            ],
+                            [
+                                -80.2631265,
+                                25.7564705
+                            ],
+                            [
+                                -80.263113,
+                                25.7564745
+                            ],
+                            [
+                                -80.263101,
+                                25.75648
+                            ],
+                            [
+                                -80.2630895,
+                                25.7564875
+                            ],
+                            [
+                                -80.2630805,
+                                25.756497
+                            ],
+                            [
+                                -80.2630725,
+                                25.7565075
+                            ],
+                            [
+                                -80.2630675,
+                                25.756519
+                            ],
+                            [
+                                -80.263064,
+                                25.7565315
+                            ],
+                            [
+                                -80.2630635,
+                                25.756544
+                            ],
+                            [
+                                -80.2630645,
+                                25.7565755
+                            ],
+                            [
+                                -80.263067,
+                                25.7566435
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "headline": "1650 S Le Jeune Rd Apt 103",
+                    "path": "/us/fl/miami-dade/miami/905225",
+                    "fields": {
+                        "ogc_fid": 905225,
+                        "geoid": "12086",
+                        "parcelnumb": "0341080480030",
+                        "parcelnumb_no_formatting": "0341080480030",
+                        "alt_parcelnumb1": "318939",
+                        "usecode": "0407",
+                        "usedesc": "RESIDENTIAL - TOTAL VALUE : CONDOMINIUM - RESIDENTIAL",
+                        "zoning": "MF3",
+                        "zoning_description": "Multifamily 3",
+                        "yearbuilt": 1968,
+                        "numstories": 0.0,
+                        "numunits": 1,
+                        "parvaltype": "ASSESSED",
+                        "parval": 88169.0,
+                        "saleprice": 60000.0,
+                        "saledate": "2009-12-03",
+                        "taxyear": "2024",
+                        "owner": "MARIA A DE CASTRO JTRS",
+                        "owner2": "JULIO I DE CASTRO TOIRAC JTRS",
+                        "mailadd": "1650 LEJEUNE RD #103",
+                        "mail_city": "CORAL GABLES",
+                        "mail_state2": "FL",
+                        "mail_zip": "33134",
+                        "address": "1650 S LE JEUNE RD APT 103",
+                        "saddno": "1650",
+                        "saddpref": "S",
+                        "saddstr": "LE JEUNE",
+                        "saddsttyp": "RD",
+                        "sunit": "103",
+                        "scity": "CORAL GABLES",
+                        "original_address": "{\"address\":\"1650 S LE JEUNE RD 103\",\"sunit\":\"103\",\"scity\":\"Coral Gables\",\"szip\":\"33134-3876\"}",
+                        "city": "miami",
+                        "county": "miami-dade",
+                        "state2": "FL",
+                        "szip": "33134-3847",
+                        "szip5": "33134",
+                        "address_source": "county;cass",
+                        "legaldesc": "MADRID TOWERS CONDO UNIT 103 - 1ST FLOOR UNDIV 5.19% INT IN COMMON ELEMENTS CLERKS FILE 74R-75206 OR 16750-0258 0495 1",
+                        "lat": "25.756620",
+                        "lon": "-80.263253",
+                        "qoz": "No",
+                        "census_tract": "12086006201",
+                        "census_block": "120860062014008",
+                        "census_blockgroup": "120860062014",
+                        "census_zcta": "33134",
+                        "ll_last_refresh": "2024-04-23",
+                        "recrdareano": 722,
+                        "sqft": 0.0,
+                        "ll_gisacre": 0.3088,
+                        "ll_gissqft": 13452,
+                        "plss_township": "054S",
+                        "plss_section": "Section 08",
+                        "plss_range": "041E",
+                        "path": "/us/fl/miami-dade/miami/905225",
+                        "ll_stable_id": "preserved",
+                        "ll_uuid": "f12f7607-7fac-47e1-bf42-32609ca2e946",
+                        "ll_stack_uuid": "48474759-190e-4123-a8e0-9246a981f9d9",
+                        "ll_updated_at": "2024-09-05 18:11:53 -0400"
+                    },
+                    "context": {
+                        "headline": "Miami, FL",
+                        "name": "Miami, FL",
+                        "path": "/us/fl/miami-dade/miami",
+                        "active": true
+                    },
+                    "ll_uuid": "f12f7607-7fac-47e1-bf42-32609ca2e946",
+                    "score": 92.0
+                },
+                "id": 905225
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                -80.263067,
+                                25.7566435
+                            ],
+                            [
+                                -80.2630695,
+                                25.7567135
+                            ],
+                            [
+                                -80.2630715,
+                                25.756779
+                            ],
+                            [
+                                -80.263442,
+                                25.756765
+                            ],
+                            [
+                                -80.2634395,
+                                25.756697
+                            ],
+                            [
+                                -80.2634375,
+                                25.7566275
+                            ],
+                            [
+                                -80.263435,
+                                25.756559
+                            ],
+                            [
+                                -80.263432,
+                                25.756459
+                            ],
+                            [
+                                -80.26314,
+                                25.756469
+                            ],
+                            [
+                                -80.2631265,
+                                25.7564705
+                            ],
+                            [
+                                -80.263113,
+                                25.7564745
+                            ],
+                            [
+                                -80.263101,
+                                25.75648
+                            ],
+                            [
+                                -80.2630895,
+                                25.7564875
+                            ],
+                            [
+                                -80.2630805,
+                                25.756497
+                            ],
+                            [
+                                -80.2630725,
+                                25.7565075
+                            ],
+                            [
+                                -80.2630675,
+                                25.756519
+                            ],
+                            [
+                                -80.263064,
+                                25.7565315
+                            ],
+                            [
+                                -80.2630635,
+                                25.756544
+                            ],
+                            [
+                                -80.2630645,
+                                25.7565755
+                            ],
+                            [
+                                -80.263067,
+                                25.7566435
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "headline": "1650 S Le Jeune Rd Apt 102",
+                    "path": "/us/fl/miami-dade/miami/1060839",
+                    "fields": {
+                        "ogc_fid": 1060839,
+                        "geoid": "12086",
+                        "parcelnumb": "0341080480020",
+                        "parcelnumb_no_formatting": "0341080480020",
+                        "alt_parcelnumb1": "318939",
+                        "usecode": "0407",
+                        "usedesc": "RESIDENTIAL - TOTAL VALUE : CONDOMINIUM - RESIDENTIAL",
+                        "zoning": "MF3",
+                        "zoning_description": "Multifamily 3",
+                        "yearbuilt": 1968,
+                        "numstories": 0.0,
+                        "numunits": 1,
+                        "parvaltype": "ASSESSED",
+                        "parval": 93708.0,
+                        "saleprice": 0.0,
+                        "saledate": "2006-07-01",
+                        "taxyear": "2024",
+                        "owner": "MARIA A DE CASTRO",
+                        "mailadd": "1650 S LE JEUNE RD #102",
+                        "mail_city": "CORAL GABLES",
+                        "mail_state2": "FL",
+                        "mail_zip": "33134-3847",
+                        "address": "1650 S LE JEUNE RD APT 102",
+                        "saddno": "1650",
+                        "saddpref": "S",
+                        "saddstr": "LE JEUNE",
+                        "saddsttyp": "RD",
+                        "sunit": "102",
+                        "scity": "CORAL GABLES",
+                        "original_address": "{\"address\":\"1650 S LE JEUNE RD 102\",\"sunit\":\"102\",\"scity\":\"Coral Gables\",\"szip\":\"33134-3876\"}",
+                        "city": "miami",
+                        "county": "miami-dade",
+                        "state2": "FL",
+                        "szip": "33134-3847",
+                        "szip5": "33134",
+                        "address_source": "county;cass",
+                        "legaldesc": "MADRID TOWERS CONDO UNIT 102 - 1ST FLOOR UNDIV 6.73% INT IN COMMON ELEMENTS CLERKS FILE 74R-75206 OR 16160-4120 1193 4 COC 25004-2914 /3023 0706 5",
+                        "lat": "25.756620",
+                        "lon": "-80.263253",
+                        "qoz": "No",
+                        "census_tract": "12086006201",
+                        "census_block": "120860062014008",
+                        "census_blockgroup": "120860062014",
+                        "census_zcta": "33134",
+                        "ll_last_refresh": "2024-04-23",
+                        "recrdareano": 805,
+                        "sqft": 0.0,
+                        "ll_gisacre": 0.3088,
+                        "ll_gissqft": 13452,
+                        "plss_township": "054S",
+                        "plss_section": "Section 08",
+                        "plss_range": "041E",
+                        "path": "/us/fl/miami-dade/miami/1060839",
+                        "ll_stable_id": "preserved",
+                        "ll_uuid": "b808a182-4ac4-4a84-a4f7-a15e09037bd7",
+                        "ll_stack_uuid": "48474759-190e-4123-a8e0-9246a981f9d9",
+                        "ll_updated_at": "2024-09-05 18:11:53 -0400"
+                    },
+                    "context": {
+                        "headline": "Miami, FL",
+                        "name": "Miami, FL",
+                        "path": "/us/fl/miami-dade/miami",
+                        "active": true
+                    },
+                    "ll_uuid": "b808a182-4ac4-4a84-a4f7-a15e09037bd7",
+                    "score": 92.0
+                },
+                "id": 1060839
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                -80.263067,
+                                25.7566435
+                            ],
+                            [
+                                -80.2630695,
+                                25.7567135
+                            ],
+                            [
+                                -80.2630715,
+                                25.756779
+                            ],
+                            [
+                                -80.263442,
+                                25.756765
+                            ],
+                            [
+                                -80.2634395,
+                                25.756697
+                            ],
+                            [
+                                -80.2634375,
+                                25.7566275
+                            ],
+                            [
+                                -80.263435,
+                                25.756559
+                            ],
+                            [
+                                -80.263432,
+                                25.756459
+                            ],
+                            [
+                                -80.26314,
+                                25.756469
+                            ],
+                            [
+                                -80.2631265,
+                                25.7564705
+                            ],
+                            [
+                                -80.263113,
+                                25.7564745
+                            ],
+                            [
+                                -80.263101,
+                                25.75648
+                            ],
+                            [
+                                -80.2630895,
+                                25.7564875
+                            ],
+                            [
+                                -80.2630805,
+                                25.756497
+                            ],
+                            [
+                                -80.2630725,
+                                25.7565075
+                            ],
+                            [
+                                -80.2630675,
+                                25.756519
+                            ],
+                            [
+                                -80.263064,
+                                25.7565315
+                            ],
+                            [
+                                -80.2630635,
+                                25.756544
+                            ],
+                            [
+                                -80.2630645,
+                                25.7565755
+                            ],
+                            [
+                                -80.263067,
+                                25.7566435
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "headline": "1650 S Le Jeune Rd Apt 301",
+                    "path": "/us/fl/miami-dade/miami/960956",
+                    "fields": {
+                        "ogc_fid": 960956,
+                        "geoid": "12086",
+                        "parcelnumb": "0341080480110",
+                        "parcelnumb_no_formatting": "0341080480110",
+                        "alt_parcelnumb1": "318939",
+                        "usecode": "0407",
+                        "usedesc": "RESIDENTIAL - TOTAL VALUE : CONDOMINIUM - RESIDENTIAL",
+                        "zoning": "MF3",
+                        "zoning_description": "Multifamily 3",
+                        "yearbuilt": 1968,
+                        "numstories": 0.0,
+                        "numunits": 1,
+                        "parvaltype": "ASSESSED",
+                        "parval": 98791.0,
+                        "saleprice": 112600.0,
+                        "saledate": "2011-09-13",
+                        "taxyear": "2024",
+                        "owner": "IVAN DE LA CRUZ",
+                        "owner2": "GLORIA H CRUZ",
+                        "mailadd": "1650 SOUTH LE JEUNE RD #301",
+                        "mail_city": "CORAL GABLES",
+                        "mail_state2": "FL",
+                        "mail_zip": "33134",
+                        "address": "1650 S LE JEUNE RD APT 301",
+                        "saddno": "1650",
+                        "saddpref": "S",
+                        "saddstr": "LE JEUNE",
+                        "saddsttyp": "RD",
+                        "sunit": "301",
+                        "scity": "CORAL GABLES",
+                        "original_address": "{\"address\":\"1650 S LE JEUNE RD 301\",\"sunit\":\"301\",\"scity\":\"Coral Gables\",\"szip\":\"33134-3876\"}",
+                        "city": "miami",
+                        "county": "miami-dade",
+                        "state2": "FL",
+                        "szip": "33134-3848",
+                        "szip5": "33134",
+                        "address_source": "county;cass",
+                        "legaldesc": "MADRID TOWERS CONDO UNIT 301 - 3RD FLOOR UNDIV 7.17% INT IN COMMON ELEMENTS CLERKS FILE 75R-75206 OR 10446-0327 0679 1 COC 22852-4678 11 2004 1",
+                        "lat": "25.756620",
+                        "lon": "-80.263253",
+                        "qoz": "No",
+                        "census_tract": "12086006201",
+                        "census_block": "120860062014008",
+                        "census_blockgroup": "120860062014",
+                        "census_zcta": "33134",
+                        "ll_last_refresh": "2024-04-23",
+                        "recrdareano": 805,
+                        "sqft": 0.0,
+                        "ll_gisacre": 0.3088,
+                        "ll_gissqft": 13452,
+                        "plss_township": "054S",
+                        "plss_section": "Section 08",
+                        "plss_range": "041E",
+                        "path": "/us/fl/miami-dade/miami/960956",
+                        "ll_stable_id": "preserved",
+                        "ll_uuid": "031629a5-4cec-4432-9881-c501eef8ef21",
+                        "ll_stack_uuid": "48474759-190e-4123-a8e0-9246a981f9d9",
+                        "ll_updated_at": "2024-09-05 18:11:53 -0400"
+                    },
+                    "context": {
+                        "headline": "Miami, FL",
+                        "name": "Miami, FL",
+                        "path": "/us/fl/miami-dade/miami",
+                        "active": true
+                    },
+                    "ll_uuid": "031629a5-4cec-4432-9881-c501eef8ef21",
+                    "score": 92.0
+                },
+                "id": 960956
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                -80.263067,
+                                25.7566435
+                            ],
+                            [
+                                -80.2630695,
+                                25.7567135
+                            ],
+                            [
+                                -80.2630715,
+                                25.756779
+                            ],
+                            [
+                                -80.263442,
+                                25.756765
+                            ],
+                            [
+                                -80.2634395,
+                                25.756697
+                            ],
+                            [
+                                -80.2634375,
+                                25.7566275
+                            ],
+                            [
+                                -80.263435,
+                                25.756559
+                            ],
+                            [
+                                -80.263432,
+                                25.756459
+                            ],
+                            [
+                                -80.26314,
+                                25.756469
+                            ],
+                            [
+                                -80.2631265,
+                                25.7564705
+                            ],
+                            [
+                                -80.263113,
+                                25.7564745
+                            ],
+                            [
+                                -80.263101,
+                                25.75648
+                            ],
+                            [
+                                -80.2630895,
+                                25.7564875
+                            ],
+                            [
+                                -80.2630805,
+                                25.756497
+                            ],
+                            [
+                                -80.2630725,
+                                25.7565075
+                            ],
+                            [
+                                -80.2630675,
+                                25.756519
+                            ],
+                            [
+                                -80.263064,
+                                25.7565315
+                            ],
+                            [
+                                -80.2630635,
+                                25.756544
+                            ],
+                            [
+                                -80.2630645,
+                                25.7565755
+                            ],
+                            [
+                                -80.263067,
+                                25.7566435
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "headline": "1650 S Le Jeune Rd Apt 201",
+                    "path": "/us/fl/miami-dade/miami/800216",
+                    "fields": {
+                        "ogc_fid": 800216,
+                        "geoid": "12086",
+                        "parcelnumb": "0341080480060",
+                        "parcelnumb_no_formatting": "0341080480060",
+                        "alt_parcelnumb1": "318939",
+                        "usecode": "0407",
+                        "usedesc": "RESIDENTIAL - TOTAL VALUE : CONDOMINIUM - RESIDENTIAL",
+                        "zoning": "MF3",
+                        "zoning_description": "Multifamily 3",
+                        "yearbuilt": 1968,
+                        "numstories": 0.0,
+                        "numunits": 1,
+                        "parvaltype": "ASSESSED",
+                        "parval": 97202.0,
+                        "saleprice": 75000.0,
+                        "saledate": "1998-10-01",
+                        "taxyear": "2024",
+                        "owner": "MARIA DEL CARMEN RODRIGUEZ",
+                        "mailadd": "1650 S LE JEUNE RD #201",
+                        "mail_city": "CORAL GABLES",
+                        "mail_state2": "FL",
+                        "mail_zip": "33134-3800",
+                        "address": "1650 S LE JEUNE RD APT 201",
+                        "saddno": "1650",
+                        "saddpref": "S",
+                        "saddstr": "LE JEUNE",
+                        "saddsttyp": "RD",
+                        "sunit": "201",
+                        "scity": "CORAL GABLES",
+                        "original_address": "{\"address\":\"1650 S LE JEUNE RD 201\",\"sunit\":\"201\",\"scity\":\"Coral Gables\",\"szip\":\"33134-3876\"}",
+                        "city": "miami",
+                        "county": "miami-dade",
+                        "state2": "FL",
+                        "szip": "33134-3800",
+                        "szip5": "33134",
+                        "address_source": "county;cass",
+                        "legaldesc": "MADRID TOWERS CONDO UNIT 201 - 2ND FLOOR UNDIV 7.05% INT IN COMMON ELEMENTS OR 18341-0511 1098 1",
+                        "lat": "25.756620",
+                        "lon": "-80.263253",
+                        "qoz": "No",
+                        "census_tract": "12086006201",
+                        "census_block": "120860062014008",
+                        "census_blockgroup": "120860062014",
+                        "census_zcta": "33134",
+                        "ll_last_refresh": "2024-04-23",
+                        "recrdareano": 805,
+                        "sqft": 0.0,
+                        "ll_gisacre": 0.3088,
+                        "ll_gissqft": 13452,
+                        "plss_township": "054S",
+                        "plss_section": "Section 08",
+                        "plss_range": "041E",
+                        "path": "/us/fl/miami-dade/miami/800216",
+                        "ll_stable_id": "preserved",
+                        "ll_uuid": "48474759-190e-4123-a8e0-9246a981f9d9",
+                        "ll_stack_uuid": "48474759-190e-4123-a8e0-9246a981f9d9",
+                        "ll_updated_at": "2024-09-05 18:11:53 -0400"
+                    },
+                    "context": {
+                        "headline": "Miami, FL",
+                        "name": "Miami, FL",
+                        "path": "/us/fl/miami-dade/miami",
+                        "active": true
+                    },
+                    "ll_uuid": "48474759-190e-4123-a8e0-9246a981f9d9",
+                    "score": 92.0
+                },
+                "id": 800216
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                -80.263067,
+                                25.7566435
+                            ],
+                            [
+                                -80.2630695,
+                                25.7567135
+                            ],
+                            [
+                                -80.2630715,
+                                25.756779
+                            ],
+                            [
+                                -80.263442,
+                                25.756765
+                            ],
+                            [
+                                -80.2634395,
+                                25.756697
+                            ],
+                            [
+                                -80.2634375,
+                                25.7566275
+                            ],
+                            [
+                                -80.263435,
+                                25.756559
+                            ],
+                            [
+                                -80.263432,
+                                25.756459
+                            ],
+                            [
+                                -80.26314,
+                                25.756469
+                            ],
+                            [
+                                -80.2631265,
+                                25.7564705
+                            ],
+                            [
+                                -80.263113,
+                                25.7564745
+                            ],
+                            [
+                                -80.263101,
+                                25.75648
+                            ],
+                            [
+                                -80.2630895,
+                                25.7564875
+                            ],
+                            [
+                                -80.2630805,
+                                25.756497
+                            ],
+                            [
+                                -80.2630725,
+                                25.7565075
+                            ],
+                            [
+                                -80.2630675,
+                                25.756519
+                            ],
+                            [
+                                -80.263064,
+                                25.7565315
+                            ],
+                            [
+                                -80.2630635,
+                                25.756544
+                            ],
+                            [
+                                -80.2630645,
+                                25.7565755
+                            ],
+                            [
+                                -80.263067,
+                                25.7566435
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "headline": "1650 S Le Jeune Rd Apt 202",
+                    "path": "/us/fl/miami-dade/miami/913704",
+                    "fields": {
+                        "ogc_fid": 913704,
+                        "geoid": "12086",
+                        "parcelnumb": "0341080480070",
+                        "parcelnumb_no_formatting": "0341080480070",
+                        "alt_parcelnumb1": "318939",
+                        "usecode": "0407",
+                        "usedesc": "RESIDENTIAL - TOTAL VALUE : CONDOMINIUM - RESIDENTIAL",
+                        "zoning": "MF3",
+                        "zoning_description": "Multifamily 3",
+                        "yearbuilt": 1968,
+                        "numstories": 0.0,
+                        "numunits": 1,
+                        "parvaltype": "ASSESSED",
+                        "parval": 205472.0,
+                        "saleprice": 96100.0,
+                        "saledate": "2012-09-07",
+                        "taxyear": "2024",
+                        "owner": "EDGEWATER HOMES INC",
+                        "mailadd": "3518 NW 36 ST",
+                        "mail_city": "MIAMI",
+                        "mail_state2": "FL",
+                        "mail_zip": "33142",
+                        "address": "1650 S LE JEUNE RD APT 202",
+                        "saddno": "1650",
+                        "saddpref": "S",
+                        "saddstr": "LE JEUNE",
+                        "saddsttyp": "RD",
+                        "sunit": "202",
+                        "scity": "CORAL GABLES",
+                        "original_address": "{\"address\":\"1650 S LE JEUNE RD 202\",\"sunit\":\"202\",\"scity\":\"Coral Gables\",\"szip\":\"33134-3876\"}",
+                        "city": "miami",
+                        "county": "miami-dade",
+                        "state2": "FL",
+                        "szip": "33134-3800",
+                        "szip5": "33134",
+                        "address_source": "county;cass",
+                        "legaldesc": "MADRID TOWERS CONDO UNIT 202 - 2ND FLOOR UNDIV 6.94% INT IN COMMON ELEMENTS CLERKS FILE 74R-75206 OR 17507-3446 18574-4227 0197 1",
+                        "lat": "25.756620",
+                        "lon": "-80.263253",
+                        "qoz": "No",
+                        "census_tract": "12086006201",
+                        "census_block": "120860062014008",
+                        "census_blockgroup": "120860062014",
+                        "census_zcta": "33134",
+                        "ll_last_refresh": "2024-04-23",
+                        "recrdareano": 805,
+                        "sqft": 0.0,
+                        "ll_gisacre": 0.3088,
+                        "ll_gissqft": 13452,
+                        "plss_township": "054S",
+                        "plss_section": "Section 08",
+                        "plss_range": "041E",
+                        "path": "/us/fl/miami-dade/miami/913704",
+                        "ll_stable_id": "preserved",
+                        "ll_uuid": "6d4289de-5045-46a0-ac50-6a68fd77c988",
+                        "ll_stack_uuid": "48474759-190e-4123-a8e0-9246a981f9d9",
+                        "ll_updated_at": "2024-09-05 18:11:53 -0400"
+                    },
+                    "context": {
+                        "headline": "Miami, FL",
+                        "name": "Miami, FL",
+                        "path": "/us/fl/miami-dade/miami",
+                        "active": true
+                    },
+                    "ll_uuid": "6d4289de-5045-46a0-ac50-6a68fd77c988",
+                    "score": 92.0
+                },
+                "id": 913704
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                -80.263067,
+                                25.7566435
+                            ],
+                            [
+                                -80.2630695,
+                                25.7567135
+                            ],
+                            [
+                                -80.2630715,
+                                25.756779
+                            ],
+                            [
+                                -80.263442,
+                                25.756765
+                            ],
+                            [
+                                -80.2634395,
+                                25.756697
+                            ],
+                            [
+                                -80.2634375,
+                                25.7566275
+                            ],
+                            [
+                                -80.263435,
+                                25.756559
+                            ],
+                            [
+                                -80.263432,
+                                25.756459
+                            ],
+                            [
+                                -80.26314,
+                                25.756469
+                            ],
+                            [
+                                -80.2631265,
+                                25.7564705
+                            ],
+                            [
+                                -80.263113,
+                                25.7564745
+                            ],
+                            [
+                                -80.263101,
+                                25.75648
+                            ],
+                            [
+                                -80.2630895,
+                                25.7564875
+                            ],
+                            [
+                                -80.2630805,
+                                25.756497
+                            ],
+                            [
+                                -80.2630725,
+                                25.7565075
+                            ],
+                            [
+                                -80.2630675,
+                                25.756519
+                            ],
+                            [
+                                -80.263064,
+                                25.7565315
+                            ],
+                            [
+                                -80.2630635,
+                                25.756544
+                            ],
+                            [
+                                -80.2630645,
+                                25.7565755
+                            ],
+                            [
+                                -80.263067,
+                                25.7566435
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "headline": "1650 S Le Jeune Rd Apt 105",
+                    "path": "/us/fl/miami-dade/miami/973960",
+                    "fields": {
+                        "ogc_fid": 973960,
+                        "geoid": "12086",
+                        "parcelnumb": "0341080480050",
+                        "parcelnumb_no_formatting": "0341080480050",
+                        "alt_parcelnumb1": "318939",
+                        "usecode": "0407",
+                        "usedesc": "RESIDENTIAL - TOTAL VALUE : CONDOMINIUM - RESIDENTIAL",
+                        "zoning": "MF3",
+                        "zoning_description": "Multifamily 3",
+                        "yearbuilt": 1968,
+                        "numstories": 0.0,
+                        "numunits": 1,
+                        "parvaltype": "ASSESSED",
+                        "parval": 215600.0,
+                        "saleprice": 250000.0,
+                        "saledate": "2021-01-29",
+                        "taxyear": "2024",
+                        "owner": "ANTHONY BEGUIRISTAIN",
+                        "mailadd": "1650 S LE JEUNE RD 105",
+                        "mail_city": "CORAL GABLES",
+                        "mail_state2": "FL",
+                        "mail_zip": "33134",
+                        "address": "1650 S LE JEUNE RD APT 105",
+                        "saddno": "1650",
+                        "saddpref": "S",
+                        "saddstr": "LE JEUNE",
+                        "saddsttyp": "RD",
+                        "sunit": "105",
+                        "scity": "CORAL GABLES",
+                        "original_address": "{\"address\":\"1650 S LE JEUNE RD 105\",\"sunit\":\"105\",\"scity\":\"Coral Gables\",\"szip\":\"33134-3876\"}",
+                        "city": "miami",
+                        "county": "miami-dade",
+                        "state2": "FL",
+                        "szip": "33134-3800",
+                        "szip5": "33134",
+                        "address_source": "county;cass",
+                        "legaldesc": "MADRID TOWERS CONDO UNIT 105 - 1ST FLOOR UNDIV 6.99% INT IN COMMON ELEMENTS CLERKS FILE 74R-75206 OR 17352-0741 0996 1",
+                        "lat": "25.756620",
+                        "lon": "-80.263253",
+                        "qoz": "No",
+                        "census_tract": "12086006201",
+                        "census_block": "120860062014008",
+                        "census_blockgroup": "120860062014",
+                        "census_zcta": "33134",
+                        "ll_last_refresh": "2024-04-23",
+                        "recrdareano": 805,
+                        "sqft": 0.0,
+                        "ll_gisacre": 0.3088,
+                        "ll_gissqft": 13452,
+                        "plss_township": "054S",
+                        "plss_section": "Section 08",
+                        "plss_range": "041E",
+                        "path": "/us/fl/miami-dade/miami/973960",
+                        "ll_stable_id": "preserved",
+                        "ll_uuid": "b1374d1a-c1c8-4ed1-abf5-6b48b17de3ba",
+                        "ll_stack_uuid": "48474759-190e-4123-a8e0-9246a981f9d9",
+                        "ll_updated_at": "2024-09-05 18:11:53 -0400"
+                    },
+                    "context": {
+                        "headline": "Miami, FL",
+                        "name": "Miami, FL",
+                        "path": "/us/fl/miami-dade/miami",
+                        "active": true
+                    },
+                    "ll_uuid": "b1374d1a-c1c8-4ed1-abf5-6b48b17de3ba",
+                    "score": 92.0
+                },
+                "id": 973960
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                -80.263067,
+                                25.7566435
+                            ],
+                            [
+                                -80.2630695,
+                                25.7567135
+                            ],
+                            [
+                                -80.2630715,
+                                25.756779
+                            ],
+                            [
+                                -80.263442,
+                                25.756765
+                            ],
+                            [
+                                -80.2634395,
+                                25.756697
+                            ],
+                            [
+                                -80.2634375,
+                                25.7566275
+                            ],
+                            [
+                                -80.263435,
+                                25.756559
+                            ],
+                            [
+                                -80.263432,
+                                25.756459
+                            ],
+                            [
+                                -80.26314,
+                                25.756469
+                            ],
+                            [
+                                -80.2631265,
+                                25.7564705
+                            ],
+                            [
+                                -80.263113,
+                                25.7564745
+                            ],
+                            [
+                                -80.263101,
+                                25.75648
+                            ],
+                            [
+                                -80.2630895,
+                                25.7564875
+                            ],
+                            [
+                                -80.2630805,
+                                25.756497
+                            ],
+                            [
+                                -80.2630725,
+                                25.7565075
+                            ],
+                            [
+                                -80.2630675,
+                                25.756519
+                            ],
+                            [
+                                -80.263064,
+                                25.7565315
+                            ],
+                            [
+                                -80.2630635,
+                                25.756544
+                            ],
+                            [
+                                -80.2630645,
+                                25.7565755
+                            ],
+                            [
+                                -80.263067,
+                                25.7566435
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "headline": "1650 S Le Jeune Rd Apt 305",
+                    "path": "/us/fl/miami-dade/miami/1037437",
+                    "fields": {
+                        "ogc_fid": 1037437,
+                        "geoid": "12086",
+                        "parcelnumb": "0341080480150",
+                        "parcelnumb_no_formatting": "0341080480150",
+                        "alt_parcelnumb1": "318939",
+                        "usecode": "0407",
+                        "usedesc": "RESIDENTIAL - TOTAL VALUE : CONDOMINIUM - RESIDENTIAL",
+                        "zoning": "MF3",
+                        "zoning_description": "Multifamily 3",
+                        "yearbuilt": 1968,
+                        "numstories": 0.0,
+                        "numunits": 1,
+                        "parvaltype": "ASSESSED",
+                        "parval": 215600.0,
+                        "saleprice": 400000.0,
+                        "saledate": "2023-10-04",
+                        "taxyear": "2024",
+                        "owner": "FELIX PAZ ACOSTA",
+                        "mailadd": "1650 S LE JEUNE RD 305",
+                        "mail_city": "CORAL GABLES",
+                        "mail_state2": "FL",
+                        "mail_zip": "33134",
+                        "address": "1650 S LE JEUNE RD APT 305",
+                        "saddno": "1650",
+                        "saddpref": "S",
+                        "saddstr": "LE JEUNE",
+                        "saddsttyp": "RD",
+                        "sunit": "305",
+                        "scity": "CORAL GABLES",
+                        "original_address": "{\"address\":\"1650 S LE JEUNE RD 305\",\"sunit\":\"305\",\"scity\":\"Coral Gables\",\"szip\":\"33134-3876\"}",
+                        "city": "miami",
+                        "county": "miami-dade",
+                        "state2": "FL",
+                        "szip": "33134-3809",
+                        "szip5": "33134",
+                        "address_source": "county;cass",
+                        "legaldesc": "MADRID TOWERS CONDO UNIT 305 - 3RD FLOOR UNDIV 7.53% INT IN COMMON ELEMENTS CLERKS FILE 74R-75206 OR 18720-2437 0599 1 COC 23484-4361 06 2005 1",
+                        "lat": "25.756620",
+                        "lon": "-80.263253",
+                        "qoz": "No",
+                        "census_tract": "12086006201",
+                        "census_block": "120860062014008",
+                        "census_blockgroup": "120860062014",
+                        "census_zcta": "33134",
+                        "ll_last_refresh": "2024-04-23",
+                        "recrdareano": 805,
+                        "sqft": 0.0,
+                        "ll_gisacre": 0.3088,
+                        "ll_gissqft": 13452,
+                        "plss_township": "054S",
+                        "plss_section": "Section 08",
+                        "plss_range": "041E",
+                        "path": "/us/fl/miami-dade/miami/1037437",
+                        "ll_stable_id": "preserved",
+                        "ll_uuid": "505785f9-33f9-40f5-89ff-209bab44d8ff",
+                        "ll_stack_uuid": "48474759-190e-4123-a8e0-9246a981f9d9",
+                        "ll_updated_at": "2024-09-05 18:11:53 -0400"
+                    },
+                    "context": {
+                        "headline": "Miami, FL",
+                        "name": "Miami, FL",
+                        "path": "/us/fl/miami-dade/miami",
+                        "active": true
+                    },
+                    "ll_uuid": "505785f9-33f9-40f5-89ff-209bab44d8ff",
+                    "score": 92.0
+                },
+                "id": 1037437
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                -80.263067,
+                                25.7566435
+                            ],
+                            [
+                                -80.2630695,
+                                25.7567135
+                            ],
+                            [
+                                -80.2630715,
+                                25.756779
+                            ],
+                            [
+                                -80.263442,
+                                25.756765
+                            ],
+                            [
+                                -80.2634395,
+                                25.756697
+                            ],
+                            [
+                                -80.2634375,
+                                25.7566275
+                            ],
+                            [
+                                -80.263435,
+                                25.756559
+                            ],
+                            [
+                                -80.263432,
+                                25.756459
+                            ],
+                            [
+                                -80.26314,
+                                25.756469
+                            ],
+                            [
+                                -80.2631265,
+                                25.7564705
+                            ],
+                            [
+                                -80.263113,
+                                25.7564745
+                            ],
+                            [
+                                -80.263101,
+                                25.75648
+                            ],
+                            [
+                                -80.2630895,
+                                25.7564875
+                            ],
+                            [
+                                -80.2630805,
+                                25.756497
+                            ],
+                            [
+                                -80.2630725,
+                                25.7565075
+                            ],
+                            [
+                                -80.2630675,
+                                25.756519
+                            ],
+                            [
+                                -80.263064,
+                                25.7565315
+                            ],
+                            [
+                                -80.2630635,
+                                25.756544
+                            ],
+                            [
+                                -80.2630645,
+                                25.7565755
+                            ],
+                            [
+                                -80.263067,
+                                25.7566435
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "headline": "1650 S Le Jeune Rd Apt 303",
+                    "path": "/us/fl/miami-dade/miami/828319",
+                    "fields": {
+                        "ogc_fid": 828319,
+                        "geoid": "12086",
+                        "parcelnumb": "0341080480130",
+                        "parcelnumb_no_formatting": "0341080480130",
+                        "alt_parcelnumb1": "318939",
+                        "usecode": "0407",
+                        "usedesc": "RESIDENTIAL - TOTAL VALUE : CONDOMINIUM - RESIDENTIAL",
+                        "zoning": "MF3",
+                        "zoning_description": "Multifamily 3",
+                        "yearbuilt": 1968,
+                        "numstories": 0.0,
+                        "numunits": 1,
+                        "parvaltype": "ASSESSED",
+                        "parval": 91757.0,
+                        "saleprice": 133000.0,
+                        "saledate": "2003-08-01",
+                        "taxyear": "2024",
+                        "owner": "MICHAEL M BREZIN",
+                        "mailadd": "1650 S LE JEUNE RD #303",
+                        "mail_city": "MIAMI",
+                        "mail_state2": "FL",
+                        "mail_zip": "33134-3809",
+                        "address": "1650 S LE JEUNE RD APT 303",
+                        "saddno": "1650",
+                        "saddpref": "S",
+                        "saddstr": "LE JEUNE",
+                        "saddsttyp": "RD",
+                        "sunit": "303",
+                        "scity": "CORAL GABLES",
+                        "original_address": "{\"address\":\"1650 S LE JEUNE RD 303\",\"sunit\":\"303\",\"scity\":\"Coral Gables\",\"szip\":\"33134-3876\"}",
+                        "city": "miami",
+                        "county": "miami-dade",
+                        "state2": "FL",
+                        "szip": "33134-3809",
+                        "szip5": "33134",
+                        "address_source": "county;cass",
+                        "legaldesc": "MADRID TOWERS CONDO UNIT 303 - 3RD FLOOR UNDIV 5.38% INT IN COMMON ELEMENTS CLERKS FILE 74R-75206 OR 18667-3754 0599 1 COC 21726-2202 08 2003 1",
+                        "lat": "25.756620",
+                        "lon": "-80.263253",
+                        "qoz": "No",
+                        "census_tract": "12086006201",
+                        "census_block": "120860062014008",
+                        "census_blockgroup": "120860062014",
+                        "census_zcta": "33134",
+                        "ll_last_refresh": "2024-04-23",
+                        "recrdareano": 722,
+                        "sqft": 0.0,
+                        "ll_gisacre": 0.3088,
+                        "ll_gissqft": 13452,
+                        "plss_township": "054S",
+                        "plss_section": "Section 08",
+                        "plss_range": "041E",
+                        "path": "/us/fl/miami-dade/miami/828319",
+                        "ll_stable_id": "preserved",
+                        "ll_uuid": "8042130a-e75f-4e03-9ce9-d5a9c77321f8",
+                        "ll_stack_uuid": "48474759-190e-4123-a8e0-9246a981f9d9",
+                        "ll_updated_at": "2024-09-05 18:11:53 -0400"
+                    },
+                    "context": {
+                        "headline": "Miami, FL",
+                        "name": "Miami, FL",
+                        "path": "/us/fl/miami-dade/miami",
+                        "active": true
+                    },
+                    "ll_uuid": "8042130a-e75f-4e03-9ce9-d5a9c77321f8",
+                    "score": 92.0
+                },
+                "id": 828319
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                -80.263067,
+                                25.7566435
+                            ],
+                            [
+                                -80.2630695,
+                                25.7567135
+                            ],
+                            [
+                                -80.2630715,
+                                25.756779
+                            ],
+                            [
+                                -80.263442,
+                                25.756765
+                            ],
+                            [
+                                -80.2634395,
+                                25.756697
+                            ],
+                            [
+                                -80.2634375,
+                                25.7566275
+                            ],
+                            [
+                                -80.263435,
+                                25.756559
+                            ],
+                            [
+                                -80.263432,
+                                25.756459
+                            ],
+                            [
+                                -80.26314,
+                                25.756469
+                            ],
+                            [
+                                -80.2631265,
+                                25.7564705
+                            ],
+                            [
+                                -80.263113,
+                                25.7564745
+                            ],
+                            [
+                                -80.263101,
+                                25.75648
+                            ],
+                            [
+                                -80.2630895,
+                                25.7564875
+                            ],
+                            [
+                                -80.2630805,
+                                25.756497
+                            ],
+                            [
+                                -80.2630725,
+                                25.7565075
+                            ],
+                            [
+                                -80.2630675,
+                                25.756519
+                            ],
+                            [
+                                -80.263064,
+                                25.7565315
+                            ],
+                            [
+                                -80.2630635,
+                                25.756544
+                            ],
+                            [
+                                -80.2630645,
+                                25.7565755
+                            ],
+                            [
+                                -80.263067,
+                                25.7566435
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "headline": "1650 S Le Jeune Rd Apt 304",
+                    "path": "/us/fl/miami-dade/miami/868644",
+                    "fields": {
+                        "ogc_fid": 868644,
+                        "geoid": "12086",
+                        "parcelnumb": "0341080480140",
+                        "parcelnumb_no_formatting": "0341080480140",
+                        "alt_parcelnumb1": "318939",
+                        "usecode": "0407",
+                        "usedesc": "RESIDENTIAL - TOTAL VALUE : CONDOMINIUM - RESIDENTIAL",
+                        "zoning": "MF3",
+                        "zoning_description": "Multifamily 3",
+                        "yearbuilt": 1968,
+                        "numstories": 0.0,
+                        "numunits": 1,
+                        "parvaltype": "ASSESSED",
+                        "parval": 97479.0,
+                        "saleprice": 72500.0,
+                        "saledate": "1996-04-01",
+                        "taxyear": "2024",
+                        "owner": "ISRAEL ARANA SR &W CARMEN L",
+                        "mailadd": "1650 SW LE JEUNE RD #304",
+                        "mail_city": "CORAL GABLES",
+                        "mail_state2": "FL",
+                        "mail_zip": "33134",
+                        "address": "1650 S LE JEUNE RD APT 304",
+                        "saddno": "1650",
+                        "saddpref": "S",
+                        "saddstr": "LE JEUNE",
+                        "saddsttyp": "RD",
+                        "sunit": "304",
+                        "scity": "CORAL GABLES",
+                        "original_address": "{\"address\":\"1650 S LE JEUNE RD 304\",\"sunit\":\"304\",\"scity\":\"Coral Gables\",\"szip\":\"33134-3876\"}",
+                        "city": "miami",
+                        "county": "miami-dade",
+                        "state2": "FL",
+                        "szip": "33134-3809",
+                        "szip5": "33134",
+                        "address_source": "county;cass",
+                        "legaldesc": "MADRID TOWERS CONDO UNIT 304 - 3RD FLOOR UNDIV 7.06% INT IN COMMON ELEMENTS CLERKS FILE 74R-75206 OR 17189-1497 0496 1",
+                        "lat": "25.756620",
+                        "lon": "-80.263253",
+                        "qoz": "No",
+                        "census_tract": "12086006201",
+                        "census_block": "120860062014008",
+                        "census_blockgroup": "120860062014",
+                        "census_zcta": "33134",
+                        "ll_last_refresh": "2024-04-23",
+                        "recrdareano": 805,
+                        "sqft": 0.0,
+                        "ll_gisacre": 0.3088,
+                        "ll_gissqft": 13452,
+                        "plss_township": "054S",
+                        "plss_section": "Section 08",
+                        "plss_range": "041E",
+                        "path": "/us/fl/miami-dade/miami/868644",
+                        "ll_stable_id": "preserved",
+                        "ll_uuid": "87e41890-f623-4f9b-9fc5-8b524ef47d61",
+                        "ll_stack_uuid": "48474759-190e-4123-a8e0-9246a981f9d9",
+                        "ll_updated_at": "2024-09-05 18:11:53 -0400"
+                    },
+                    "context": {
+                        "headline": "Miami, FL",
+                        "name": "Miami, FL",
+                        "path": "/us/fl/miami-dade/miami",
+                        "active": true
+                    },
+                    "ll_uuid": "87e41890-f623-4f9b-9fc5-8b524ef47d61",
+                    "score": 92.0
+                },
+                "id": 868644
+            },
+            {
+                "type": "Feature",
+                "geometry": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            [
+                                -80.263067,
+                                25.7566435
+                            ],
+                            [
+                                -80.2630695,
+                                25.7567135
+                            ],
+                            [
+                                -80.2630715,
+                                25.756779
+                            ],
+                            [
+                                -80.263442,
+                                25.756765
+                            ],
+                            [
+                                -80.2634395,
+                                25.756697
+                            ],
+                            [
+                                -80.2634375,
+                                25.7566275
+                            ],
+                            [
+                                -80.263435,
+                                25.756559
+                            ],
+                            [
+                                -80.263432,
+                                25.756459
+                            ],
+                            [
+                                -80.26314,
+                                25.756469
+                            ],
+                            [
+                                -80.2631265,
+                                25.7564705
+                            ],
+                            [
+                                -80.263113,
+                                25.7564745
+                            ],
+                            [
+                                -80.263101,
+                                25.75648
+                            ],
+                            [
+                                -80.2630895,
+                                25.7564875
+                            ],
+                            [
+                                -80.2630805,
+                                25.756497
+                            ],
+                            [
+                                -80.2630725,
+                                25.7565075
+                            ],
+                            [
+                                -80.2630675,
+                                25.756519
+                            ],
+                            [
+                                -80.263064,
+                                25.7565315
+                            ],
+                            [
+                                -80.2630635,
+                                25.756544
+                            ],
+                            [
+                                -80.2630645,
+                                25.7565755
+                            ],
+                            [
+                                -80.263067,
+                                25.7566435
+                            ]
+                        ]
+                    ]
+                },
+                "properties": {
+                    "headline": "1650 S Le Jeune Rd Apt 205",
+                    "path": "/us/fl/miami-dade/miami/944351",
+                    "fields": {
+                        "ogc_fid": 944351,
+                        "geoid": "12086",
+                        "parcelnumb": "0341080480100",
+                        "parcelnumb_no_formatting": "0341080480100",
+                        "alt_parcelnumb1": "318939",
+                        "usecode": "0407",
+                        "usedesc": "RESIDENTIAL - TOTAL VALUE : CONDOMINIUM - RESIDENTIAL",
+                        "zoning": "MF3",
+                        "zoning_description": "Multifamily 3",
+                        "yearbuilt": 1968,
+                        "numstories": 0.0,
+                        "numunits": 1,
+                        "parvaltype": "ASSESSED",
+                        "parval": 125239.0,
+                        "saleprice": 235000.0,
+                        "saledate": "2018-04-24",
+                        "taxyear": "2024",
+                        "owner": "JOSE H GARCIA",
+                        "owner2": "LUZ C GARCIA",
+                        "mailadd": "1650 S LE JEUNE RD # 205",
+                        "mail_city": "CORAL GABLES",
+                        "mail_state2": "FL",
+                        "mail_zip": "33134",
+                        "address": "1650 S LE JEUNE RD APT 205",
+                        "saddno": "1650",
+                        "saddpref": "S",
+                        "saddstr": "LE JEUNE",
+                        "saddsttyp": "RD",
+                        "sunit": "205",
+                        "scity": "CORAL GABLES",
+                        "original_address": "{\"address\":\"1650 S LE JEUNE RD 205\",\"sunit\":\"205\",\"scity\":\"Coral Gables\",\"szip\":\"33134-3876\"}",
+                        "city": "miami",
+                        "county": "miami-dade",
+                        "state2": "FL",
+                        "szip": "33134-3848",
+                        "szip5": "33134",
+                        "address_source": "county;cass",
+                        "legaldesc": "MADRID TOWERS CONDO UNIT 205 - 2ND FLOOR UNDIV 7.03% INT IN COMMON ELEMENTS CLERKS FILE 74R-75206 OR 19762-2298 0601 1",
+                        "lat": "25.756620",
+                        "lon": "-80.263253",
+                        "qoz": "No",
+                        "census_tract": "12086006201",
+                        "census_block": "120860062014008",
+                        "census_blockgroup": "120860062014",
+                        "census_zcta": "33134",
+                        "ll_last_refresh": "2024-04-23",
+                        "recrdareano": 805,
+                        "sqft": 0.0,
+                        "ll_gisacre": 0.3088,
+                        "ll_gissqft": 13452,
+                        "plss_township": "054S",
+                        "plss_section": "Section 08",
+                        "plss_range": "041E",
+                        "path": "/us/fl/miami-dade/miami/944351",
+                        "ll_stable_id": "preserved",
+                        "ll_uuid": "ff3f25dd-269a-45af-a6c4-90814a2fa3a6",
+                        "ll_stack_uuid": "48474759-190e-4123-a8e0-9246a981f9d9",
+                        "ll_updated_at": "2024-09-05 18:11:53 -0400"
+                    },
+                    "context": {
+                        "headline": "Miami, FL",
+                        "name": "Miami, FL",
+                        "path": "/us/fl/miami-dade/miami",
+                        "active": true
+                    },
+                    "ll_uuid": "ff3f25dd-269a-45af-a6c4-90814a2fa3a6",
+                    "score": 92.0
+                },
+                "id": 944351
+            }
+        ]
+    }
+}
