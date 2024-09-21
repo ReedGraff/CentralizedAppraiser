@@ -1,31 +1,156 @@
 import importlib
+import json
+import uuid
+import motor.motor_asyncio
+import geopandas as gpd
 import re
+import pkgutil
+
+import pymongo
+
+from CentralizedAppraiser.abstracts._address import MongoInfo
 
 # local imports
-from .utils import getLocationDetailsRecursive, getSubClassPath
+from .utils import get_all_modules, getSubClassPath, interleave_lists
 from .abstracts import Country, AddressInfo, AppraiserInfo
+from .abstracts._exceptions import *
 
 # Localize:
 from .abstracts._client import *
 
 
 
-def pathByAddressInfo(addressInfo:AddressInfo) -> set[list, dict]:
-    """return the most nested class that the placeID is in, and an error message if the most nested class is not found"""
-    locationData, error = addressInfo.get()
-    if error["status"] == "error":
-        return None, error
-    else:
-        path, error = getLocationDetailsRecursive(locationData["geo"]["lng"], locationData["geo"]["lat"])
+# ==================================================================================================
+# Request Data
+# ==================================================================================================
+async def requestQueryAtPath(mongoClientCreds: dict, query: dict, path: str) -> dict:
+    """Finds all addresses that match the unformatted address which are at a specific path"""
+    modulePathList = path.split(".")
+    modulePathList = ["geoDB", "geoCollection"]
 
-        if error["status"] == "error":
-            return None, error
+    client = motor.motor_asyncio.AsyncIOMotorClient(f'mongodb+srv://{mongoClientCreds["u"]}:{mongoClientCreds["p"]}@serverlessinstance0.mos4bob.mongodb.net/?retryWrites=true&w=majority&appName={mongoClientCreds["a"]}')
+    db = client["+".join(modulePathList[0:-1])]  # UnitedStates+Florida
+    collection = db[modulePathList[-1]]  # Broward
+
+    # Retrieve data from MongoDB
+    cursor = collection.find(query)
+    results = await cursor.to_list(length=None)
+    return results
+
+async def requestAllAtPath(mongoClientCreds: dict, query: dict, path: str) -> list[dict]:
+    """Finds all addresses that match the unformatted address which are within the path"""
+    nestedModules = get_all_modules(path)
+    nestedModules = ["geoDB.geoCollection"]
+
+    potentialAddresses = []
+
+    # Connect to MongoDB
+    for modulePath in nestedModules:
+        results = await requestQueryAtPath(mongoClientCreds, query, modulePath)
+        potentialAddresses.append(results)
+
+    return interleave_lists(potentialAddresses)
+
+# ==================================================================================================
+# Generate Data Locally
+# ==================================================================================================
+async def generateAtPath(path: str, addressClient: Client) -> None:
+    """Generates a new document in the database at the specified path"""
+    modulePathList = path.split(".")
+    classObj = classByPath(modulePathList)
+
+    gdf:gpd.GeoDataFrame = await classObj.generate(addressClient)
+
+    # Ensure 'uuid' and 'path' columns exist
+    if 'uuid' not in gdf.columns:
+        gdf['uuid'] = None
+    if 'path' not in gdf.columns:
+        gdf['path'] = None
+
+    # Function to generate new column values
+    for index, row in gdf.iterrows():
+        gdf.at[index, 'uuid'] = str(uuid.uuid4())
+        gdf.at[index, 'path'] = modulePathList
+
+    # Change the projection
+    gdf.set_crs(epsg=2236, inplace=True, allow_override=True)
+    gdf.to_crs(epsg=4326, inplace=True)
+
+    # Save data to the _data folder
+    gdf.to_file(f"CentralizedAppraiser/{path.replace('.', '/')}/_data/data.kml", driver='KML')
+    with open(f"CentralizedAppraiser/{path.replace('.', '/')}/_data/data.json", "w") as file:
+        json.dump(gdf.to_geo_dict(), file, indent=4)
+
+def generateAllAtPath(path: str, addressClient: Client) -> None:
+    nestedModules = get_all_modules(path)
+
+    # Connect to MongoDB
+    for modulePath in nestedModules:
+        generateAtPath(modulePath, addressClient)
+
+# ==================================================================================================
+# Sync Data With MongoDB
+# ==================================================================================================
+def syncAtPath(mongoClientCreds: dict, path: str) -> dict:
+    """Generates a new document in the database at the specified path"""
+    modulePathList = path.split(".")
+    modulePathList = ["geoDB", "geoCollection"]
+    
+    # Load GeoJSON data from a file
+    with open('larger.json', 'r') as file:
+        geojson_data = json.load(file)
+
+    print("Running makeMongoDB")
+    # Connect to MongoDB
+    client = pymongo.MongoClient('mongodb+srv://ReedG:97eJPbuphnqRsIMl@serverlessinstance0.mos4bob.mongodb.net/?retryWrites=true&w=majority&appName=ServerlessInstance0')
+    db = client['geoDB']
+    collection = db['geoCollection']
+
+    # Create a unique index on the FOLIO field
+    collection.create_index("FOLIO", unique=True)
+
+    # Insert GeoJSON data into MongoDB
+    def insert_geojson_to_mongo(geojson_data, collection, batch_size=1000):
+        if geojson_data['type'] == 'FeatureCollection':
+            features = geojson_data['features']
+            operations = []
+            for feature in features:
+                operations.append(
+                    pymongo.UpdateOne(
+                        {"FOLIO": feature["properties"]["FOLIO"]},
+                        {"$set": feature},
+                        upsert=True
+                    )
+                )
+                if len(operations) == batch_size:
+                    collection.bulk_write(operations)
+                    operations = []
+            if operations:
+                collection.bulk_write(operations)
         else:
-            return path, error
+            raise ValueError("Invalid GeoJSON format")
+
+    # Insert the data
+    insert_geojson_to_mongo(geojson_data, collection)
 
 
+def makeMongoDB(mongoClientCreds: dict, path: str):
 
-def classByPath(path:list) -> set[Country, dict]:
+    
+    print("GeoJSON data has been inserted into MongoDB.")
+
+# ==================================================================================================
+# Generate & Sync Data
+# ==================================================================================================
+def generateAndSync(mongoClientCreds: dict, path: str):
+    generateAtPath(mongoClientCreds, path)
+    syncAtPath(mongoClientCreds, path)
+
+
+# ==================================================================================================
+# Other Helper Functions
+# ==================================================================================================
+def classByPath(path:list) -> Country:
     """return the class by the path"""
     # Import the module and return the class
     try:
@@ -38,62 +163,4 @@ def classByPath(path:list) -> set[Country, dict]:
         module = importlib.import_module(subclassPath)
         my_class = getattr(module, path[-2])
 
-    return my_class, {"status": "success", "message": ""}
-
-
-
-def classByAddressInfo(addressInfo:AddressInfo) -> set[Country, dict]:
-    """return the class by the address info"""
-    path, error = pathByAddressInfo(addressInfo)
-    if error["status"] == "error":
-        return None, error
-    else:
-        return classByPath(path)
-
-
-
-def appraiserInfoByAddressInfo(addressInfo:AddressInfo, client:Client) -> set[AppraiserInfo, dict]:
-    """return the appraiser info by the address info"""
-    locationClass, error = classByAddressInfo(addressInfo)
-    if error["status"] == "error":
-        return None, error
-    else:
-        return locationClass.appraiserInfoByAddressInfo(addressInfo, client)
-'''
-from ijson.common import JSONError, IncompleteJSONError, ObjectBuilder
-
-from ijson.utils import coroutine, sendable_list
-from .version import __version__
-
-def get_backend(backend):
-    """Import the backend named ``backend``"""
-    import importlib
-    return importlib.import_module('ijson.backends.' + backend)
-
-def _default_backend():
-    import os
-    if 'IJSON_BACKEND' in os.environ:
-        return get_backend(os.environ['IJSON_BACKEND'])
-    for backend in ('yajl2_c', 'yajl2_cffi', 'yajl2', 'yajl', 'python'):
-        try:
-            return get_backend(backend)
-        except ImportError:
-            continue
-    raise ImportError('no backends available')
-backend = _default_backend()
-del _default_backend
-
-basic_parse = backend.basic_parse
-basic_parse_coro = backend.basic_parse_coro
-parse = backend.parse
-parse_coro = backend.parse_coro
-items = backend.items
-items_coro = backend.items_coro
-kvitems = backend.kvitems
-kvitems_coro = backend.kvitems_coro
-basic_parse_async = backend.basic_parse_async
-parse_async = backend.parse_async
-items_async = backend.items_async
-kvitems_async = backend.kvitems_async
-backend = backend.backend
-'''
+    return my_class

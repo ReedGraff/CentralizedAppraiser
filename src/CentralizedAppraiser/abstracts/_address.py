@@ -1,163 +1,167 @@
 import json
-from ..utils import strict_types
-from schema import Schema, And, Use, Or, Optional, SchemaError
-# from schema import Schema, And, Use, Optional, SchemaError
+from ._exceptions import TranslationInvalid
+from schema import Schema, And, Use, Or, Optional
+
+
 
 class AddressSchematic(object):
     """Passed from the counties"""
-    @strict_types
-    def __init__(self, data:dict, translateStrategy) -> None:
+    
+    def __init__(self, data: dict, translateStrategy) -> None:
         raise NotImplementedError
 
     def __str__(self):
         raise NotImplementedError
     
-    def get(self) -> set[dict, dict]:
+    def get(self) -> dict:
         """return the formatted data and an error message if the data is not valid"""
+        raise NotImplementedError
+    
+    @classmethod
+    def getSchema(cls) -> dict:
+        """Return the schema for the class"""
         raise NotImplementedError
 
 
 
-# Address Info (IK this is not abstract)
 class AddressInfo(AddressSchematic):
     """Passed to the counties from the client"""
-    @strict_types
-    def __init__(self, data:dict, translateStrategy) -> None:
-        self.__data = data # this is the raw data from the appraiser
-        self.__formattedData = translateStrategy(data) # this is the translated data into consistent format
+    
+    def __init__(self, data: dict, translateStrategy) -> None:
+        self.__data = data
+        self.__formattedData = translateStrategy(data)
 
-        self.__schema = Schema(
-            {
-                "formattedAddress": And(str, len),
-                "folio": Or(None, And(str, Use(len))),
-                "addressComponents": {
-                    "streetNumber": str,
-                    "street": str,
-                    "streetDirection": str,
-                    "city": str,
-                    "county": str,
-                    "state": And(str, len),
-                    "country": And(str, len),
-                    "zip": And(str, len)
-                },
-                "geo": {
-                    "lat": And(Use(float), lambda n: -90 <= n <= 90),
-                    "lng": And(Use(float), lambda n: -180 <= n <= 180)
-                }
+    @classmethod
+    def getSchema(cls) -> dict:
+        return {
+            "formattedAddress": And(str, len),
+            "addressComponents": {
+                "streetNumber": str,
+                "street": str,
+                "unit": str,
+                "city": str,
+                "county": str,
+                "state": str,
+                "country": str,
+                "zip": str
+            },
+            Optional("geo"): {
+                "lat": And(Use(float), lambda n: -90 <= n <= 90),
+                "lng": And(Use(float), lambda n: -180 <= n <= 180)
             }
-        )
+        }
 
     def __str__(self):
         return f"AddressInfo(data={self.__data})"
     
-    def get(self) -> set[dict, dict]:
-        """return the formatted data and an error message if the data is not valid"""
-        if self.__schema.is_valid(self.__formattedData):
-            return self.__formattedData, {"status": "success", "message": ""}
+    def get(self) -> dict:
+        schema = Schema(self.getSchema())
+        if schema.is_valid(self.__formattedData):
+            return self.__formattedData
         else:
-            return None, {"status": "error", "message": f"Internal Error. Data is not valid for AddressInfo: {self.__formattedData}"}
+            print(schema.validate(self.__formattedData))
+            raise TranslationInvalid(f"Internal Error. Data is not valid for AddressInfo: {self.__formattedData}")
 
 
 
-# Address Info (IK this is not abstract)
 class AppraiserInfo(AddressSchematic):
     """Passed from the counties"""
-    @strict_types
-    def __init__(self, data:dict, client, translateStrategy) -> None:
-        self.__data = data # this is the raw data from the appraiser
-        self.__formattedData, self.__errorHandler = translateStrategy(data, client) # this is the translated data into consistent format
+    
+    def __init__(self, data: dict, client, translateStrategy) -> None:
+        self.__data = data
+        self.__formattedData = translateStrategy(data, client)
 
-        self.__schema = Schema(
-            {
-                "assessments": [
-                    {
-                        "assessedValue": And(int, lambda n: n >= 0),
-                        
-                        "buildingValue": And(int, lambda n: n >= 0),
-                        "landValue": And(int, lambda n: n >= 0),
-                        "totalValue": And(int, lambda n: n >= 0),
-                        "year": int
-                    },
-                ],
-                "propertyInfo": {
-                    "folio": And(str, len),
-                    "parentFolio": str,
-                    "legal": str,
-                    "use": str,
-                    "subdivision": Or(None, str),
-                    "blk": Or(None, int),
-                    "lot": Or(None, int),
-                    "plat": {
-                        "book": Or(None, int),
-                        "page": Or(None, int)
-                    },
-                    "lotSize": Or(None, int, float),
-                    "otherRecords": [
-                        {
-                            "type": str,
-                            "book": int,
-                            "page": int
-                        }
-                    ]
+    @classmethod
+    def getSchema(cls) -> dict:
+        return {
+            "locationInfo": dict,
+            "assessments": [
+                {
+                    "assessedValue": And(int, lambda n: n >= 0),
+                    "buildingValue": And(int, lambda n: n >= 0),
+                    "landValue": And(int, lambda n: n >= 0),
+                    "totalValue": And(int, lambda n: n >= 0),
+                    "year": int
                 },
-                "owners": [
+            ],
+            "propertyInfo": {
+                "parentFolio": str,
+                "legal": str,
+                "use": str,
+                "subdivision": Or(None, str),
+                "blk": Or(None, int),
+                "lot": Or(None, int),
+                "lotSize": Or(None, int, float),
+                "records": [
                     {
-                        "name": And(str, len),
-                        # "type": str, Should be used for sole proprietorship, partnership, LLC, etc
-                        "mailingAddresses": [
-                            {
-                                "formattedAddress": And(str, len),
-                                'folio': Or(None, And(str, Use(len))),
-                                "addressComponents": {
-                                    "streetNumber": str,
-                                    "street": str,
-                                    "streetDirection": str,
-                                    "city": str,
-                                    "county": str,
-                                    "state": And(str, len),
-                                    "country": And(str, len),
-                                    "zip": And(str, len)
-                                },
-                                "geo": {
-                                    "lat": And(Use(float), lambda n: -90 <= n <= 90),
-                                    "lng": And(Use(float), lambda n: -180 <= n <= 180)
-                                }
-                            }
-                        ]
+                        "type": str,
+                        "book": int,
+                        "page": int
                     }
-                ],
-                Optional("unStructured"): dict
-            }
-        )
+                ]
+            },
+            "owners": [
+                {
+                    "name": And(str, len),
+                    "mailingAddresses": [
+                        AddressInfo.getSchema()
+                    ]
+                }
+            ],
+            Optional("unStructured"): dict
+        }
 
     def __str__(self):
         return f"AppraiserInfo(data={self.__data})"
     
-    def get(self) -> set[dict, dict]:
-        """return the formatted data and an error message if the data is not valid"""
-        if self.__errorHandler["status"] == "error":
-            return None, self.__errorHandler
+    def get(self) -> dict:
+        schema = Schema(self.getSchema())
+        if schema.is_valid(self.__formattedData):
+            return self.__formattedData
         else:
-            if self.__schema.is_valid(self.__formattedData):
-                return self.__formattedData, {"status": "success", "message": ""}
-            else:
-                json.dump(self.__formattedData, open("warning.json", "w"), indent=4)
-                self.__schema.validate(self.__formattedData)
-                return None, {"status": "error", "message": f"Internal Error. Data is not valid for AppraiserInfo: {self.__formattedData}"}
+            print(schema.validate(self.__formattedData))
+            raise TranslationInvalid(f"Internal Error. Data is not valid for AppraiserInfo: {self.__formattedData}")
 
 
 
-class FolioInfo(AddressSchematic):
-    """Passed from the counties (this represents one individual folio)"""
-    # this would replace the regrid folio search or typeahead function...
-    # right now, we are somewhat dependent on regrid to access the right folio number... (in the case where there are multiple folios for an address)
-    @strict_types
-    def __init__(self, data:dict, translateStrategy) -> None:
-        raise NotImplementedError
+class MongoInfo(AddressSchematic):
+    """
+    Should be globally standard. translateStrategy should be the same for all counties, and should not really change.
+    
+    This builds the base to geojson, which is {
+        "type": "FeatureCollection",
+        "name": "larger",
+        "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+        "features": mongoInfo.getSchema()
+    }"""
+    def __init__(self, data: dict, translateStrategy) -> None:
+        self.__data = data
+        self.__formattedData = translateStrategy(data)
+
+    @classmethod
+    def getSchema(cls) -> dict:
+        return {
+            "_id": str,
+            "type": str,
+            "properties": {
+                "uuid": str,
+                "path": list[str],
+                "apn": str,
+                **AppraiserInfo.getSchema()
+            },
+            "geometry": {
+                "type": str,
+                "coordinates": list[list[list[float, float]]]
+            }
+        }
 
     def __str__(self):
-        raise NotImplementedError
+        return f"MongoInfo(data={self.__data})"
     
-    def get(self) -> set[dict, dict]:
-        """return the formatted data and an error message if the data is not valid"""
-        raise NotImplementedError
+    def get(self) -> dict:
+        schema = Schema(self.getSchema())
+        if schema.is_valid(self.__formattedData):
+            return self.__formattedData
+        else:
+            print(schema.validate(self.__formattedData))
+            raise TranslationInvalid(f"Internal Error. Data is not valid for MongoInfo: {self.__formattedData}")
