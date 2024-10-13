@@ -91,7 +91,7 @@ def syncAtPath(mongoClientCreds: dict, path: str) -> dict:
 
     print("Running makeMongoDB")
     # Connect to MongoDB
-    client = pymongo.MongoClient('mongodb+srv://ReedG:97eJPbuphnqRsIMl@serverlessinstance0.mos4bob.mongodb.net/?retryWrites=true&w=majority&appName=ServerlessInstance0')
+    client = pymongo.MongoClient("")
     db = client['geoDB']
     collection = db['geoCollection']
 

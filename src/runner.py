@@ -37,6 +37,7 @@ countyObj = CentralizedAppraiser.UnitedStates.Florida.Broward.Broward(
     mongoClientCreds = mongoClientCreds,
     maxConcurrent=100
 )
+out = CentralizedAppraiser.requestQueryAtPath(mongoClientCreds, {"properties.locationInfo.formattedAddress": {"$regex": "^123 Main St", "$options": "i"}}, "UnitedStates.Florida.Broward")
 # out = asyncio.run(countyObj.generate())
 # out = print(asyncio.run(countyObj.appraiserInfoByFolio("494222082380")))
 
