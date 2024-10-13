@@ -1,6 +1,7 @@
 from ._address import *
 # from ._client import * # imported into __init__.py
 from ._location import *
+from ._proxy import *
 
 
 # # Client File

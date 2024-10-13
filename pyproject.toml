@@ -25,7 +25,12 @@ dependencies = [
     # "json",
     "shapely",
     "schema",
-    "pyproj"
+    "pyproj",
+
+    "usaddress",
+    "geopy",
+    "reverse_geocode",
+    "pymongo"
 ]
 license = {file = "LICENSE"}
 

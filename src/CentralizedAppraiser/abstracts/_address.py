@@ -29,7 +29,7 @@ class AddressInfo(AddressSchematic):
     
     def __init__(self, data: dict, translateStrategy) -> None:
         self.__data = data
-        self.__formattedData = translateStrategy(data)
+        self.__formattedData = translateStrategy
 
     @classmethod
     def getSchema(cls) -> dict:
@@ -56,11 +56,12 @@ class AddressInfo(AddressSchematic):
     
     def get(self) -> dict:
         schema = Schema(self.getSchema())
-        if schema.is_valid(self.__formattedData):
-            return self.__formattedData
+        formattedData = self.__formattedData(self.__data)
+        if schema.is_valid(formattedData):
+            return formattedData
         else:
-            print(schema.validate(self.__formattedData))
-            raise TranslationInvalid(f"Internal Error. Data is not valid for AddressInfo: {self.__formattedData}")
+            print(schema.validate(formattedData))
+            raise TranslationInvalid(f"Internal Error. Data is not valid for AddressInfo: {formattedData}")
 
 
 
@@ -69,7 +70,8 @@ class AppraiserInfo(AddressSchematic):
     
     def __init__(self, data: dict, client, translateStrategy) -> None:
         self.__data = data
-        self.__formattedData = translateStrategy(data, client)
+        self.__client = client
+        self.__translateStrategy = translateStrategy
 
     @classmethod
     def getSchema(cls) -> dict:
@@ -116,11 +118,12 @@ class AppraiserInfo(AddressSchematic):
     
     def get(self) -> dict:
         schema = Schema(self.getSchema())
-        if schema.is_valid(self.__formattedData):
-            return self.__formattedData
+        formattedData = self.__translateStrategy(self.__data, self.__client)
+        if schema.is_valid(formattedData):
+            return formattedData
         else:
-            print(schema.validate(self.__formattedData))
-            raise TranslationInvalid(f"Internal Error. Data is not valid for AppraiserInfo: {self.__formattedData}")
+            print(schema.validate(formattedData))
+            raise TranslationInvalid(f"Internal Error. Data is not valid for AppraiserInfo: {formattedData}")
 
 
 
@@ -135,6 +138,7 @@ class MongoInfo(AddressSchematic):
         "features": mongoInfo.getSchema()
     }"""
     def __init__(self, data: dict, translateStrategy) -> None:
+        raise NotImplementedError
         self.__data = data
         self.__formattedData = translateStrategy(data)
 

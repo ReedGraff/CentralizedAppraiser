@@ -1,12 +1,16 @@
 import importlib
 import json
+import os
 import uuid
-import motor.motor_asyncio
+# import motor.motor_asyncio
 import geopandas as gpd
-import re
-import pkgutil
+import asyncio
+# import pymongo
+import logging
 
-import pymongo
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+
 
 from CentralizedAppraiser.abstracts._address import MongoInfo
 
@@ -21,41 +25,10 @@ from .abstracts._client import *
 
 
 # ==================================================================================================
-# Request Data
-# ==================================================================================================
-async def requestQueryAtPath(mongoClientCreds: dict, query: dict, path: str) -> dict:
-    """Finds all addresses that match the unformatted address which are at a specific path"""
-    modulePathList = path.split(".")
-    modulePathList = ["geoDB", "geoCollection"]
-
-    client = motor.motor_asyncio.AsyncIOMotorClient(f'mongodb+srv://{mongoClientCreds["u"]}:{mongoClientCreds["p"]}@serverlessinstance0.mos4bob.mongodb.net/?retryWrites=true&w=majority&appName={mongoClientCreds["a"]}')
-    db = client["+".join(modulePathList[0:-1])]  # UnitedStates+Florida
-    collection = db[modulePathList[-1]]  # Broward
-
-    # Retrieve data from MongoDB
-    cursor = collection.find(query)
-    results = await cursor.to_list(length=None)
-    return results
-
-async def requestAllAtPath(mongoClientCreds: dict, query: dict, path: str) -> list[dict]:
-    """Finds all addresses that match the unformatted address which are within the path"""
-    nestedModules = get_all_modules(path)
-    nestedModules = ["geoDB.geoCollection"]
-
-    potentialAddresses = []
-
-    # Connect to MongoDB
-    for modulePath in nestedModules:
-        results = await requestQueryAtPath(mongoClientCreds, query, modulePath)
-        potentialAddresses.append(results)
-
-    return interleave_lists(potentialAddresses)
-
-# ==================================================================================================
 # Generate Data Locally
 # ==================================================================================================
-async def generateAtPath(path: str, addressClient: Client) -> None:
-    """Generates a new document in the database at the specified path"""
+async def generateAtPath(path: str, addressClient: Client) -> list: # Blocking
+    """Generates a new document in the database for the specified path"""
     modulePathList = path.split(".")
     classObj = classByPath(modulePathList)
 
@@ -77,16 +50,32 @@ async def generateAtPath(path: str, addressClient: Client) -> None:
     gdf.to_crs(epsg=4326, inplace=True)
 
     # Save data to the _data folder
-    gdf.to_file(f"CentralizedAppraiser/{path.replace('.', '/')}/_data/data.kml", driver='KML')
-    with open(f"CentralizedAppraiser/{path.replace('.', '/')}/_data/data.json", "w") as file:
-        json.dump(gdf.to_geo_dict(), file, indent=4)
+    __location__ = os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__), ""))
+    gdf.to_file(os.path.join(__location__, *modulePathList, 'data.kml'), driver='KML')
+    # gdf.to_json(os.path.join(__location__, *modulePathList, 'data.json'), driver='GeoJSON')
+    with open(os.path.join(__location__, *modulePathList, 'data.json'), "w") as f:
+        json.dump(gdf.to_geo_dict(), f, indent=4)
 
-def generateAllAtPath(path: str, addressClient: Client) -> None:
+    return [
+        f"CentralizedAppraiser/{path.replace('.', '/')}/_data/data.kml",
+        f"CentralizedAppraiser/{path.replace('.', '/')}/_data/data.json"
+    ]
+
+async def generateAllAtPath(path: str, addressClient: Client) -> dict: # Non Blocking
     nestedModules = get_all_modules(path)
+    tasks = []
 
-    # Connect to MongoDB
     for modulePath in nestedModules:
-        generateAtPath(modulePath, addressClient)
+        task = asyncio.create_task(generateAtPath(modulePath, addressClient))
+        tasks.append(task)
+    res = await asyncio.gather(*tasks)
+
+    # convert to a dictionary for easier access
+    output = {}
+    for index, vals in enumerate(res):
+        output.update({nestedModules[index]: vals})
+
+    return output
 
 # ==================================================================================================
 # Sync Data With MongoDB
@@ -135,9 +124,42 @@ def syncAtPath(mongoClientCreds: dict, path: str) -> dict:
 
 
 def makeMongoDB(mongoClientCreds: dict, path: str):
-
-    
     print("GeoJSON data has been inserted into MongoDB.")
+
+
+
+# ==================================================================================================
+# Request Data
+# ==================================================================================================
+async def requestQueryAtPath(mongoClientCreds: dict, query: dict, path: str) -> dict:
+    """Finds all addresses that match the unformatted address which are at a specific path"""
+    modulePathList = path.split(".")
+    modulePathList = ["geoDB", "geoCollection"]
+
+    client = motor.motor_asyncio.AsyncIOMotorClient(f'mongodb+srv://{mongoClientCreds["u"]}:{mongoClientCreds["p"]}@serverlessinstance0.mos4bob.mongodb.net/?retryWrites=true&w=majority&appName={mongoClientCreds["a"]}')
+    db = client["+".join(modulePathList[0:-1])]  # UnitedStates+Florida
+    collection = db[modulePathList[-1]]  # Broward
+
+    # Retrieve data from MongoDB
+    cursor = collection.find(query)
+    results = await cursor.to_list(length=None)
+    return results
+
+async def requestAllAtPath(mongoClientCreds: dict, query: dict, path: str) -> list[dict]:
+    """Finds all addresses that match the unformatted address which are within the path"""
+    nestedModules = get_all_modules(path)
+    nestedModules = ["geoDB.geoCollection"]
+
+    potentialAddresses = []
+
+    # Connect to MongoDB
+    for modulePath in nestedModules:
+        results = await requestQueryAtPath(mongoClientCreds, query, modulePath)
+        potentialAddresses.append(results)
+
+    return interleave_lists(potentialAddresses)
+
+
 
 # ==================================================================================================
 # Generate & Sync Data
@@ -145,6 +167,7 @@ def makeMongoDB(mongoClientCreds: dict, path: str):
 def generateAndSync(mongoClientCreds: dict, path: str):
     generateAtPath(mongoClientCreds, path)
     syncAtPath(mongoClientCreds, path)
+
 
 
 # ==================================================================================================

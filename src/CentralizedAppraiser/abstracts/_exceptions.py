@@ -7,3 +7,6 @@ class TranslationInvalid(Exception):
 class AddressClientError(Exception):
     """Raised when an error occurs with the AddressClient"""
 
+class AppraiserRequestError(Exception):
+    """Raised when an error occurs with the AddressClient"""
+

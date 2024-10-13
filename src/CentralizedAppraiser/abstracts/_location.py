@@ -11,7 +11,7 @@ class Country(object):
         raise NotImplementedError
     
     @classmethod
-    def appraiserInfoByFolio(cls, folio:str, client:Client) -> set[AppraiserInfo, dict]:
+    def appraiserInfoByFolio(cls, folio:str) -> set[AppraiserInfo, dict]:
         """just returns the appraiser info for a folio. We use the Client to validate mailing addresses"""
         raise NotImplementedError
     
@@ -40,8 +40,10 @@ class Country(object):
             Abstract class to define the structure of a county object. This class is inherited by the other materials in the subdirectories.
                 - It can be inherited by other classes, but not instantiated directly
             """
-            @classmethod
-            def __translate(cls, data:dict, client:Client) -> dict:
+            def __init__(self, **kwargs):
+                raise NotImplementedError
+
+            def __translate(self, data:dict) -> dict:
                 """just returns the translated data. We use the Client to validate mailing addresses"""
                 raise NotImplementedError
 

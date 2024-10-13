@@ -69,7 +69,7 @@ def convert_to_int(value):
 # =================================================================================================
 def esri_to_geojson(esri_json):
     features = []
-    for feature in esri_json["features"]:
+    for feature in esri_json.get("features", []):
         geometry = feature["geometry"]
         if geometry and "rings" in geometry:
             # Convert Esri rings to GeoJSON-like coordinates
@@ -132,6 +132,8 @@ def make_grid(shape, granularity):
             box = Polygon([(sw[1], sw[0]), (ne[1], sw[0]), (ne[1], ne[0]), (sw[1], ne[0])])
             if shape.intersects(box):
                 results.append((sw, ne))
+    
+    print("Number of grid squares: ", len(results))
     return results
 
 def meters_to_degrees(meters):
