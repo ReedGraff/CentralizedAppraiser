@@ -86,11 +86,6 @@ asyncio.run(testin())
 #
 
 """ Query all properties """
-# mongoClientCreds = {
-#     "u": "ReedG",
-#     "p": "97eJPbuphnqRsIMl",
-#     "a": "ServerlessInstance0"
-# }
 # query = { # https://www.mongodb.com/docs/atlas/atlas-search/text/#text
 #   "$search": {
 #     "index": '<index name>, // optional, defaults to "default"',
