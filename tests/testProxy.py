@@ -16,9 +16,8 @@ class AppraiserInfoFetcher:
         self.semaphore = asyncio.Semaphore(max_concurrency)
 
     def create_connector(self):
-        username = "2ekx8cxiamyrzgy-odds-5+100-country-us"
-        password = "au7okncyymr5nta"
-        proxy = "rp.proxyscrape.com:6060"
+        raise NotImplementedError
+        # replace with u p proxy for your proxy server...
         proxy_auth = "{}:{}@{}".format(username, password, proxy)
         return "http://{}".format(proxy_auth)
 

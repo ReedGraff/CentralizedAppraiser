@@ -46,7 +46,6 @@ async def testin():
     gridDict = json.load(open("C:/Users/range/CodingProjects/RGBZ/Aeri4l/AllofPermitFly/CentralizedAppraiser/src/CentralizedAppraiser/UnitedStates/Florida/Broward/_data/_grids.json", "r"))
 
     # Connect to MongoDB once
-    uri = f"mongodb+srv://ReedG:2xWgqq4Zf6IdnWUZ@centralizedappraiser.i0rek.mongodb.net/?retryWrites=true&w=majority&appName=CentralizedAppraiser"
     # Create a new client and connect to the server
     client = MongoClient(uri, server_api=ServerApi('1'))
 
