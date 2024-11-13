@@ -1,8 +1,9 @@
 import importlib
 import json
 import os
+import time
 import uuid
-# import motor.motor_asyncio
+import motor.motor_asyncio
 import geopandas as gpd
 import asyncio
 # import pymongo
@@ -15,7 +16,7 @@ logging.basicConfig(level=logging.INFO)
 from CentralizedAppraiser.abstracts._address import MongoInfo
 
 # local imports
-from .utils import get_all_modules, getSubClassPath, interleave_lists
+from .utils import get_all_modules, getSubClassPath, interleave_lists, order_by_score
 from .abstracts import Country, AddressInfo, AppraiserInfo
 from .abstracts._exceptions import *
 
@@ -82,82 +83,44 @@ async def generateAllAtPath(path: str, addressClient: Client) -> dict: # Non Blo
 # ==================================================================================================
 def syncAtPath(mongoClientCreds: dict, path: str) -> dict:
     """Generates a new document in the database at the specified path"""
-    modulePathList = path.split(".")
-    modulePathList = ["geoDB", "geoCollection"]
-    
-    # Load GeoJSON data from a file
-    with open('larger.json', 'r') as file:
-        geojson_data = json.load(file)
-
-    print("Running makeMongoDB")
-    # Connect to MongoDB
-    client = pymongo.MongoClient("")
-    db = client['geoDB']
-    collection = db['geoCollection']
-
-    # Create a unique index on the FOLIO field
-    collection.create_index("FOLIO", unique=True)
-
-    # Insert GeoJSON data into MongoDB
-    def insert_geojson_to_mongo(geojson_data, collection, batch_size=1000):
-        if geojson_data['type'] == 'FeatureCollection':
-            features = geojson_data['features']
-            operations = []
-            for feature in features:
-                operations.append(
-                    pymongo.UpdateOne(
-                        {"FOLIO": feature["properties"]["FOLIO"]},
-                        {"$set": feature},
-                        upsert=True
-                    )
-                )
-                if len(operations) == batch_size:
-                    collection.bulk_write(operations)
-                    operations = []
-            if operations:
-                collection.bulk_write(operations)
-        else:
-            raise ValueError("Invalid GeoJSON format")
-
-    # Insert the data
-    insert_geojson_to_mongo(geojson_data, collection)
+    raise NotImplementedError("This function has not been implemented yet.")
 
 
 def makeMongoDB(mongoClientCreds: dict, path: str):
-    print("GeoJSON data has been inserted into MongoDB.")
+    raise NotImplementedError("This function has not been implemented yet.")
 
 
 
 # ==================================================================================================
 # Request Data
 # ==================================================================================================
-async def requestQueryAtPath(mongoClientCreds: dict, query: dict, path: str) -> dict:
+async def requestQueryAtPath(mongoClientCreds: dict, pipeline: list[dict], path: str) -> dict:
     """Finds all addresses that match the unformatted address which are at a specific path"""
     modulePathList = path.split(".")
-    modulePathList = ["geoDB", "geoCollection"]
 
-    client = motor.motor_asyncio.AsyncIOMotorClient(f'mongodb+srv://{mongoClientCreds["u"]}:{mongoClientCreds["p"]}@serverlessinstance0.mos4bob.mongodb.net/?retryWrites=true&w=majority&appName={mongoClientCreds["a"]}')
+    client = motor.motor_asyncio.AsyncIOMotorClient(f'mongodb+srv://{mongoClientCreds["u"]}:{mongoClientCreds["p"]}@centralizedappraiser.i0rek.mongodb.net/?retryWrites=true&w=majority&appName=CentralizedAppraiser')
     db = client["+".join(modulePathList[0:-1])]  # UnitedStates+Florida
     collection = db[modulePathList[-1]]  # Broward
 
-    # Retrieve data from MongoDB
-    cursor = collection.find(query)
+    # Execute the aggregation pipeline
+    cursor = collection.aggregate(pipeline)
     results = await cursor.to_list(length=None)
     return results
 
-async def requestAllAtPath(mongoClientCreds: dict, query: dict, path: str) -> list[dict]:
+async def requestAllAtPath(mongoClientCreds: dict, pipeline: list[dict], path: str) -> list[dict]:
     """Finds all addresses that match the unformatted address which are within the path"""
     nestedModules = get_all_modules(path)
-    nestedModules = ["geoDB.geoCollection"]
 
-    potentialAddresses = []
+    # Connect to MongoDB concurrently
+    tasks = [requestQueryAtPath(mongoClientCreds, pipeline, modulePath) for modulePath in nestedModules]
+    results = await asyncio.gather(*tasks)
 
-    # Connect to MongoDB
-    for modulePath in nestedModules:
-        results = await requestQueryAtPath(mongoClientCreds, query, modulePath)
-        potentialAddresses.append(results)
+    # Flatten the list of results
+    potentialAddresses = [item for sublist in results for item in sublist]
 
-    return interleave_lists(potentialAddresses)
+    # return interleave_lists(potentialAddresses)
+    print("Potential Addresses:", potentialAddresses)
+    return order_by_score(potentialAddresses)
 
 
 

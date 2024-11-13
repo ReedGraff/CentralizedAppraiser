@@ -166,3 +166,5 @@ cython_debug/
 creds.txt
 credentials.txt
 src/CentralizedAppraiser/UnitedStates/*/*/_data
+src/runner.py
+src/translate.py

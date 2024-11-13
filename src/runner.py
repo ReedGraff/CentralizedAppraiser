@@ -1,27 +1,20 @@
 import json
-
+import time
+import asyncio
+import logging
 from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 import CentralizedAppraiser
-import CentralizedAppraiser.UnitedStates
-import CentralizedAppraiser.UnitedStates.Florida
 import CentralizedAppraiser.UnitedStates.Florida.Broward
-import CentralizedAppraiser.UnitedStates.Florida.MiamiDade
-from CentralizedAppraiser.abstracts._proxy import CustomRotating, Proxy
+from CentralizedAppraiser.abstracts._proxy import Proxy
 from CentralizedAppraiser.abstracts._client import USAReverseClient
 
-
-import asyncio
-import requests
-import logging
-
-""" Generate all properties """
 # Set up proxy server
-with open("credentials.txt", "r") as f:
-    username, password, proxy = f.read().split("\n")
-proxy_auth = "{}:{}@{}".format(username, password, proxy)
-customProxy = Proxy(url="http://{}".format(proxy_auth))
-usaReverseClient = USAReverseClient()
+# with open("credentials.txt", "r") as f:
+#     username, password, proxy = f.read().split("\n")
+# proxy_auth = "{}:{}@{}".format(username, password, proxy)
+# customProxy = Proxy(url="http://{}".format(proxy_auth))
+# usaReverseClient = USAReverseClient()
 
 with open("creds.txt", "r") as f:
     u, p, a = f.read().split("\n")
@@ -31,13 +24,59 @@ mongoClientCreds = {
     "a": a
 }
 
-countyObj = CentralizedAppraiser.UnitedStates.Florida.Broward.Broward(
-    addressClient=usaReverseClient,
-    proxy=customProxy,
-    mongoClientCreds = mongoClientCreds,
-    maxConcurrent=100
-)
-out = CentralizedAppraiser.requestQueryAtPath(mongoClientCreds, {"properties.locationInfo.formattedAddress": {"$regex": "^123 Main St", "$options": "i"}}, "UnitedStates.Florida.Broward")
+# countyObj = CentralizedAppraiser.UnitedStates.Florida.Broward.Broward(
+#     addressClient=usaReverseClient,
+#     proxy=customProxy,
+#     mongoClientCreds=mongoClientCreds,
+#     maxConcurrent=100
+# )
+
+pipeline = [
+    {
+        "$search": {
+            "index": "autocomplete",
+            "compound": {
+                "must": [
+                    {
+                        "text": {
+                            "query": "9425 sw 94th st",
+                            "path": "properties.locationInfo.formattedAddress"
+                        }
+                    },
+                    {
+                        "text": {
+                            "query": "9425",
+                            "path": "properties.locationInfo.addressComponents.streetNumber"
+                        }
+                    },
+                    {
+                        "text": {
+                            "query": "sw 94th st",
+                            "path": "properties.locationInfo.addressComponents.street"
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "$project": {
+            "properties.locationInfo.addressComponents": 1,
+            "score": {"$meta": "searchScore"}
+        }
+    },
+    {
+        "$sort": {
+            "score": -1
+        }
+    }
+]
+
+timeIn = time.time()
+out = asyncio.run(CentralizedAppraiser.requestAllAtPath(mongoClientCreds, pipeline, "UnitedStates.Florida"))
+timeOut = time.time()
+print(timeIn - timeOut)
+print([obj["properties"]["locationInfo"]["addressComponents"] for obj in out])
 # out = asyncio.run(countyObj.generate())
 # out = print(asyncio.run(countyObj.appraiserInfoByFolio("494222082380")))
 

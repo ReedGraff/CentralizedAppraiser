@@ -162,6 +162,12 @@ def interleave_lists(*lists):
 
     return newlist
 
+def order_by_score(results: list[dict]) -> list[dict]:
+    """Orders the results by the score provided by MongoDB Atlas search"""
+    # Assuming the score is stored in the 'score' field of each result
+    sorted_results = sorted(results, key=lambda x: x.get('score', 0), reverse=True)
+    return sorted_results
+
 def makeMongoDB(mongoClient):
     # Load GeoJSON data from a file
     with open('larger.json', 'r') as file:
